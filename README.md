@@ -1,3 +1,3 @@
 # BTTF
 Flipper
-créé par Babar,
+créé par Babar
