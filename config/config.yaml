@@ -48,33 +48,33 @@ coils:
   # === CÔTÉ GAUCHE ===
   c_flipper_left_main:
     number: 0-0-8
-    default_pulse_ms: 30
-    default_hold_power: 0.25
+    default_pulse_ms: 15
+    default_hold_power: 0.125
     allow_enable: true        # Autorise le maintien par PWM
 
   c_flipper_left_mini_main:
     number: 0-0-9
-    default_pulse_ms: 30
-    default_hold_power: 0.25
+    default_pulse_ms: 15
+    default_hold_power: 0.125
     allow_enable: true
 
   # === CÔTÉ DROIT ===
   c_flipper_right_bas_main:
     number: 0-0-10
-    default_pulse_ms: 30
-    default_hold_power: 0.25
+    default_pulse_ms: 15
+    default_hold_power: 0.125
     allow_enable: true
 
   c_flipper_right_haut_main:
     number: 0-0-11
-    default_pulse_ms: 30
-    default_hold_power: 0.25
+    default_pulse_ms: 15
+    default_hold_power: 0.125
     allow_enable: true
 
   c_flipper_right_mini_main:
     number: 0-0-0
-    default_pulse_ms: 30
-    default_hold_power: 0.25
+    default_pulse_ms: 15
+    default_hold_power: 0.125
     allow_enable: true
 
 playfields:
