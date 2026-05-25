@@ -7,6 +7,113 @@
 # include everything here, or create sub-config files to be
 # imported and merged with this one.
 
+#CobraPin
+
 modes:
   - attract
+  # ATTRACT. C'est le mode "sommeil" du flipper quand personne ne joue.
+  # Il gère le défilement des lumières sur le plateau,
+  # l'affichage sur l'écran qui dit "Appuyez sur Start",
+  # et attend que le joueur lance une partie.
   - base
+  # BASE. Dès qu'un joueur appuie sur Start, le mode attract s'arrête et le mode base se lance.
+  # C'est lui qui gère le déroulement d'une partie classique.
+
+hardware:
+  platform: opp
+
+opp:
+  ports: COM
+
+psus:
+  default:
+    #Gives the capacitors extra time to recharge after firing a coil
+    #  and eases the load on the power supply. Doesn't affect autofire
+    #  devices like flippers, pops, slings.
+    release_wait_ms: 50
+
+switches:
+  s_left_flipper:
+    number: 0-0-1
+    tags: left_flipper
+  s_right_flipper:
+    number: 0-0-2
+    tags: right_flipper
+
+  s_startButton:
+    number: 0-0-3
+    tags: start
+
+coils:
+  # === CÔTÉ GAUCHE ===
+  c_flipper_left_main:
+    number: 0-0-8
+    default_pulse_ms: 30
+    default_hold_power: 0.25
+    allow_enable: true        # Autorise le maintien par PWM
+
+  c_flipper_left_mini_main:
+    number: 0-0-9
+    default_pulse_ms: 30
+    default_hold_power: 0.25
+    allow_enable: true
+
+  # === CÔTÉ DROIT ===
+  c_flipper_right_bas_main:
+    number: 0-0-10
+    default_pulse_ms: 30
+    default_hold_power: 0.25
+    allow_enable: true
+
+  c_flipper_right_haut_main:
+    number: 0-0-11
+    default_pulse_ms: 30
+    default_hold_power: 0.25
+    allow_enable: true
+
+  c_flipper_right_mini_main:
+    number: 0-0-0
+    default_pulse_ms: 30
+    default_hold_power: 0.25
+    allow_enable: true
+
+playfields:
+  playfield:
+    tags: default
+    default_source_device: None  # use None in steps before 8
+
+flippers:
+  # === CONFIGURATION GAUCHE ===
+  left_flipper_main:
+    main_coil: c_flipper_left_main
+    activation_switch: s_left_flipper
+    enable_events: machine_reset_phase_3
+
+  left_flipper_mini:
+    main_coil: c_flipper_left_mini_main
+    activation_switch: s_left_flipper
+    enable_events: machine_reset_phase_3
+
+  # === CONFIGURATION DROITE ===
+  right_flipper_bas:
+    main_coil: c_flipper_right_bas_main
+    activation_switch: s_right_flipper
+    enable_events: machine_reset_phase_3
+
+  right_flipper_haut:
+    main_coil: c_flipper_right_haut_main
+    activation_switch: s_right_flipper
+    enable_events: machine_reset_phase_3
+
+  right_flipper_mini:
+    main_coil: c_flipper_right_mini_main
+    activation_switch: s_right_flipper
+    enable_events: machine_reset_phase_3
+
+machine:
+  balls_installed: 5 #How many balls are physically in your game
+  min_balls: 5 #How few balls can be accounted for before you can start a game
+
+game:
+  balls_per_game: 5
+  max_players: 4
