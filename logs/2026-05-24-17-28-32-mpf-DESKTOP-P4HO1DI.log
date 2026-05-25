@@ -1,0 +1,51 @@
+2026-05-24 17:28:32,724 : INFO : root : Loading config.
+2026-05-24 17:28:32,746 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2026-05-24 17:28:32,787 : INFO : ConfigProcessor : Loading config from cache: C:\Users\BABAR\AppData\Local\Temp\b7221ac8aa7e1f861cbabed4af727cab.mpf_cache
+2026-05-24 17:28:33,195 : INFO : ConfigProcessor : Loading config from cache: C:\Users\BABAR\AppData\Local\Temp\56c3f8f3a08c0933cea78cc049ec7f9f.mpf_cache
+2026-05-24 17:28:33,308 : INFO : ConfigProcessor : Loading config from cache: C:\Users\BABAR\AppData\Local\Temp\95bb87c123475a7ce134d7bfdb9da55f.mpf_cache
+2026-05-24 17:28:33,380 : INFO : ConfigProcessor : Loading config from cache: C:\Users\BABAR\AppData\Local\Temp\56c3f8f3a08c0933cea78cc049ec7f9f.mpf_cache
+2026-05-24 17:28:33,666 : INFO : ConfigProcessor : Loading config from cache: C:\Users\BABAR\AppData\Local\Temp\cf00f153dc9ffdf535ad3526d62ff24b.mpf_cache
+2026-05-24 17:28:33,734 : INFO : Machine : Mission Pinball Framework Core Engine v0.80.0
+2026-05-24 17:28:33,734 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': False, 'configfile': ['config.yaml'], 'force_assets_load': False, 'platform_integration_test': False, 'jsonlogging': False, 'logfile': 'logs\\2026-05-24-17-28-32-mpf-DESKTOP-P4HO1DI.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': None, 'syslog_address': None, 'full_logfile_path': 'Z:\\GITHUB\\logs\\2026-05-24-17-28-32-mpf-DESKTOP-P4HO1DI.log'}
+2026-05-24 17:28:33,734 : INFO : Machine : MPF path: C:\Users\BABAR\mpf\Lib\site-packages\mpf
+2026-05-24 17:28:33,734 : INFO : Machine : Machine path: Z:\GITHUB
+2026-05-24 17:28:33,734 : INFO : Machine : Platform: win32
+2026-05-24 17:28:33,734 : INFO : Machine : Python executable location: C:\Users\BABAR\mpf\Scripts\python.exe
+2026-05-24 17:28:33,734 : INFO : Machine : Python version: 3.11.9 (64-bit)
+2026-05-24 17:28:33,735 : INFO : Machine : Initializing MPF...
+2026-05-24 17:28:34,349 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2026-05-24 17:28:34,382 : INFO : Machine : Shutting down...
+2026-05-24 17:28:34,382 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2026-05-24 17:28:34,383 : ERROR : Machine : Failed to initialize MPF
+Traceback (most recent call last):
+  File "C:\Users\BABAR\mpf\Lib\site-packages\mpf\core\machine.py", line 419, in _register_plugin_config_players
+    name, player = entry_point.load()(self)
+                   ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BABAR\mpf\Lib\site-packages\pkg_resources\__init__.py", line 2770, in load
+    self.require(*args, **kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BABAR\mpf\Lib\site-packages\pkg_resources\__init__.py", line 2798, in require
+    items = working_set.resolve(reqs, env, installer, extras=self.extras)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BABAR\mpf\Lib\site-packages\pkg_resources\__init__.py", line 896, in resolve
+    dist = self._resolve_dist(
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BABAR\mpf\Lib\site-packages\pkg_resources\__init__.py", line 942, in _resolve_dist
+    raise VersionConflict(dist, req).with_context(dependent_req)
+pkg_resources.ContextualVersionConflict: (psutil 5.9.5 (c:\users\babar\mpf\lib\site-packages), Requirement.parse('psutil==5.9.8'), {'mpf'})
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\BABAR\mpf\Lib\site-packages\mpf\core\machine.py", line 696, in initialize_mpf
+    raise init.exception()
+  File "C:\Users\BABAR\mpf\Lib\site-packages\mpf\core\machine.py", line 254, in initialize
+    self._register_config_players()
+  File "C:\Users\BABAR\mpf\Lib\site-packages\mpf\core\machine.py", line 410, in _register_config_players
+    self._register_plugin_config_players()
+  File "C:\Users\BABAR\mpf\Lib\site-packages\mpf\core\machine.py", line 425, in _register_plugin_config_players
+    name, player = handler()(self)
+                   ^^^^^^^^^
+TypeError: register_with_mpf() missing 1 required positional argument: 'machine'
+2026-05-24 17:28:34,512 : INFO : crash_reporter : Will not report crash as "report_crashes" mode is "never"
+2026-05-24 17:28:34,512 : INFO : root : MPF run loop ended.

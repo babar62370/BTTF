@@ -1,0 +1,47 @@
+2026-05-24 17:34:36,171 : INFO : root : Loading config.
+2026-05-24 17:34:36,177 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2026-05-24 17:34:36,218 : INFO : ConfigProcessor : Loading config from cache: C:\Users\BABAR\AppData\Local\Temp\b7221ac8aa7e1f861cbabed4af727cab.mpf_cache
+2026-05-24 17:34:36,418 : INFO : ConfigProcessor : Loading config from cache: C:\Users\BABAR\AppData\Local\Temp\56c3f8f3a08c0933cea78cc049ec7f9f.mpf_cache
+2026-05-24 17:34:36,450 : INFO : ConfigProcessor : Loading config from cache: C:\Users\BABAR\AppData\Local\Temp\95bb87c123475a7ce134d7bfdb9da55f.mpf_cache
+2026-05-24 17:34:36,506 : INFO : ConfigProcessor : Loading config from cache: C:\Users\BABAR\AppData\Local\Temp\56c3f8f3a08c0933cea78cc049ec7f9f.mpf_cache
+2026-05-24 17:34:36,579 : INFO : ConfigProcessor : Loading config from cache: C:\Users\BABAR\AppData\Local\Temp\cf00f153dc9ffdf535ad3526d62ff24b.mpf_cache
+2026-05-24 17:34:36,631 : INFO : Machine : Mission Pinball Framework Core Engine v0.80.0
+2026-05-24 17:34:36,631 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': False, 'configfile': ['config.yaml'], 'force_assets_load': False, 'platform_integration_test': False, 'jsonlogging': False, 'logfile': 'logs\\2026-05-24-17-34-36-mpf-DESKTOP-P4HO1DI.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': None, 'syslog_address': None, 'full_logfile_path': 'Z:\\GITHUB\\logs\\2026-05-24-17-34-36-mpf-DESKTOP-P4HO1DI.log'}
+2026-05-24 17:34:36,631 : INFO : Machine : MPF path: C:\Users\BABAR\mpf\Lib\site-packages\mpf
+2026-05-24 17:34:36,631 : INFO : Machine : Machine path: Z:\GITHUB
+2026-05-24 17:34:36,632 : INFO : Machine : Platform: win32
+2026-05-24 17:34:36,632 : INFO : Machine : Python executable location: C:\Users\BABAR\mpf\Scripts\python.exe
+2026-05-24 17:34:36,632 : INFO : Machine : Python version: 3.11.9 (64-bit)
+2026-05-24 17:34:36,633 : INFO : Machine : Initializing MPF...
+2026-05-24 17:34:36,861 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2026-05-24 17:34:36,932 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.5, 'prev_value': None, 'change': True}
+2026-05-24 17:34:36,932 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'Mission Pinball Framework v0.80.0', 'prev_value': None, 'change': True}
+2026-05-24 17:34:36,932 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'Mission Pinball Framework v0.80.0, Config version:6, Show version: 6, BCP version:1.1', 'prev_value': None, 'change': True}
+2026-05-24 17:34:36,932 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.11.9', 'prev_value': None, 'change': True}
+2026-05-24 17:34:36,947 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-10-10.0.26100-SP0', 'prev_value': None, 'change': True}
+2026-05-24 17:34:36,947 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2026-05-24 17:34:36,948 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '10', 'prev_value': None, 'change': True}
+2026-05-24 17:34:36,948 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.26100', 'prev_value': None, 'change': True}
+2026-05-24 17:34:36,948 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2026-05-24 17:34:36,948 : INFO : EventManager : Event: ======'machine_var_log_file_path'====== Args={'value': 'Z:\\GITHUB\\logs\\2026-05-24-17-34-36-mpf-DESKTOP-P4HO1DI.log', 'prev_value': None, 'change': True}
+2026-05-24 17:34:36,948 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2026-05-24 17:34:36,959 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2026-05-24 17:34:36,985 : INFO : EventManager : Event: ======'init_phase_3'====== Args={}
+2026-05-24 17:34:36,987 : INFO : EventManager : Event: ======'init_phase_4'====== Args={}
+2026-05-24 17:34:36,988 : INFO : EventManager : Event: ======'machine_var_audits_events_game_started'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2026-05-24 17:34:36,988 : INFO : EventManager : Event: ======'machine_var_audits_events_game_ended'====== Args={'value': 0, 'prev_value': None, 'change': True}
+2026-05-24 17:34:36,988 : INFO : EventManager : Event: ======'machine_var_audits_player_score'====== Args={'value': {'top': [], 'average': 0, 'total': 0}, 'prev_value': None, 'change': True}
+2026-05-24 17:34:36,988 : INFO : EventManager : Event: ======'init_phase_5'====== Args={}
+2026-05-24 17:34:36,995 : INFO : EventManager : Event: ======'init_done'====== Args={}
+2026-05-24 17:34:36,996 : INFO : EventManager : Event: ======'machine_reset_phase_1'====== Args={}
+2026-05-24 17:34:36,996 : INFO : EventManager : Event: ======'machine_reset_phase_2'====== Args={}
+2026-05-24 17:34:36,996 : INFO : EventManager : Event: ======'machine_reset_phase_3'====== Args={}
+2026-05-24 17:34:36,996 : INFO : EventManager : Event: ======'reset_complete'====== Args={}
+2026-05-24 17:34:36,996 : INFO : EventManager : Event: ======'mode_attract_will_start'====== Args={}
+2026-05-24 17:34:36,996 : INFO : EventManager : Event: ======'mode_attract_starting'====== Args={}
+2026-05-24 17:34:36,996 : INFO : Mode.attract : Started. Priority: 10
+2026-05-24 17:34:36,996 : INFO : EventManager : Event: ======'modes_active_modes_changed'====== Args={}
+2026-05-24 17:34:36,996 : INFO : EventManager : Event: ======'mode_attract_started'====== Args={}
+2026-05-24 17:34:36,996 : INFO : EventManager : Event: ======'collecting_balls_complete'====== Args={}
+2026-05-24 17:34:37,003 : INFO : Machine : Starting the main run loop with active modes: [<Mode.attract>]
+2026-05-24 17:34:37,161 : INFO : BcpServer : New client connected.
