@@ -1,0 +1,8 @@
+2026-05-27 20:34:27,560 : INFO : root : Loading config.
+2026-05-27 20:34:27,562 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2026-05-27 20:34:27,562 : WARNING : ConfigProcessor : Config file in cache changed: /Users/guillaumebarre/Desktop/BTTF/DEF/BTTF MINI-PC/GITHUB/config/config.yaml
+2026-05-27 20:34:27,562 : INFO : ConfigProcessor : Loading config from file /Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/mpfconfig.yaml.
+2026-05-27 20:34:27,568 : INFO : ConfigProcessor : Loading config: /Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/mpfconfig.yaml
+2026-05-27 20:34:27,569 : INFO : ConfigProcessor : Loading config from file /Users/guillaumebarre/Desktop/BTTF/DEF/BTTF MINI-PC/GITHUB/config/config.yaml.
+2026-05-27 20:34:27,570 : INFO : ConfigProcessor : Loading config: /Users/guillaumebarre/Desktop/BTTF/DEF/BTTF MINI-PC/GITHUB/config/config.yaml
+2026-05-27 20:34:27,570 : ERROR : ConfigProcessor : Config section 'slides' is removed in MPF 0.80 and will be ignored.

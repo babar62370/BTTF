@@ -40,9 +40,35 @@ switches:
     number: 0-0-2
     tags: right_flipper
 
-  s_startButton:
+  s_start:
     number: 0-0-3
     tags: start
+
+  s_trough1:
+    number: 0-0-9
+  s_trough2:
+    number: 0-0-10
+  s_trough3:
+    number: 0-0-11
+  s_trough4:
+    number: 0-0-27
+  s_trough_jam:
+    number: 0-0-8
+  s_plunger:
+    number: 0-0-26
+
+  s_right_outlane:
+    number: 0-0-25
+    tags: playfield_active
+  s_right_inlane:
+    number: 0-0-24
+    tags: playfield_active
+  s_left_inlane:
+    number: 0-0-19
+    tags: playfield_active
+  s_left_outlane:
+    number: 0-0-18
+    tags: playfield_active
 
 coils:
   # === CÔTÉ GAUCHE ===
@@ -61,7 +87,7 @@ coils:
   # === CÔTÉ DROIT ===
   c_flipper_right_bas_main:
     number: 0-0-10
-    default_pulse_ms: 15
+    default_pulse_ms: 12
     default_hold_power: 0.125
     allow_enable: true
 
@@ -77,10 +103,9 @@ coils:
     default_hold_power: 0.10
     allow_enable: true
 
-playfields:
-  playfield:
-    tags: default
-    default_source_device: None  # use None in steps before 8
+  c_trough_eject:
+    number: 0-0-12
+    default_pulse_ms: 20
 
 flippers:
   # === CONFIGURATION GAUCHE ===
@@ -117,3 +142,31 @@ machine:
 game:
   balls_per_game: 5
   max_players: 4
+
+displays:
+  window:
+    width: 1920
+    height: 1080
+    fps: 75
+
+virtual_platform_start_active_switches: s_trough1, s_trough2, s_trough3, s_trough4
+
+ball_devices:
+  bd_trough:
+    ball_switches: s_trough1, s_trough2, s_trough3, s_trough4, s_trough_jam
+    eject_coil: c_trough_eject
+    tags: trough, home, drain
+    jam_switch: s_trough_jam
+    eject_coil_jam_pulse: 15ms
+    eject_targets: bd_plunger
+    eject_timeouts: 3s
+  bd_plunger:
+    ball_switches: s_plunger
+    mechanical_eject: true
+    eject_timeouts: 5s
+
+playfields:
+  playfield:
+    default_source_device: bd_plunger
+    tags: default
+
