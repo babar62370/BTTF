@@ -1,0 +1,54 @@
+2026-05-30 18:10:52,276 : INFO : root : Loading config.
+2026-05-30 18:10:52,303 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2026-05-30 18:10:52,341 : WARNING : ConfigProcessor : Config file in cache changed: Z:\GITHUB\config\config.yaml
+2026-05-30 18:10:52,341 : INFO : ConfigProcessor : Loading config from file C:\Users\BABAR\mpf\Lib\site-packages\mpf\mpfconfig.yaml.
+2026-05-30 18:10:52,367 : INFO : ConfigProcessor : Loading config: C:\Users\BABAR\mpf\Lib\site-packages\mpf\mpfconfig.yaml
+2026-05-30 18:10:52,367 : INFO : ConfigProcessor : Loading config from file Z:\GITHUB\config\config.yaml.
+2026-05-30 18:10:52,425 : INFO : ConfigProcessor : Loading config: Z:\GITHUB\config\config.yaml
+2026-05-30 18:10:52,430 : INFO : ConfigProcessor : Config file cache created: C:\Users\BABAR\AppData\Local\Temp\b7221ac8aa7e1f861cbabed4af727cab.mpf_cache
+2026-05-30 18:10:52,703 : INFO : ConfigProcessor : Loading config from cache: C:\Users\BABAR\AppData\Local\Temp\56c3f8f3a08c0933cea78cc049ec7f9f.mpf_cache
+2026-05-30 18:10:52,751 : INFO : ConfigProcessor : Loading config from cache: C:\Users\BABAR\AppData\Local\Temp\95bb87c123475a7ce134d7bfdb9da55f.mpf_cache
+2026-05-30 18:10:52,797 : INFO : ConfigProcessor : Loading config from cache: C:\Users\BABAR\AppData\Local\Temp\56c3f8f3a08c0933cea78cc049ec7f9f.mpf_cache
+2026-05-30 18:10:52,844 : INFO : ConfigProcessor : Loading config from cache: C:\Users\BABAR\AppData\Local\Temp\cf00f153dc9ffdf535ad3526d62ff24b.mpf_cache
+2026-05-30 18:10:52,900 : INFO : Machine : Mission Pinball Framework Core Engine v0.81.0.dev2
+2026-05-30 18:10:52,900 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'force_assets_load': False, 'platform_integration_test': False, 'jsonlogging': False, 'logfile': 'logs\\2026-05-30-18-10-52-mpf-DESKTOP-P4HO1DI.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': None, 'syslog_address': None, 'full_logfile_path': 'Z:\\GITHUB\\logs\\2026-05-30-18-10-52-mpf-DESKTOP-P4HO1DI.log'}
+2026-05-30 18:10:52,900 : INFO : Machine : MPF path: C:\Users\BABAR\mpf\Lib\site-packages\mpf
+2026-05-30 18:10:52,900 : INFO : Machine : Machine path: Z:\GITHUB
+2026-05-30 18:10:52,900 : INFO : Machine : Platform: win32
+2026-05-30 18:10:52,900 : INFO : Machine : Python executable location: C:\Users\BABAR\mpf\Scripts\python.exe
+2026-05-30 18:10:52,900 : INFO : Machine : Python version: 3.12.10 (64-bit)
+2026-05-30 18:10:52,907 : INFO : Machine : Initializing MPF...
+2026-05-30 18:10:53,584 : INFO : OPP : Connecting to COM at 115200bps
+2026-05-30 18:10:53,584 : INFO : Machine : Shutting down...
+2026-05-30 18:10:53,584 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2026-05-30 18:10:53,584 : ERROR : Machine : Failed to initialize MPF
+Traceback (most recent call last):
+  File "C:\Users\BABAR\mpf\Lib\site-packages\mpf\core\machine.py", line 688, in initialize_mpf
+    raise init.exception()
+  File "C:\Users\BABAR\mpf\Lib\site-packages\mpf\core\machine.py", line 250, in initialize
+    await self.initialize_core_and_hardware()
+  File "C:\Users\BABAR\mpf\Lib\site-packages\mpf\core\machine.py", line 246, in initialize_core_and_hardware
+    await self._initialize_platforms()
+  File "C:\Users\BABAR\mpf\Lib\site-packages\mpf\core\machine.py", line 336, in _initialize_platforms
+    result.result()
+  File "C:\Users\BABAR\mpf\Lib\site-packages\mpf\platforms\opp\opp.py", line 107, in initialize
+    await self._connect_to_hardware()
+  File "C:\Users\BABAR\mpf\Lib\site-packages\mpf\platforms\opp\opp.py", line 312, in _connect_to_hardware
+    await comm.connect()
+  File "C:\Users\BABAR\mpf\Lib\site-packages\mpf\platforms\base_serial_communicator.py", line 47, in connect
+    await self._connect_to_hardware(self.port, self.baud, self.xonxoff)
+  File "C:\Users\BABAR\mpf\Lib\site-packages\mpf\platforms\base_serial_communicator.py", line 56, in _connect_to_hardware
+    self.reader, self.writer = await connector
+                               ^^^^^^^^^^^^^^^
+  File "C:\Users\BABAR\mpf\Lib\site-packages\mpf\core\clock.py", line 157, in open_serial_connection
+    transport, _ = await create_serial_connection(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BABAR\mpf\Lib\site-packages\serial_asyncio\__init__.py", line 448, in create_serial_connection
+    serial_instance = serial.serial_for_url(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\BABAR\mpf\Lib\site-packages\serial\__init__.py", line 90, in serial_for_url
+    instance.open()
+  File "C:\Users\BABAR\mpf\Lib\site-packages\serial\serialwin32.py", line 64, in open
+    raise SerialException("could not open port {!r}: {!r}".format(self.portstr, ctypes.WinError()))
+serial.serialutil.SerialException: could not open port 'COM': FileNotFoundError(2, 'Le fichier spécifié est introuvable.', None, 2)
+2026-05-30 18:10:53,679 : INFO : root : MPF run loop ended.

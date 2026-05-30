@@ -23,7 +23,9 @@ hardware:
   platform: opp
 
 opp:
-  ports: COM
+  ports: /dev/tty.usbmodem568441744C001, /dev/tty.usbmodem5683416F4C001
+  # SI SUR MINI-PC = ports: COM4, COM3
+  # SI SUR MAC = ports: /dev/tty.usbmodem568441744C001, /dev/tty.usbmodem5683416F4C001
 
 psus:
   default:

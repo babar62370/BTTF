@@ -1,0 +1,41 @@
+2026-05-30 18:46:53,275 : INFO : root : Loading config.
+2026-05-30 18:46:53,290 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2026-05-30 18:46:53,339 : INFO : ConfigProcessor : Loading config from cache: C:\Users\BABAR\AppData\Local\Temp\b7221ac8aa7e1f861cbabed4af727cab.mpf_cache
+2026-05-30 18:46:53,561 : INFO : ConfigProcessor : Loading config from cache: C:\Users\BABAR\AppData\Local\Temp\56c3f8f3a08c0933cea78cc049ec7f9f.mpf_cache
+2026-05-30 18:46:53,577 : INFO : ConfigProcessor : Loading config from cache: C:\Users\BABAR\AppData\Local\Temp\95bb87c123475a7ce134d7bfdb9da55f.mpf_cache
+2026-05-30 18:46:53,625 : INFO : ConfigProcessor : Loading config from cache: C:\Users\BABAR\AppData\Local\Temp\56c3f8f3a08c0933cea78cc049ec7f9f.mpf_cache
+2026-05-30 18:46:53,657 : INFO : ConfigProcessor : Loading config from cache: C:\Users\BABAR\AppData\Local\Temp\cf00f153dc9ffdf535ad3526d62ff24b.mpf_cache
+2026-05-30 18:46:53,704 : INFO : Machine : Mission Pinball Framework Core Engine v0.81.0.dev2
+2026-05-30 18:46:53,704 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'force_assets_load': False, 'platform_integration_test': False, 'jsonlogging': False, 'logfile': 'logs\\2026-05-30-18-46-53-mpf-DESKTOP-P4HO1DI.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': None, 'syslog_address': None, 'full_logfile_path': 'Z:\\GITHUB\\logs\\2026-05-30-18-46-53-mpf-DESKTOP-P4HO1DI.log'}
+2026-05-30 18:46:53,704 : INFO : Machine : MPF path: C:\Users\BABAR\mpf\Lib\site-packages\mpf
+2026-05-30 18:46:53,704 : INFO : Machine : Machine path: Z:\GITHUB
+2026-05-30 18:46:53,704 : INFO : Machine : Platform: win32
+2026-05-30 18:46:53,704 : INFO : Machine : Python executable location: C:\Users\BABAR\mpf\Scripts\python.exe
+2026-05-30 18:46:53,704 : INFO : Machine : Python version: 3.12.10 (64-bit)
+2026-05-30 18:46:53,704 : INFO : Machine : Initializing MPF...
+2026-05-30 18:46:54,166 : INFO : OPP : Connecting to COM3 at 115200bps
+2026-05-30 18:46:54,341 : INFO : OPP : Init of OPP board 1 done
+2026-05-30 18:46:54,341 : INFO : OPP : Connecting to COM4 at 115200bps
+2026-05-30 18:46:54,501 : INFO : OPP : Init of OPP board 0 done
+2026-05-30 18:46:54,501 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2026-05-30 18:46:54,532 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.5, 'prev_value': None, 'change': True}
+2026-05-30 18:46:54,532 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'Mission Pinball Framework v0.81.0.dev2', 'prev_value': None, 'change': True}
+2026-05-30 18:46:54,532 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'Mission Pinball Framework v0.81.0.dev2, Config version:6, Show version: 6, BCP version:1.1', 'prev_value': None, 'change': True}
+2026-05-30 18:46:54,532 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.12.10', 'prev_value': None, 'change': True}
+2026-05-30 18:46:54,581 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'Windows-11-10.0.26200-SP0', 'prev_value': None, 'change': True}
+2026-05-30 18:46:54,581 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Windows', 'prev_value': None, 'change': True}
+2026-05-30 18:46:54,581 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '11', 'prev_value': None, 'change': True}
+2026-05-30 18:46:54,581 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': '10.0.26200', 'prev_value': None, 'change': True}
+2026-05-30 18:46:54,581 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'AMD64', 'prev_value': None, 'change': True}
+2026-05-30 18:46:54,581 : INFO : EventManager : Event: ======'machine_var_log_file_path'====== Args={'value': 'Z:\\GITHUB\\logs\\2026-05-30-18-46-53-mpf-DESKTOP-P4HO1DI.log', 'prev_value': None, 'change': True}
+2026-05-30 18:46:54,581 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2026-05-30 18:46:54,598 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2026-05-30 18:46:54,598 : INFO : EventManager : Event: ======'bcp_connection_attempt'====== Args={'name': 'local_display', 'host': 'localhost', 'port': 5050}
+2026-05-30 18:46:54,598 : INFO : BCPClientSocket : Connecting BCP to 'local_display' at localhost:5050...
+2026-05-30 18:47:40,047 : INFO : Machine : Starting the main run loop with active modes: []
+2026-05-30 18:47:40,047 : WARNING : Machine : Attract mode is not active, game will not be playable. Please check your attract mode configuration.
+2026-05-30 18:47:40,048 : INFO : Machine : Shutting down...
+2026-05-30 18:47:40,048 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2026-05-30 18:47:40,049 : ERROR : OPP : Stop called on serial connection COM3
+2026-05-30 18:47:40,051 : ERROR : OPP : Stop called on serial connection COM4
+2026-05-30 18:47:41,054 : INFO : root : MPF run loop ended.
