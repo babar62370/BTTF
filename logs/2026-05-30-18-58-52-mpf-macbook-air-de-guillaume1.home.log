@@ -34,3 +34,46 @@
 2026-05-30 18:58:52,903 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
 2026-05-30 18:58:52,904 : INFO : EventManager : Event: ======'bcp_connection_attempt'====== Args={'name': 'local_display', 'host': 'localhost', 'port': 5050}
 2026-05-30 18:58:52,905 : INFO : BCPClientSocket : Connecting BCP to 'local_display' at localhost:5050...
+2026-05-30 19:08:56,333 : INFO : Machine : Starting the main run loop with active modes: []
+2026-05-30 19:08:56,335 : WARNING : Machine : Attract mode is not active, game will not be playable. Please check your attract mode configuration.
+2026-05-30 19:08:56,336 : INFO : Machine : Shutting down...
+2026-05-30 19:08:56,337 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2026-05-30 19:08:56,343 : ERROR : OPP : Stop called on serial connection /dev/tty.usbmodem5683416F4C001
+2026-05-30 19:08:56,346 : ERROR : OPP : Stop called on serial connection /dev/tty.usbmodem568441744C001
+2026-05-30 19:08:56,346 : ERROR : root : read failed: [Errno 6] Device not configured
+Traceback (most recent call last):
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/serial/serialposix.py", line 575, in read
+    buf = os.read(self.fd, size - len(read))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 6] Device not configured
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/commands/game.py", line 229, in __init__
+    self.machine.run()
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/machine.py", line 706, in run
+    self._run_loop()
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/machine.py", line 816, in _run_loop
+    self._do_stop()
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/machine.py", line 742, in _do_stop
+    self.shutdown()
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/machine.py", line 772, in shutdown
+    self._platform_stop()
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/machine.py", line 822, in _platform_stop
+    hardware_platform.stop()
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/platforms/opp/opp.py", line 195, in stop
+    connections.stop()
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/platforms/base_serial_communicator.py", line 149, in stop
+    self.machine.clock.loop.run_until_complete(self.writer.wait_closed())
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/streams.py", line 364, in wait_closed
+    await self._protocol._get_close_waiter(self)
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/serial_asyncio/__init__.py", line 115, in _read_ready
+    data = self._serial.read(self._max_read_size)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/serial/serialposix.py", line 581, in read
+    raise SerialException('read failed: {}'.format(e))
+serial.serialutil.SerialException: read failed: [Errno 6] Device not configured
