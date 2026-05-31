@@ -18,6 +18,8 @@ modes:
   - base
   # BASE. Dès qu'un joueur appuie sur Start, le mode attract s'arrête et le mode base se lance.
   # C'est lui qui gère le déroulement d'une partie classique.
+  - multiball_einstein
+  # MULTIBALL EINSTEIN. C'est un mode qui gère une multibille à 3 billes, déclenchée par le bras rotatif.
 
 hardware:
   platform: opp
@@ -54,23 +56,65 @@ switches:
     number: 0-0-11
   s_trough4:
     number: 0-0-27
+  s_trough5:
+    number: 0-0-
   s_trough_jam:
-    number: 0-0-8
+    number: 0-0-
+    type: NC
   s_plunger:
-    number: 0-0-26
+    number: 0-0-
 
-  s_right_outlane:
-    number: 0-0-25
+  s_left_slingshot:
+    number: 0-0-
     tags: playfield_active
-  s_right_inlane:
-    number: 0-0-24
+  s_right_slingshot:
+    number: 0-0-
     tags: playfield_active
+
+  s_entree_souterrain:
+    number: 0-0-
+    tags: playfield_active
+  s_lower_jet:
+    number: 0-0-
+    tags: playfield_active
+  s_left_jet:
+    number: 0-0-
+    tags: playfield_active
+  s_right_jet:
+    number: 0-0-
+    tags: playfield_active
+
+  s_left_popper:
+    number: 0-0-
+  s_right_popper:
+    number: 0-0-
+  s_ramp_einstein:
+    number: 0-0-
+    tags: playfield_active
+  s_top_popper:
+    number: 0-0-
+
+  s_bras_slot1:
+    number: 0-0-
+  s_bras_slot2:
+    number: 0-0-
+  s_bras_slot3:
+    number: 0-0-
+
   s_left_inlane:
-    number: 0-0-19
+    number: 0-0-
     tags: playfield_active
   s_left_outlane:
-    number: 0-0-18
+    number: 0-0-
     tags: playfield_active
+  s_right_outlane:
+    number: 0-0-
+    tags: playfield_active
+  s_right_inlane:
+    number: 0-0-
+    tags: playfield_active
+
+  s_
 
 coils:
   # === CÔTÉ GAUCHE ===
@@ -108,6 +152,63 @@ coils:
   c_trough_eject:
     number: 0-0-12
     default_pulse_ms: 20
+
+  c_left_slingshot:
+    number: 0-0-
+    default_pulse_ms: 
+  c_right_slingshot:
+    number: 0-0-
+    default_pulse_ms: 
+
+  c_lower_jet_bumper:
+    number: 0-0-
+    default_pulse_ms:
+  c_left_jet_bumper:    
+    number: 0-0-
+    default_pulse_ms: 
+  c_right_jet_bumper:
+    number: 0-0-
+    default_pulse_ms: 
+
+  c_left_popper:
+    number: 0-0-
+    default_pulse_ms: 
+  c_right_popper:
+    number: 0-0-
+    default_pulse_ms: 
+  c_deviateur_bras_actuate:
+    number: 0-0-
+    default_pulse_ms: 30
+  c_top_popper:
+    number: 0-0-
+    default_pulse_ms:
+  
+autofire_coils:
+  left_slingshot:
+    coil: c_left_slingshot
+    switch: s_left_slingshot
+  right_slingshot:
+    coil: c_right_slingshot
+    switch: s_right_slingshot
+
+  lower_jet:
+    coil: c_lower_jet_bumper
+    switch: s_lower_jet
+  left_jet:
+    coil: c_left_jet_bumper
+    switch: s_left_jet
+  right_jet:
+    coil: c_right_jet_bumper
+    switch: s_right_jet
+
+servos:
+  servo_bras_einstein:
+    number: 0-0-          # Ta broche Servo sur la CobraPin (souvent J13 ou J14)
+    reset_position: 0.2    # Position de départ (attente_chargement)
+    debug: true
+    positions:
+      attente_chargement: 0.2
+      ejection_multibille: 0.8
 
 flippers:
   # === CONFIGURATION GAUCHE ===
@@ -155,17 +256,48 @@ virtual_platform_start_active_switches: s_trough1, s_trough2, s_trough3, s_troug
 
 ball_devices:
   bd_trough:
-    ball_switches: s_trough1, s_trough2, s_trough3, s_trough4, s_trough_jam
+    ball_switches: s_trough1, s_trough2, s_trough3, s_trough4, s_trough5, s_trough_jam
     eject_coil: c_trough_eject
     tags: trough, home, drain
     jam_switch: s_trough_jam
     eject_coil_jam_pulse: 15ms
     eject_targets: bd_plunger
     eject_timeouts: 3s
+    entrance_count_delay: 300ms
+    debug: true
   bd_plunger:
     ball_switches: s_plunger
-    mechanical_eject: true
+    entrance_count_delay: 300ms
     eject_timeouts: 5s
+    eject_coil: c_plunger_eject
+    player_controlled_eject_event: sw_launch
+
+  bd_left_vuk:
+  # Un VUK (Vertical Up Kicker) est un dispositif qui peut éjecter une bille vers le haut.
+  # Il a un switch pour détecter la présence de la bille, et une bobine pour l'éjecter.
+    ball_switches: s_left_popper
+    eject_coil: c_left_popper
+    eject_timeouts: 2s
+
+  bd_right_vuk:
+    ball_switches: s_right_popper
+    eject_coil: c_right_popper
+    eject_timeouts: 2s
+    eject_targets: playfield
+
+  bd_upper_vuk:
+    ball_switches: s_top_popper
+    eject_coil: c_top_popper
+    eject_timeouts: 2s
+    eject_targets: bd_bras_rotatif # Propulse la bille directement dans le bras
+
+  bd_bras_rotatif:
+    tags: lock                     # Dit à MPF que cet appareil sert à verrouiller des billes
+    ball_switches: s_bras_slot1, s_bras_slot2, s_bras_slot3
+    mechanical_eject: true         # C'est le moteur qui fait tourner le bras pour libérer les billes
+    eject_targets: playfield
+    eject_timeouts: 4s             # Le temps que le bras tourne et que les 3 billes tombent
+    debug: true
 
 playfields:
   playfield:
