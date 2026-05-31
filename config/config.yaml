@@ -114,8 +114,6 @@ switches:
     number: 0-0-
     tags: playfield_active
 
-  s_
-
 coils:
   # === CÔTÉ GAUCHE ===
   c_flipper_left_main:
@@ -182,7 +180,16 @@ coils:
   c_top_popper:
     number: 0-0-
     default_pulse_ms:
-  
+
+  c_horloge_sens_horaire:
+    number: 0-0-23
+    allow_enable: true
+    default_hold_power: 0.3  # Vitesse réduite (30% de la puissance) pour le mode horloge
+  c_horloge_sens_anti_horaire:
+    number: 0-0-24
+    allow_enable: true
+    default_hold_power: 0.3
+
 autofire_coils:
   left_slingshot:
     coil: c_left_slingshot
