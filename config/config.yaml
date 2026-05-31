@@ -101,6 +101,10 @@ switches:
   s_bras_slot3:
     number: 0-0-
 
+  s_horloge_encodeur:
+    number: 0-0-
+    tags: playfield_active
+
   s_left_inlane:
     number: 0-0-
     tags: playfield_active

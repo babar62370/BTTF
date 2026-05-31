@@ -1,0 +1,31 @@
+#config_version=6
+mode:
+  start_events: mode_horloge_started
+  priority: 500
+
+timers:
+  timer_rotation_aiguille:
+    start_value: 0
+    end_value: 15      # 15 étapes de 100ms = 1,5 seconde de rotation
+    direction: up
+    tick_interval: 100ms
+    control_events:
+      - event: s_cible_declencheur_active  # La bille tape le switch sur le plateau
+        action: start
+      - event: s_aiguille_choc_inverse     # Si un choc inversé est détecté, on stoppe tout
+        action: stop
+
+coils_player:
+  # Dès que le timer démarre, on active la rotation horaire
+  timer_rotation_aiguille_started:
+    c_aiguille_horaire:
+      action: enable
+      power: 0.4       # Puissance à 40% pour garder de la souplesse en cas de choc
+  
+  # Dès que le timer se termine (au bout d'un seconde et demi), on coupe le moteur
+  timer_rotation_aiguille_stopped:
+    c_aiguille_horaire:
+      action: disable
+  timer_rotation_aiguille_complete:
+    c_aiguille_horaire:
+      action: disable
