@@ -1,23 +1,42 @@
 #config_version=6
+
 mode:
   start_events: mode_horloge_started
   priority: 500
 
-coil_player:
-  # --- SENS HORAIRE ---
-  s_horloge_encodeur_horaire:
-    c_horloge_sens_anti_horaire:
-      action: disable           # Coupe NET le sens inverse s'il tournait
-    c_horloge_sens_horaire:
-      action: pulse
-      pulse_ms: 1500            # Le moteur reste alimenté pendant 1,5s pour accompagner l'aiguille
-      power: 0.3
+# On analyse le nombre d'impulsions reçues dans une fenêtre de tir très courte
+counters:
+  analyseur_force_choc:
+    count_events: s_horloge_impact_active
+    count_complete_value: 5
+    reset_on_complete: true
+    reset_events: timer_fenetre_choc_complete
 
-  # --- SENS ANTI-HORAIRE ---
-  s_horloge_encodeur_anti_horaire:
-    c_horloge_sens_horaire:
-      action: disable           # Coupe NET le sens horaire s'il tournait
-    c_horloge_sens_anti_horaire:
-      action: pulse
-      pulse_ms: 1500            # Le moteur reste alimenté pendant 1,5s dans l'autre sens
-      power: 0.3
+timers:
+  timer_fenetre_choc:
+    start_value: 0
+    end_value: 2                  # Fenêtre de 200ms pour compter les impulsions du choc
+    direction: up
+    tick_interval: 100ms
+    control_events:
+      - action: start
+        event: s_horloge_impact_active
+
+# C'est ici qu'on applique la rotation variable et l'arrêt progressif géré par le stepper
+stepper_player:
+  # --- CAS 1 : CHOC FAIBLE --- (Le timer se coupe avant d'atteindre 3 impulsions)
+  timer_fenetre_choc_complete{device.counters.analyseur_force_choc.value<3}:
+    moteur_horloge:
+      position: 50                # Petit entraînement (ex: 1/4 de tour)
+      speed: 60                   # Vitesse tranquille
+
+  # --- CAS 2 : CHOC PUISSANT --- (L'encodeur DIAG a envoyé plein de signaux d'un coup)
+  s_horloge_impact_active{device.counters.analyseur_force_choc.value>=3}:
+    moteur_horloge:
+      position: 400               # Grand emballement (ex: 2 tours complets)
+      speed: 200                  # Vitesse maximale, le moteur prend le relais de la bille
+
+# Libération de l'aiguille dès que le moteur a fini sa course
+event_player:
+  stepper_moteur_horloge_ready:
+    - cmd_debrayer_moteur_attente # Envoie l'ordre de couper le courant de maintien (roue libre)

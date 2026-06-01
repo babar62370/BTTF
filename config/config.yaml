@@ -80,14 +80,17 @@ switches:
   s_top_popper:
     number: 0-0-17
 
-  # RESTE SWITCH 0-0-16 DE DISPO EN DIRECT
+  # RESTE LE SWITCH 0-0-16 DE DISPO EN DIRECT
   
-  s_horloge_encodeur:
+  # Broche "Input" SWITCH DIRECT CobraPin reliée à la pin DIAG du TMC2209 du moteur de l'horloge
+  s_horloge_impact:
     number: 1-0-1
     tags: playfield_active
+    debounce: quick  # "quick" pour une détection rapide du choc, sans filtrage logiciel
+    # "no" NON ACCEPTE pour capter l'impact instantanément sans filtrage
 
   # OPTOS:
-  s_ramp_1985:
+  s_ramp_1985_entree:
     number: 1-0-2
     type: NC
   s_ramp_hotel_de_ville:
@@ -148,7 +151,7 @@ switches:
   s_ramp_1955:
     number: 1-0-46
     tags: playfield_active
-  s_ramp_1985:
+  s_ramp_1985_sortie:
     number: 1-0-47
     tags: playfield_active
   
@@ -295,14 +298,19 @@ coils:
     number: 0-0-2
     default_pulse_ms:
 
-  c_horloge_sens_horaire:
+  # Broche COIL CobraPin reliée à la pin DIR du TMC2209 du moteur de l'horloge
+  c_horloge_dir:
     number: 1-0-1
-    allow_enable: true
-    default_hold_power: 0.3  # Vitesse réduite (30% de la puissance) pour le mode horloge
-  c_horloge_sens_anti_horaire:
+
+# Broche COIL CobraPin reliée à la pin STEP du TMC2209 du moteur de l'horloge
+steppers:
+  moteur_horloge:
     number: 1-0-2
-    allow_enable: true
-    default_hold_power: 0.3
+    direction_coil: c_horloge_dir
+    homing_speed: 10
+    move_speed: 150               # Vitesse max de l'emballement
+    acceleration: 600             # Démarrage rapide lors du choc
+    deceleration: 150             # Décélération basse pour un arrêt progressif ("effet cinéma"
 
 autofire_coils:
   left_slingshot:
@@ -322,6 +330,13 @@ autofire_coils:
     coil: c_right_jet_bumper
     switch: s_right_jet
 
+diverters:
+  deviateur_rampe_bras:
+    activation_coil: c_deviateur_bras_actuate
+    type: pulse
+    activate_events: multiball_lock_lock_einstein_enabled
+    disable_events: multiball_lock_lock_einstein_disabled                                     # 'hold' pour qu'il reste ouvert tant qu'on lui demande
+
 servos:
   servo_bras_einstein:
     number: 0-0-          # Ta broche Servo sur la CobraPin (souvent J13 ou J14)
@@ -330,6 +345,16 @@ servos:
     positions:
       attente_chargement: 0.2
       ejection_multibille: 0.8
+
+# Le contrôle du servo pour la rotation du bras
+servo_controllers:
+  controleur_bras_einstein:
+    servo: servo_bras_einstein
+    control_events:
+      - event: start_multiball_einstein
+        position: ejection_multiball
+      - event: multiball_einstein_ended
+        position: attente_chargement
 
 flippers:
   # === CONFIGURATION GAUCHE ===
@@ -406,18 +431,22 @@ ball_devices:
     eject_timeouts: 2s
     eject_targets: playfield
 
+  # Le VUK de la rampe
   bd_upper_vuk:
-    ball_switches: s_top_popper
-    eject_coil: c_top_popper
+    ball_switches: s_top_popper           # Le switch au fond du trou du VUK
+    eject_coil: c_top_popper              # La bobine qui pousse la bille dans le tunnel vertical
     eject_timeouts: 2s
-    eject_targets: bd_bras_rotatif # Propulse la bille directement dans le bras
+    # Ce paramètre évite que ta bobine ne grille ou ne s'active à l'infini si la bille a du mal à monter dans le tunnel vertical
+    eject_targets: bd_bras_rotatif        # Destination : le bras rotatif !
 
+  # Le Bras Rotatif complet (Tunnel + Partie horizontale)
   bd_bras_rotatif:
-    tags: lock                     # Dit à MPF que cet appareil sert à verrouiller des billes
+    tags: lock
+    # MPF compte les billes logées sur les switchs horizontaux :
     ball_switches: s_bras_slot1, s_bras_slot2, s_bras_slot3
-    mechanical_eject: true         # C'est le moteur qui fait tourner le bras pour libérer les billes
-    eject_targets: playfield
-    eject_timeouts: 4s             # Le temps que le bras tourne et que les 3 billes tombent
+    mechanical_eject: true                # C'est ton servo qui fait tourner le bras pour libérer les billes
+    eject_targets: playfield              # Les billes tombent sur le plateau pour le multiball
+    eject_timeouts: 4s
     debug: true
 
 playfields:
