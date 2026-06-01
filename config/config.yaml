@@ -49,178 +49,183 @@ switches:
     tags: start
 
   s_trough5:
-    number: 0-0-
+    number: 0-0-8
   s_trough_jam:
-    number: 0-0-
+    number: 0-0-9
     type: NC
   s_plunger:
-    number: 0-0-
+    number: 0-0-10
 
   s_left_slingshot:
-    number: 0-0-
+    number: 0-0-11
     tags: playfield_active
   s_right_slingshot:
-    number: 0-0-
+    number: 0-0-27
     tags: playfield_active
 
   s_lower_jet:
-    number: 0-0-
+    number: 0-0-26
     tags: playfield_active
   s_left_jet:
-    number: 0-0-
+    number: 0-0-25
     tags: playfield_active
   s_right_jet:
-    number: 0-0-
+    number: 0-0-24
     tags: playfield_active
 
   s_left_popper:
-    number: 0-0-
+    number: 0-0-19
   s_right_popper:
-    number: 0-0-
-  s_lane_cafe_einstein:
-    number: 0-0-
-    tags: playfield_active
+    number: 0-0-18
   s_top_popper:
-    number: 0-0-
+    number: 0-0-17
 
+  # RESTE SWITCH 0-0-16 DE DISPO EN DIRECT
+  
   s_horloge_encodeur:
-    number: 0-0-
+    number: 1-0-1
     tags: playfield_active
 
   # OPTOS:
   s_ramp_1985:
-    number: 0-0-
+    number: 1-0-2
     type: NC
   s_ramp_hotel_de_ville:
-    number: 0-0-
+    number: 1-0-3
     type: NC
   s_ramp_2015_lower:
-    number: 0-0-
+    number: 1-0-8
     type: NC
   s_ramp_marty_lower:
-    number: 0-0-
+    number: 1-0-9
     type: NC
   s_ramp_george:
-    number: 0-0-
+    number: 1-0-10
     type: NC
   s_ramp_bttf:
-    number: 0-0-
+    number: 1-0-11
     type: NC  
 
   s_left_inlane:
-    number: 0-0-
+    number: 1-0-32
     tags: playfield_active
   s_left_outlane:
-    number: 0-0-
+    number: 1-0-33
     tags: playfield_active
   s_target_plutonium:
-    number: 0-0-
+    number: 1-0-34
     tags: playfield_active
   s_1955_lane:
-    number: 0-0-
+    number: 1-0-35
     tags: playfield_active
   s_bank_dmc_lower:
-    number: 0-0-
+    number: 1-0-36
     tags: playfield_active
   s_bank_dmc_middle:
-    number: 0-0-
+    number: 1-0-37
     tags: playfield_active
   s_bank_dmc_upper:
-    number: 0-0-
+    number: 1-0-38
     tags: playfield_active
   s_entree_souterrain:
-    number: 0-0-
+    number: 1-0-39
     tags: playfield_active
   
   s_trough1:
-    number: 0-0-9
+    number: 1-0-40
   s_trough2:
-    number: 0-0-10
+    number: 1-0-41
   s_trough3:
-    number: 0-0-11
+    number: 1-0-42
   s_trough4:
-    number: 0-0-27
+    number: 1-0-43
   s_right_outlane:
-    number: 0-0-
+    number: 1-0-44
     tags: playfield_active
   s_right_inlane:
-    number: 0-0-
+    number: 1-0-45
     tags: playfield_active
   s_ramp_1955:
-    number: 0-0-
+    number: 1-0-46
     tags: playfield_active
   s_ramp_1985:
-    number: 0-0-
+    number: 1-0-47
     tags: playfield_active
   
   s_lane_1885:
-    number: 0-0-
+    number: 1-0-48
     tags: playfield_active
   s_target_hill_valley:
-    number: 0-0-
+    number: 1-0-49
+    tags: playfield_active
+  s_lane_cafe_einstein:
+    number: 1-0-50
     tags: playfield_active
   s_lane_einstein_upper:
-    number: 0-0-
+    number: 1-0-51
     tags: playfield_active
   s_bras_slot1:
-    number: 0-0-
+    number: 1-0-52
   s_bras_slot2:
-    number: 0-0-
+    number: 1-0-53
   s_bras_slot3:
-    number: 0-0-
+    number: 1-0-54
 
   s_spinner_almanach:
-    number: 0-0-
+    number: 1-0-56
     tags: playfield_active
   s_lane_biff:
-    number: 0-0-
+    number: 1-0-57
     tags: playfield_active
   s_lane_doc_lower:
-    number: 0-0-
+    number: 1-0-58
     tags: playfield_active
   s_lane_doc_upper:
-    number: 0-0-
+    number: 1-0-59
     tags: playfield_active
   s_lane_horloge:
-    number: 0-0-
+    number: 1-0-60
     tags: playfield_active
   s_target_foudre:
-    number: 0-0-
+    number: 1-0-61
     tags: playfield_active
 
   s_target_overboard:
-    number: 0-0-
+    number: 1-0-64
     tags: playfield_active
   s_bank_doc_lower:
-    number: 0-0-
+    number: 1-0-65
     tags: playfield_active
   s_bank_doc_middle:
-    number: 0-0-
+    number: 1-0-66
     tags: playfield_active
   s_bank_doc_upper:
-    number: 0-0-
+    number: 1-0-67
     tags: playfield_active
   s_ramp_2015_upper:
-    number: 0-0-
+    number: 1-0-68
     tags: playfield_active
 
   s_lane_marty_lower:
-    number: 0-0-
+    number: 1-0-72
     tags: playfield_active
   s_lane_marty_upper:
-    number: 0-0-
+    number: 1-0-73
     tags: playfield_active
   s_ramp_marty_upper:
-    number: 0-0-
+    number: 1-0-74
+    tags: playfield_active
+  s_spinner_lorraine:
+    number: 1-0-75
     tags: playfield_active
   s_lane_lorraine:
-    number: 0-0-
+    number: 1-0-76
     tags: playfield_active
   s_lane_marvin:
-    number: 0-0-
+    number: 1-0-77
     tags: playfield_active
   s_lane_guitar:
-    number: 0-0-
+    number: 1-0-78
     tags: playfield_active
 
 coils:
@@ -261,41 +266,41 @@ coils:
     default_pulse_ms: 20
 
   c_left_slingshot:
-    number: 0-0-
+    number: 0-0-13
     default_pulse_ms: 
   c_right_slingshot:
-    number: 0-0-
+    number: 0-0-14
     default_pulse_ms: 
 
   c_lower_jet_bumper:
-    number: 0-0-
+    number: 0-0-15
     default_pulse_ms:
   c_left_jet_bumper:    
-    number: 0-0-
+    number: 0-0-7
     default_pulse_ms: 
   c_right_jet_bumper:
-    number: 0-0-
+    number: 0-0-6
     default_pulse_ms: 
 
   c_left_popper:
-    number: 0-0-
+    number: 0-0-5
     default_pulse_ms: 
   c_right_popper:
-    number: 0-0-
+    number: 0-0-4
     default_pulse_ms: 
   c_deviateur_bras_actuate:
-    number: 0-0-
+    number: 0-0-3
     default_pulse_ms: 30
   c_top_popper:
-    number: 0-0-
+    number: 0-0-2
     default_pulse_ms:
 
   c_horloge_sens_horaire:
-    number: 0-0-23
+    number: 1-0-1
     allow_enable: true
     default_hold_power: 0.3  # Vitesse réduite (30% de la puissance) pour le mode horloge
   c_horloge_sens_anti_horaire:
-    number: 0-0-24
+    number: 1-0-2
     allow_enable: true
     default_hold_power: 0.3
 

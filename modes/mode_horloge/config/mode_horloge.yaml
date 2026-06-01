@@ -3,29 +3,21 @@ mode:
   start_events: mode_horloge_started
   priority: 500
 
-timers:
-  timer_rotation_aiguille:
-    start_value: 0
-    end_value: 15      # 15 étapes de 100ms = 1,5 seconde de rotation
-    direction: up
-    tick_interval: 100ms
-    control_events:
-      - event: s_cible_declencheur_active  # La bille tape le switch sur le plateau
-        action: start
-      - event: s_aiguille_choc_inverse     # Si un choc inversé est détecté, on stoppe tout
-        action: stop
+coil_player:
+  # --- SENS HORAIRE ---
+  s_horloge_encodeur_horaire:
+    c_horloge_sens_anti_horaire:
+      action: disable           # Coupe NET le sens inverse s'il tournait
+    c_horloge_sens_horaire:
+      action: pulse
+      pulse_ms: 1500            # Le moteur reste alimenté pendant 1,5s pour accompagner l'aiguille
+      power: 0.3
 
-coils_player:
-  # Dès que le timer démarre, on active la rotation horaire
-  timer_rotation_aiguille_started:
-    c_aiguille_horaire:
-      action: enable
-      power: 0.4       # Puissance à 40% pour garder de la souplesse en cas de choc
-  
-  # Dès que le timer se termine (au bout d'un seconde et demi), on coupe le moteur
-  timer_rotation_aiguille_stopped:
-    c_aiguille_horaire:
-      action: disable
-  timer_rotation_aiguille_complete:
-    c_aiguille_horaire:
-      action: disable
+  # --- SENS ANTI-HORAIRE ---
+  s_horloge_encodeur_anti_horaire:
+    c_horloge_sens_horaire:
+      action: disable           # Coupe NET le sens horaire s'il tournait
+    c_horloge_sens_anti_horaire:
+      action: pulse
+      pulse_ms: 1500            # Le moteur reste alimenté pendant 1,5s dans l'autre sens
+      power: 0.3
