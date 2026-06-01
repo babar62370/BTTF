@@ -48,14 +48,6 @@ switches:
     number: 0-0-3
     tags: start
 
-  s_trough1:
-    number: 0-0-9
-  s_trough2:
-    number: 0-0-10
-  s_trough3:
-    number: 0-0-11
-  s_trough4:
-    number: 0-0-27
   s_trough5:
     number: 0-0-
   s_trough_jam:
@@ -71,9 +63,6 @@ switches:
     number: 0-0-
     tags: playfield_active
 
-  s_entree_souterrain:
-    number: 0-0-
-    tags: playfield_active
   s_lower_jet:
     number: 0-0-
     tags: playfield_active
@@ -88,22 +77,35 @@ switches:
     number: 0-0-
   s_right_popper:
     number: 0-0-
-  s_ramp_einstein:
+  s_lane_cafe_einstein:
     number: 0-0-
     tags: playfield_active
   s_top_popper:
     number: 0-0-
 
-  s_bras_slot1:
-    number: 0-0-
-  s_bras_slot2:
-    number: 0-0-
-  s_bras_slot3:
-    number: 0-0-
-
   s_horloge_encodeur:
     number: 0-0-
     tags: playfield_active
+
+  # OPTOS:
+  s_ramp_1985:
+    number: 0-0-
+    type: NC
+  s_ramp_hotel_de_ville:
+    number: 0-0-
+    type: NC
+  s_ramp_2015_lower:
+    number: 0-0-
+    type: NC
+  s_ramp_marty_lower:
+    number: 0-0-
+    type: NC
+  s_ramp_george:
+    number: 0-0-
+    type: NC
+  s_ramp_bttf:
+    number: 0-0-
+    type: NC  
 
   s_left_inlane:
     number: 0-0-
@@ -111,10 +113,113 @@ switches:
   s_left_outlane:
     number: 0-0-
     tags: playfield_active
+  s_target_plutonium:
+    number: 0-0-
+    tags: playfield_active
+  s_1955_lane:
+    number: 0-0-
+    tags: playfield_active
+  s_bank_dmc_lower:
+    number: 0-0-
+    tags: playfield_active
+  s_bank_dmc_middle:
+    number: 0-0-
+    tags: playfield_active
+  s_bank_dmc_upper:
+    number: 0-0-
+    tags: playfield_active
+  s_entree_souterrain:
+    number: 0-0-
+    tags: playfield_active
+  
+  s_trough1:
+    number: 0-0-9
+  s_trough2:
+    number: 0-0-10
+  s_trough3:
+    number: 0-0-11
+  s_trough4:
+    number: 0-0-27
   s_right_outlane:
     number: 0-0-
     tags: playfield_active
   s_right_inlane:
+    number: 0-0-
+    tags: playfield_active
+  s_ramp_1955:
+    number: 0-0-
+    tags: playfield_active
+  s_ramp_1985:
+    number: 0-0-
+    tags: playfield_active
+  
+  s_lane_1885:
+    number: 0-0-
+    tags: playfield_active
+  s_target_hill_valley:
+    number: 0-0-
+    tags: playfield_active
+  s_lane_einstein_upper:
+    number: 0-0-
+    tags: playfield_active
+  s_bras_slot1:
+    number: 0-0-
+  s_bras_slot2:
+    number: 0-0-
+  s_bras_slot3:
+    number: 0-0-
+
+  s_spinner_almanach:
+    number: 0-0-
+    tags: playfield_active
+  s_lane_biff:
+    number: 0-0-
+    tags: playfield_active
+  s_lane_doc_lower:
+    number: 0-0-
+    tags: playfield_active
+  s_lane_doc_upper:
+    number: 0-0-
+    tags: playfield_active
+  s_lane_horloge:
+    number: 0-0-
+    tags: playfield_active
+  s_target_foudre:
+    number: 0-0-
+    tags: playfield_active
+
+  s_target_overboard:
+    number: 0-0-
+    tags: playfield_active
+  s_bank_doc_lower:
+    number: 0-0-
+    tags: playfield_active
+  s_bank_doc_middle:
+    number: 0-0-
+    tags: playfield_active
+  s_bank_doc_upper:
+    number: 0-0-
+    tags: playfield_active
+  s_ramp_2015_upper:
+    number: 0-0-
+    tags: playfield_active
+
+  s_lane_marty_lower:
+    number: 0-0-
+    tags: playfield_active
+  s_lane_marty_upper:
+    number: 0-0-
+    tags: playfield_active
+  s_ramp_marty_upper:
+    number: 0-0-
+    tags: playfield_active
+  s_lane_lorraine:
+    number: 0-0-
+    tags: playfield_active
+  s_lane_marvin:
+    number: 0-0-
+    tags: playfield_active
+  s_lane_guitar:
     number: 0-0-
     tags: playfield_active
 
