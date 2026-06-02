@@ -1,0 +1,58 @@
+2026-06-02 02:38:38,258 : INFO : root : Loading config.
+2026-06-02 02:38:38,260 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2026-06-02 02:38:38,261 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/888a835b5fde052b87252136c50b804e.mpf_cache
+2026-06-02 02:38:38,295 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/8622cd1fe0050c6b0179be5a651e22f5.mpf_cache
+2026-06-02 02:38:38,295 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/58f948f5e9fe219120f05e295bb3ef65.mpf_cache
+2026-06-02 02:38:38,295 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/8622cd1fe0050c6b0179be5a651e22f5.mpf_cache
+2026-06-02 02:38:38,295 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/369243a5c0d089a5c3bcaae4a6363538.mpf_cache
+2026-06-02 02:38:38,296 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/9f86e0f716be9932a6ee645f4848fc86.mpf_cache
+2026-06-02 02:38:38,296 : INFO : Machine : Mission Pinball Framework Core Engine v0.81.0.dev2
+2026-06-02 02:38:38,296 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'force_assets_load': False, 'platform_integration_test': False, 'jsonlogging': False, 'logfile': 'logs/2026-06-02-02-38-38-mpf-macbook-air-de-guillaume1.home.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': None, 'syslog_address': None, 'full_logfile_path': '/Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB/logs/2026-06-02-02-38-38-mpf-macbook-air-de-guillaume1.home.log'}
+2026-06-02 02:38:38,296 : INFO : Machine : MPF path: /Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf
+2026-06-02 02:38:38,296 : INFO : Machine : Machine path: /Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB
+2026-06-02 02:38:38,296 : INFO : Machine : Platform: darwin
+2026-06-02 02:38:38,296 : INFO : Machine : Python executable location: /Users/guillaumebarre/mpf/bin/python3.12
+2026-06-02 02:38:38,296 : INFO : Machine : Python version: 3.12.9 (64-bit)
+2026-06-02 02:38:38,296 : INFO : Machine : Initializing MPF...
+2026-06-02 02:38:38,348 : INFO : OPP : Connecting to /dev/tty.usbmodem568441744C001 at 115200bps
+2026-06-02 02:38:38,349 : INFO : Machine : Shutting down...
+2026-06-02 02:38:38,349 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2026-06-02 02:38:38,349 : ERROR : Machine : Failed to initialize MPF
+Traceback (most recent call last):
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/serial/serialposix.py", line 322, in open
+    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/dev/tty.usbmodem568441744C001'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/machine.py", line 688, in initialize_mpf
+    raise init.exception()
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/machine.py", line 250, in initialize
+    await self.initialize_core_and_hardware()
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/machine.py", line 246, in initialize_core_and_hardware
+    await self._initialize_platforms()
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/machine.py", line 336, in _initialize_platforms
+    result.result()
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/platforms/opp/opp.py", line 107, in initialize
+    await self._connect_to_hardware()
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/platforms/opp/opp.py", line 312, in _connect_to_hardware
+    await comm.connect()
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/platforms/base_serial_communicator.py", line 47, in connect
+    await self._connect_to_hardware(self.port, self.baud, self.xonxoff)
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/platforms/base_serial_communicator.py", line 56, in _connect_to_hardware
+    self.reader, self.writer = await connector
+                               ^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/clock.py", line 157, in open_serial_connection
+    transport, _ = await create_serial_connection(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/serial_asyncio/__init__.py", line 448, in create_serial_connection
+    serial_instance = serial.serial_for_url(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/serial/__init__.py", line 90, in serial_for_url
+    instance.open()
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/serial/serialposix.py", line 325, in open
+    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
+serial.serialutil.SerialException: [Errno 2] could not open port /dev/tty.usbmodem568441744C001: [Errno 2] No such file or directory: '/dev/tty.usbmodem568441744C001'
+2026-06-02 02:38:38,354 : INFO : root : MPF run loop ended.

@@ -18,11 +18,12 @@ modes:
   - base
   # BASE. Dès qu'un joueur appuie sur Start, le mode attract s'arrête et le mode base se lance.
   # C'est lui qui gère le déroulement d'une partie classique.
-  - multiball_einstein
+  - einstein_multiball
   # MULTIBALL EINSTEIN. C'est un mode qui gère une multibille à 3 billes, déclenchée par le bras rotatif.
 
 hardware:
   platform: opp
+  driverboards: cobrapin
 
 opp:
   ports: /dev/tty.usbmodem568441744C001, /dev/tty.usbmodem5683416F4C001
@@ -31,9 +32,6 @@ opp:
 
 psus:
   default:
-    #Gives the capacitors extra time to recharge after firing a coil
-    #  and eases the load on the power supply. Doesn't affect autofire
-    #  devices like flippers, pops, slings.
     release_wait_ms: 50
 
 switches:
@@ -262,33 +260,39 @@ coils:
 
   c_left_slingshot:
     number: 0-0-14
-    default_pulse_ms: 
+    default_pulse_ms: 10
   c_right_slingshot:
     number: 0-0-15
-    default_pulse_ms: 
+    default_pulse_ms: 10
 
   c_lower_jet_bumper:
     number: 0-0-7
-    default_pulse_ms:
+    default_pulse_ms: 10
   c_left_jet_bumper:    
     number: 0-0-6
-    default_pulse_ms: 
+    default_pulse_ms: 10
   c_right_jet_bumper:
     number: 0-0-5
-    default_pulse_ms: 
+    default_pulse_ms: 10
 
   c_left_popper:
     number: 0-0-4
-    default_pulse_ms: 
+    default_pulse_ms: 20
   c_right_popper:
     number: 0-0-3
-    default_pulse_ms: 
+    default_pulse_ms: 20
   c_deviateur_bras_actuate:
     number: 0-0-2
     default_pulse_ms: 30
   c_top_popper:
     number: 0-0-1
-    default_pulse_ms:
+    default_pulse_ms: 20
+
+  # Bobine virtuelle pour le bras rotatif, qui n'a pas de bobine d'éjection physique dédiée
+  c_eject_bras_virtual:
+    number: 1               # Un numéro simple (pas de préfixe hardware réel)
+    platform: virtual       # <-- MAGIE : MPF ne cherchera JAMAIS cette bobine sur la CobraPin
+    default_pulse_ms: 20
 
 autofire_coils:
   left_slingshot:
@@ -331,7 +335,11 @@ servo_controllers:
     control_events:
       - event: start_multiball_einstein
         position: 0.8
+      - event: c_eject_bras_virtual_pulsed      # <-- Dès que MPF "active" la bobine virtuelle, le servo tourne !
+        position: 0.8
       - event: multiball_einstein_ended
+        position: 0.2
+      - event: balldevice_bd_bras_rotatif_ball_ejected # Dès que MPF voit qu'une bille a bien quitté les switchs
         position: 0.2
 
 flippers:
@@ -376,7 +384,7 @@ displays:
     height: 1080
     fps: 75
 
-virtual_platform_start_active_switches: s_trough1, s_trough2, s_trough3, s_trough4
+virtual_platform_start_active_switches: s_trough1, s_trough2, s_trough3, s_trough4, s_trough5
 
 ball_devices:
   bd_trough:
@@ -397,8 +405,8 @@ ball_devices:
     player_controlled_eject_event: sw_launch
 
   bd_left_vuk:
-  # Un VUK (Vertical Up Kicker) est un dispositif qui peut éjecter une bille vers le haut.
-  # Il a un switch pour détecter la présence de la bille, et une bobine pour l'éjecter.
+    # Un VUK (Vertical Up Kicker) est un dispositif qui peut éjecter une bille vers le haut.
+    # Il a un switch pour détecter la présence de la bille, et une bobine pour l'éjecter.
     ball_switches: s_left_popper
     eject_coil: c_left_popper
     eject_timeouts: 2s
@@ -411,22 +419,20 @@ ball_devices:
 
   # Le VUK de la rampe
   bd_upper_vuk:
-    ball_switches: s_top_popper           # Le switch au fond du trou du VUK
-    eject_coil: c_top_popper              # La bobine qui pousse la bille dans le tunnel vertical
+    ball_switches: s_top_popper         # Le switch au fond du trou du VUK
+    eject_coil: c_top_popper            # La bobine qui pousse la bille dans le tunnel vertical
     eject_timeouts: 2s
-    # Ce paramètre évite que ta bobine ne grille ou ne s'active à l'infini si la bille a du mal à monter dans le tunnel vertical
-    eject_targets: bd_bras_rotatif        # Destination : le bras rotatif !
+    # Evite que la bobine ne grille si la bille a du mal à monter
+    eject_targets: bd_bras_rotatif      # Destination : le bras rotatif !
 
   # Le Bras Rotatif complet (Tunnel + Partie horizontale)
   bd_bras_rotatif:
     tags: lock
     ball_switches: s_bras_slot1, s_bras_slot2, s_bras_slot3
-    # L'option magique pour désactiver la vérification stricte de la bobine d'éjection :
-    captive_ball: true
+    eject_coil: c_eject_bras_virtual
     debug: true
 
 playfields:
   playfield:
     default_source_device: bd_plunger
     tags: default
-

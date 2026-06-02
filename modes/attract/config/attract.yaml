@@ -1,18 +1,13 @@
-      #config_version=6
-
-# Attract mode that starts when the machine boots up, stops
-# whenever a game is started, and re-starts after the game ends.
+#config_version=6
 
 mode:
   start_events: machine_reset_phase_3
+  stop_events: mode_attract_stop
   priority: 10
-
-slide_player:
-  mode_attract_started: attract
 
 sound_player:
   mode_attract_started:
-    theme_bttf:        # CORRIGÉ : Pas d'espace dans les noms d'assets (theme_bttf au lieu de theme bttf)
+    theme_bttf:
       bus: music
-      action: play     # Recommandé en v6 pour forcer la lecture
-      loops: -1        # TRUE REMPLACE PAR -1 Pour que la musique tourne en boucle en attendant les joueurs
+      action: play
+      loops: -1

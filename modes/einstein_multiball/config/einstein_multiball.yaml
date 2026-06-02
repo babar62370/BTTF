@@ -8,20 +8,21 @@ mode:
 counters:
   compteur_tirs_einstein:
     count_events: s_lane_cafe_einstein_active
-    count_complete_value: 3
-    events_when_complete: einstein_palier_atteint
+    count_complete_value: 12                     # Valeur max finale pour la logique
     persist_state: true
-    reset_on_complete: true
+    reset_on_complete: false                    # On ne reset pas pour pouvoir monter à 6, 9, 12
 
 # 2. Gestion dynamique de la progression des paliers et des actions de sécurité
 event_player:
-  einstein_palier_atteint{device.counters.compteur_tirs_einstein.value == 3}:
+  # Déclenchement du déviateur aux paliers 3, 6, 9, 12
+  # Note : On utilise la valeur du compteur comme condition directe
+  compteur_tirs_einstein_value{value==3}:
     - activer_deviateur_einstein
-  einstein_palier_atteint{device.counters.compteur_tirs_einstein.value == 6}:
+  compteur_tirs_einstein_value{value==6}:
     - activer_deviateur_einstein
-  einstein_palier_atteint{device.counters.compteur_tirs_einstein.value == 9}:
+  compteur_tirs_einstein_value{value==9}:
     - activer_deviateur_einstein
-  einstein_palier_atteint{device.counters.compteur_tirs_einstein.value == 12}:
+  compteur_tirs_einstein_value{value==12}:
     - activer_deviateur_einstein
   
   # Sécurités du déviateur déplacées ici sous forme d'événements standards
