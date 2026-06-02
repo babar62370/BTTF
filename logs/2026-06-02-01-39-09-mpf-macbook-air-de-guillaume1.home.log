@@ -1,0 +1,254 @@
+2026-06-02 01:39:09,792 : INFO : root : Loading config.
+2026-06-02 01:39:09,794 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2026-06-02 01:39:09,794 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/888a835b5fde052b87252136c50b804e.mpf_cache
+2026-06-02 01:39:09,833 : DEBUG : YamlMultifileConfigLoader : Loading mode attract from /Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/modes/attract/config/attract.yaml
+2026-06-02 01:39:09,834 : DEBUG : YamlMultifileConfigLoader : Loading mode attract from /Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/modes/attract/config/attract.yaml
+2026-06-02 01:39:09,834 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/8622cd1fe0050c6b0179be5a651e22f5.mpf_cache
+2026-06-02 01:39:09,834 : DEBUG : YamlMultifileConfigLoader : Loading mode game from /Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/modes/game/config/game.yaml
+2026-06-02 01:39:09,834 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/58f948f5e9fe219120f05e295bb3ef65.mpf_cache
+2026-06-02 01:39:09,834 : DEBUG : YamlMultifileConfigLoader : Loading mode attract from /Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/modes/attract/config/attract.yaml
+2026-06-02 01:39:09,834 : DEBUG : YamlMultifileConfigLoader : Loading mode attract from /Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/modes/attract/config/attract.yaml
+2026-06-02 01:39:09,834 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/8622cd1fe0050c6b0179be5a651e22f5.mpf_cache
+2026-06-02 01:39:09,834 : DEBUG : YamlMultifileConfigLoader : Loading mode base from /Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/modes/base/config/base.yaml
+2026-06-02 01:39:09,834 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/369243a5c0d089a5c3bcaae4a6363538.mpf_cache
+2026-06-02 01:39:09,835 : DEBUG : YamlMultifileConfigLoader : Loading mode multiball_einstein from /Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/modes/multiball_einstein/config/multiball_einstein.yaml
+2026-06-02 01:39:09,835 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/9f86e0f716be9932a6ee645f4848fc86.mpf_cache
+2026-06-02 01:39:09,835 : INFO : Machine : Mission Pinball Framework Core Engine v0.81.0.dev2
+2026-06-02 01:39:09,835 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'force_assets_load': False, 'platform_integration_test': False, 'jsonlogging': False, 'logfile': 'logs/2026-06-02-01-39-09-mpf-macbook-air-de-guillaume1.home.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 10, 'consoleloglevel': 20, 'force_platform': 'smart_virtual', 'syslog_address': None, 'full_logfile_path': '/Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB/logs/2026-06-02-01-39-09-mpf-macbook-air-de-guillaume1.home.log'}
+2026-06-02 01:39:09,835 : INFO : Machine : MPF path: /Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf
+2026-06-02 01:39:09,835 : INFO : Machine : Machine path: /Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB
+2026-06-02 01:39:09,835 : INFO : Machine : Platform: darwin
+2026-06-02 01:39:09,835 : INFO : Machine : Python executable location: /Users/guillaumebarre/mpf/bin/python3.12
+2026-06-02 01:39:09,835 : INFO : Machine : Python version: 3.12.9 (64-bit)
+2026-06-02 01:39:09,835 : DEBUG : asyncio : Using selector: KqueueSelector
+2026-06-02 01:39:09,836 : INFO : Machine : Initializing MPF...
+2026-06-02 01:39:09,879 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-02 01:39:09,879 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-02 01:39:09,879 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-02 01:39:09,879 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-02 01:39:09,879 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-02 01:39:09,879 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-02 01:39:09,880 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-02 01:39:09,880 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-02 01:39:09,880 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-02 01:39:09,880 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-02 01:39:09,880 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-02 01:39:09,880 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-02 01:39:09,880 : DEBUG : asciimatics.widgets.widget : Widget blur: <asciimatics.widgets.label.Label object at 0x103207030>
+2026-06-02 01:39:09,880 : DEBUG : asciimatics.widgets.widget : Widget blur: <asciimatics.widgets.label.Label object at 0x1033e36b0>
+2026-06-02 01:39:09,880 : DEBUG : asciimatics.widgets.widget : Widget blur: <asciimatics.widgets.label.Label object at 0x1033e3850>
+2026-06-02 01:39:09,880 : DEBUG : asciimatics.widgets.layout : Blur: <asciimatics.widgets.layout.Layout object at 0x10341d1e0>
+2026-06-02 01:39:09,880 : DEBUG : asciimatics.widgets.layout : Blur: <mpf.core.text_ui.MpfLayout object at 0x103272eb0>
+2026-06-02 01:39:09,880 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-02 01:39:09,880 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-02 01:39:09,880 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-02 01:39:09,880 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-02 01:39:09,880 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-02 01:39:09,880 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-02 01:39:09,880 : DEBUG : asciimatics.widgets.widget : Widget blur: <asciimatics.widgets.label.Label object at 0x1033e3c60>
+2026-06-02 01:39:09,880 : DEBUG : asciimatics.widgets.widget : Widget blur: <asciimatics.widgets.label.Label object at 0x1033e3b90>
+2026-06-02 01:39:09,880 : DEBUG : asciimatics.widgets.widget : Widget blur: <asciimatics.widgets.label.Label object at 0x1033e3d30>
+2026-06-02 01:39:09,880 : DEBUG : asciimatics.widgets.widget : Widget blur: <asciimatics.widgets.label.Label object at 0x1033e3ac0>
+2026-06-02 01:39:09,880 : DEBUG : asciimatics.widgets.widget : Widget blur: <asciimatics.widgets.label.Label object at 0x1033e39f0>
+2026-06-02 01:39:09,880 : DEBUG : asciimatics.widgets.widget : Widget blur: <asciimatics.widgets.label.Label object at 0x1033e3920>
+2026-06-02 01:39:09,880 : DEBUG : asciimatics.widgets.layout : Blur: <asciimatics.widgets.layout.Layout object at 0x10341d240>
+2026-06-02 01:39:09,880 : DEBUG : asciimatics.widgets.layout : Focus: <asciimatics.widgets.layout.Layout object at 0x10341d1e0>
+2026-06-02 01:39:09,880 : DEBUG : asciimatics.widgets.layout : Focus: <mpf.core.text_ui.MpfLayout object at 0x103272eb0>
+2026-06-02 01:39:09,880 : DEBUG : asciimatics.widgets.layout : Focus: <asciimatics.widgets.layout.Layout object at 0x10341d240>
+2026-06-02 01:39:09,880 : DEBUG : asciimatics.widgets.frame : Cloning: Test
+2026-06-02 01:39:09,880 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-02 01:39:09,880 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-02 01:39:09,880 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-02 01:39:09,880 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-02 01:39:09,880 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-02 01:39:09,880 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-02 01:39:09,880 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-02 01:39:09,880 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-02 01:39:09,880 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-02 01:39:09,880 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-02 01:39:09,880 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-02 01:39:09,880 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-02 01:39:09,880 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-02 01:39:09,880 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-02 01:39:09,880 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-02 01:39:09,880 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-02 01:39:09,880 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-02 01:39:09,880 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-02 01:39:09,888 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2026-06-02 01:39:09,896 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.5, 'prev_value': None, 'change': True}
+2026-06-02 01:39:09,896 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'Mission Pinball Framework v0.81.0.dev2', 'prev_value': None, 'change': True}
+2026-06-02 01:39:09,896 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'Mission Pinball Framework v0.81.0.dev2, Config version:6, Show version: 6, BCP version:1.1', 'prev_value': None, 'change': True}
+2026-06-02 01:39:09,896 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.12.9', 'prev_value': None, 'change': True}
+2026-06-02 01:39:09,913 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'macOS-26.3-arm64-arm-64bit', 'prev_value': None, 'change': True}
+2026-06-02 01:39:09,913 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Darwin', 'prev_value': None, 'change': True}
+2026-06-02 01:39:09,913 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '25.3.0', 'prev_value': None, 'change': True}
+2026-06-02 01:39:09,913 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': 'Darwin Kernel Version 25.3.0: Wed Jan 28 20:53:01 PST 2026; root:xnu-12377.81.4~5/RELEASE_ARM64_T8103', 'prev_value': None, 'change': True}
+2026-06-02 01:39:09,913 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'arm64', 'prev_value': None, 'change': True}
+2026-06-02 01:39:09,913 : INFO : EventManager : Event: ======'machine_var_log_file_path'====== Args={'value': '/Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB/logs/2026-06-02-01-39-09-mpf-macbook-air-de-guillaume1.home.log', 'prev_value': None, 'change': True}
+2026-06-02 01:39:09,913 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2026-06-02 01:39:09,917 : DEBUG : ModeController : Loaded mode game
+2026-06-02 01:39:09,919 : DEBUG : ModeController : Loaded mode attract
+2026-06-02 01:39:09,919 : DEBUG : ModeController : Loaded mode multiball_einstein
+2026-06-02 01:39:09,919 : DEBUG : ModeController : Loaded mode base
+2026-06-02 01:39:09,923 : DEBUG : ball_device.bd_trough : Configuring device with settings: '{'ball_switches': 's_trough1, s_trough2, s_trough3, s_trough4, s_trough5, s_trough_jam', 'eject_coil': 'c_trough_eject', 'tags': ['trough', 'home', 'drain'], 'jam_switch': 's_trough_jam', 'eject_coil_jam_pulse': '15ms', 'eject_targets': [<ball_device.bd_plunger>], 'eject_timeouts': [3000], 'entrance_count_delay': '300ms', 'debug': True, 'label': '%', 'console_log': 'full', 'file_log': 'full', 'entrance_events': {}, 'idle_missing_ball_timeout': 5.0, 'confirm_eject_type': 'target', 'captures_from': <playfield.playfield>, 'ball_missing_timeouts': [], 'ball_missing_target': <playfield.playfield>, 'confirm_eject_switch': None, 'confirm_eject_event': None, 'max_eject_attempts': 0, 'request_ball_events': {}, 'eject_events': {}, 'eject_all_events': {}, 'mechanical_eject': False, 'player_controlled_eject_event': None, 'ball_search_order': 200, 'auto_fire_on_unexpected_ball': True, 'target_on_unexpected_ball': None}'
+2026-06-02 01:39:09,923 : DEBUG : ball_device.bd_bras_rotatif : Configuring device with settings: '{'tags': ['lock'], 'ball_switches': 's_bras_slot1, s_bras_slot2, s_bras_slot3', 'mechanical_eject': True, 'eject_targets': [<playfield.playfield>], 'eject_timeouts': [4000], 'debug': True, 'label': '%', 'console_log': 'full', 'file_log': 'full', 'entrance_events': {}, 'idle_missing_ball_timeout': 5.0, 'confirm_eject_type': 'target', 'captures_from': <playfield.playfield>, 'ball_missing_timeouts': [], 'ball_missing_target': <playfield.playfield>, 'confirm_eject_switch': None, 'confirm_eject_event': None, 'max_eject_attempts': 0, 'request_ball_events': {}, 'eject_events': {}, 'eject_all_events': {}, 'player_controlled_eject_event': None, 'ball_search_order': 200, 'auto_fire_on_unexpected_ball': True, 'target_on_unexpected_ball': None}'
+2026-06-02 01:39:09,924 : DEBUG : servo.servo_bras_einstein : Configuring device with settings: '{'number': '1-0-11', 'reset_position': 0.2, 'debug': True, 'positions': {0.2: '0.2', 0.8: '0.8'}, 'label': '%', 'tags': [], 'console_log': 'full', 'file_log': 'full', 'servo_min': 0.0, 'servo_max': 1.0, 'ball_search_min': 0.0, 'ball_search_max': 1.0, 'speed_limit': -1.0, 'acceleration_limit': -1.0, 'ball_search_wait': 5000, 'include_in_ball_search': True, 'stop_events': {}, 'stop_timeout_after_last_move': None, 'reset_events': {'machine_reset_phase_3': 0, 'ball_starting': 0, 'ball_will_end': 0, 'service_mode_entered': 0}, 'platform': None, 'platform_settings': {}}'
+2026-06-02 01:39:09,925 : DEBUG : ball_device.bd_bras_rotatif : Device does not have any ejector.
+2026-06-02 01:39:09,926 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2026-06-02 01:39:09,926 : INFO : SwitchController : Found active switch: ('1-0-40', <Platform.SmartVirtual>) <switch.s_trough1>
+2026-06-02 01:39:09,927 : INFO : SwitchController : Found active switch: ('1-0-41', <Platform.SmartVirtual>) <switch.s_trough2>
+2026-06-02 01:39:09,927 : INFO : SwitchController : Found active switch: ('1-0-42', <Platform.SmartVirtual>) <switch.s_trough3>
+2026-06-02 01:39:09,927 : INFO : SwitchController : Found active switch: ('1-0-43', <Platform.SmartVirtual>) <switch.s_trough4>
+2026-06-02 01:39:09,928 : INFO : EventManager : Event: ======'bcp_connection_attempt'====== Args={'name': 'local_display', 'host': 'localhost', 'port': 5050}
+2026-06-02 01:39:09,929 : DEBUG : asciimatics.widgets.layout : Updating: message
+2026-06-02 01:39:09,930 : DEBUG : asciimatics.widgets.layout : Updating: message
+2026-06-02 01:39:09,930 : DEBUG : asciimatics.widgets.widget : Widget blur: <asciimatics.widgets.textbox.TextBox object at 0x1034997e0>
+2026-06-02 01:39:09,930 : DEBUG : asciimatics.widgets.layout : Blur: <asciimatics.widgets.layout.Layout object at 0x103554a60>
+2026-06-02 01:39:09,930 : DEBUG : asciimatics.widgets.layout : Blur: <asciimatics.widgets.layout.Layout object at 0x103554ac0>
+2026-06-02 01:39:09,930 : DEBUG : asciimatics.widgets.layout : Focus: <asciimatics.widgets.layout.Layout object at 0x103554a60>
+2026-06-02 01:39:09,930 : DEBUG : asciimatics.widgets.layout : Focus: <asciimatics.widgets.layout.Layout object at 0x103554ac0>
+2026-06-02 01:39:09,930 : INFO : BCPClientSocket : Connecting BCP to 'local_display' at localhost:5050...
+2026-06-02 01:39:16,890 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:16,890 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:16,890 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:16,890 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:16,890 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:16,890 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:16,891 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:16,891 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:16,891 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:16,891 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:16,891 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:16,891 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:16,891 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:16,891 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:16,892 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:16,892 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:16,892 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:16,892 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:16,892 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:16,892 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:16,892 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:16,892 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:16,893 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:16,893 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:16,893 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:16,893 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:16,893 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:16,893 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:16,893 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:17,890 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:24,890 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:24,891 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:24,891 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:24,891 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:24,891 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:24,891 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:24,891 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:24,891 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:24,891 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:24,891 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:24,891 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:24,891 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:24,892 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:24,892 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:24,892 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:24,892 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:24,892 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:24,892 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:24,892 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:24,893 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:24,893 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:24,893 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:24,893 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:24,893 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:24,893 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:24,894 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:24,894 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:24,894 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:24,894 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:24,894 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:25,889 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:25,890 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:25,890 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:25,890 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:25,890 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:25,890 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:25,890 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:25,890 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:25,890 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:25,891 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:25,891 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:25,891 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:25,891 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:25,891 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:25,891 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:25,891 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:25,891 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:25,892 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:25,892 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:25,892 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:25,892 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -1) 0
+2026-06-02 01:39:34,892 : DEBUG : asciimatics.screen : Processing key: 1b
+2026-06-02 01:39:34,892 : DEBUG : asciimatics.screen : Returning key: 1b
+2026-06-02 01:39:34,892 : DEBUG : asciimatics.widgets.frame : New event: KeyboardEvent: -1
+2026-06-02 01:39:37,061 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (35, -6) 1
+2026-06-02 01:39:37,061 : DEBUG : asciimatics.widgets.frame : New event: MouseEvent (52, 4) 1
+2026-06-02 01:39:37,061 : DEBUG : asciimatics.widgets.frame : Blurring: [<asciimatics.widgets.popupdialog.PopUpDialog object at 0x103581d30>, <asciimatics.widgets.frame.Frame object at 0x102daf500>]
+2026-06-02 01:39:37,061 : ERROR : asyncio : Exception in callback DelayManager._process_delay_callback('draw_screen', <bound method... 0x10331e8a0>>)()
+handle: <TimerHandle when=147844.542809583 DelayManager._process_delay_callback('draw_screen', <bound method... 0x10331e8a0>>)()>
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/delays.py", line 189, in _process_delay_callback
+    callback(**kwargs)
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/text_ui.py", line 442, in _draw_screen
+    self.screen.draw_next_frame()
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/asciimatics/screen.py", line 1690, in draw_next_frame
+    event = scene.process_event(event)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/asciimatics/scene.py", line 98, in process_event
+    event = effect.process_event(event)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/asciimatics/widgets/frame.py", line 699, in process_event
+    claimed_focus, quit_now = self._handle_desktop_ordering(event)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/asciimatics/widgets/frame.py", line 677, in _handle_desktop_ordering
+    effect.blur()
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/asciimatics/widgets/frame.py", line 540, in blur
+    self._layouts[self._focus].blur()
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^
+IndexError: list index out of range
+2026-06-02 01:39:37,068 : INFO : Machine : Starting the main run loop with active modes: []
+2026-06-02 01:39:37,068 : WARNING : Machine : Attract mode is not active, game will not be playable. Please check your attract mode configuration.
+2026-06-02 01:39:37,071 : INFO : Machine : Shutting down...
+2026-06-02 01:39:37,071 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2026-06-02 01:39:37,071 : DEBUG : servo.servo_bras_einstein : Stopping servo
+2026-06-02 01:39:37,071 : DEBUG : ball_device.bd_trough : Stopping ball device
+2026-06-02 01:39:37,071 : DEBUG : ball_device.bd_bras_rotatif : Stopping ball device
+2026-06-02 01:39:38,073 : ERROR : Machine : Runtime Exception
+Traceback (most recent call last):
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/machine.py", line 810, in _run_loop
+    raise self._exception['exception']
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/delays.py", line 189, in _process_delay_callback
+    callback(**kwargs)
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/text_ui.py", line 442, in _draw_screen
+    self.screen.draw_next_frame()
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/asciimatics/screen.py", line 1690, in draw_next_frame
+    event = scene.process_event(event)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/asciimatics/scene.py", line 98, in process_event
+    event = effect.process_event(event)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/asciimatics/widgets/frame.py", line 699, in process_event
+    claimed_focus, quit_now = self._handle_desktop_ordering(event)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/asciimatics/widgets/frame.py", line 677, in _handle_desktop_ordering
+    effect.blur()
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/asciimatics/widgets/frame.py", line 540, in blur
+    self._layouts[self._focus].blur()
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^
+IndexError: list index out of range
+2026-06-02 01:39:38,077 : INFO : root : MPF run loop ended.

@@ -50,7 +50,7 @@ switches:
 
   s_trough5:
     number: 0-0-8
-  s_trough_jam:
+  s_trough_jam:     # OPTO
     number: 0-0-9
     type: NC
   s_plunger:
@@ -58,20 +58,15 @@ switches:
 
   s_left_slingshot:
     number: 0-0-11
-    tags: playfield_active
   s_right_slingshot:
     number: 0-0-27
-    tags: playfield_active
 
   s_lower_jet:
     number: 0-0-26
-    tags: playfield_active
   s_left_jet:
     number: 0-0-25
-    tags: playfield_active
   s_right_jet:
     number: 0-0-24
-    tags: playfield_active
 
   s_left_popper:
     number: 0-0-19
@@ -80,20 +75,14 @@ switches:
   s_top_popper:
     number: 0-0-17
 
-  # RESTE LE SWITCH 0-0-16 DE DISPO EN DIRECT
-  
-  # Broche "Input" SWITCH DIRECT CobraPin reliée à la pin DIAG du TMC2209 du moteur de l'horloge
-  s_horloge_impact:
-    number: 1-0-1
-    tags: playfield_active
-    debounce: quick  # "quick" pour une détection rapide du choc, sans filtrage logiciel
-    # "no" NON ACCEPTE pour capter l'impact instantanément sans filtrage
-
   # OPTOS:
   s_ramp_1985_entree:
-    number: 1-0-2
+    number: 0-0-16
     type: NC
   s_ramp_hotel_de_ville:
+    number: 1-0-2
+    type: NC
+  s_horloge:
     number: 1-0-3
     type: NC
   s_ramp_2015_lower:
@@ -267,50 +256,39 @@ coils:
   c_trough_eject:
     number: 0-0-12
     default_pulse_ms: 20
+  c_plunger_eject:
+    number: 0-0-13
+    default_pulse_ms: 25
 
   c_left_slingshot:
-    number: 0-0-13
+    number: 0-0-14
     default_pulse_ms: 
   c_right_slingshot:
-    number: 0-0-14
+    number: 0-0-15
     default_pulse_ms: 
 
   c_lower_jet_bumper:
-    number: 0-0-15
+    number: 0-0-7
     default_pulse_ms:
   c_left_jet_bumper:    
-    number: 0-0-7
+    number: 0-0-6
     default_pulse_ms: 
   c_right_jet_bumper:
-    number: 0-0-6
+    number: 0-0-5
     default_pulse_ms: 
 
   c_left_popper:
-    number: 0-0-5
-    default_pulse_ms: 
-  c_right_popper:
     number: 0-0-4
     default_pulse_ms: 
-  c_deviateur_bras_actuate:
+  c_right_popper:
     number: 0-0-3
+    default_pulse_ms: 
+  c_deviateur_bras_actuate:
+    number: 0-0-2
     default_pulse_ms: 30
   c_top_popper:
-    number: 0-0-2
+    number: 0-0-1
     default_pulse_ms:
-
-  # Broche COIL CobraPin reliée à la pin DIR du TMC2209 du moteur de l'horloge
-  c_horloge_dir:
-    number: 1-0-1
-
-# Broche COIL CobraPin reliée à la pin STEP du TMC2209 du moteur de l'horloge
-steppers:
-  moteur_horloge:
-    number: 1-0-2
-    direction_coil: c_horloge_dir
-    homing_speed: 10
-    move_speed: 150               # Vitesse max de l'emballement
-    acceleration: 600             # Démarrage rapide lors du choc
-    deceleration: 150             # Décélération basse pour un arrêt progressif ("effet cinéma"
 
 autofire_coils:
   left_slingshot:
@@ -337,24 +315,24 @@ diverters:
     activate_events: multiball_lock_lock_einstein_enabled
     disable_events: multiball_lock_lock_einstein_disabled                                     # 'hold' pour qu'il reste ouvert tant qu'on lui demande
 
+# DERNIER COMMUTATEUR POUR SWITCH 1-0-X POUR LE SERVO
 servos:
   servo_bras_einstein:
-    number: 0-0-          # Ta broche Servo sur la CobraPin (souvent J13 ou J14)
-    reset_position: 0.2    # Position de départ (attente_chargement)
+    number: 1-0-11
+    reset_position: 0.2
     debug: true
     positions:
-      attente_chargement: 0.2
-      ejection_multibille: 0.8
+      0.2: 0.2
+      0.8: 0.8
 
-# Le contrôle du servo pour la rotation du bras
 servo_controllers:
   controleur_bras_einstein:
     servo: servo_bras_einstein
     control_events:
       - event: start_multiball_einstein
-        position: ejection_multiball
+        position: 0.8
       - event: multiball_einstein_ended
-        position: attente_chargement
+        position: 0.2
 
 flippers:
   # === CONFIGURATION GAUCHE ===
@@ -442,11 +420,9 @@ ball_devices:
   # Le Bras Rotatif complet (Tunnel + Partie horizontale)
   bd_bras_rotatif:
     tags: lock
-    # MPF compte les billes logées sur les switchs horizontaux :
     ball_switches: s_bras_slot1, s_bras_slot2, s_bras_slot3
-    mechanical_eject: true                # C'est ton servo qui fait tourner le bras pour libérer les billes
-    eject_targets: playfield              # Les billes tombent sur le plateau pour le multiball
-    eject_timeouts: 4s
+    # L'option magique pour désactiver la vérification stricte de la bobine d'éjection :
+    captive_ball: true
     debug: true
 
 playfields:

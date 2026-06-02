@@ -15,4 +15,4 @@ sound_player:
     theme_bttf:        # CORRIGÉ : Pas d'espace dans les noms d'assets (theme_bttf au lieu de theme bttf)
       bus: music
       action: play     # Recommandé en v6 pour forcer la lecture
-      loop: true       # Pour que la musique tourne en boucle en attendant les joueurs
+      loops: -1        # TRUE REMPLACE PAR -1 Pour que la musique tourne en boucle en attendant les joueurs

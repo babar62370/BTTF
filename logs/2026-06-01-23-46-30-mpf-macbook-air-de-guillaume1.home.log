@@ -1,0 +1,189 @@
+2026-06-01 23:46:30,940 : INFO : root : Loading config.
+2026-06-01 23:46:30,942 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2026-06-01 23:46:30,943 : WARNING : ConfigProcessor : Config file in cache changed: /Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB/config/config.yaml
+2026-06-01 23:46:30,943 : INFO : ConfigProcessor : Loading config from file /Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/mpfconfig.yaml.
+2026-06-01 23:46:30,943 : DEBUG : YAML File Interface : Loading file: /Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/mpfconfig.yaml
+2026-06-01 23:46:30,949 : INFO : ConfigProcessor : Loading config: /Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/mpfconfig.yaml
+2026-06-01 23:46:30,949 : INFO : ConfigProcessor : Loading config from file /Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB/config/config.yaml.
+2026-06-01 23:46:30,950 : DEBUG : YAML File Interface : Loading file: /Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB/config/config.yaml
+2026-06-01 23:46:30,953 : INFO : ConfigProcessor : Loading config: /Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB/config/config.yaml
+2026-06-01 23:46:30,954 : INFO : ConfigProcessor : Config file cache created: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/888a835b5fde052b87252136c50b804e.mpf_cache
+2026-06-01 23:46:30,998 : DEBUG : YamlMultifileConfigLoader : Loading mode attract from /Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/modes/attract/config/attract.yaml
+2026-06-01 23:46:30,999 : DEBUG : YamlMultifileConfigLoader : Loading mode attract from /Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/modes/attract/config/attract.yaml
+2026-06-01 23:46:30,999 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/8622cd1fe0050c6b0179be5a651e22f5.mpf_cache
+2026-06-01 23:46:30,999 : DEBUG : YamlMultifileConfigLoader : Loading mode game from /Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/modes/game/config/game.yaml
+2026-06-01 23:46:30,999 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/58f948f5e9fe219120f05e295bb3ef65.mpf_cache
+2026-06-01 23:46:30,999 : DEBUG : YamlMultifileConfigLoader : Loading mode attract from /Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/modes/attract/config/attract.yaml
+2026-06-01 23:46:30,999 : DEBUG : YamlMultifileConfigLoader : Loading mode attract from /Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/modes/attract/config/attract.yaml
+2026-06-01 23:46:30,999 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/8622cd1fe0050c6b0179be5a651e22f5.mpf_cache
+2026-06-01 23:46:30,999 : DEBUG : YamlMultifileConfigLoader : Loading mode base from /Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/modes/base/config/base.yaml
+2026-06-01 23:46:30,999 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/369243a5c0d089a5c3bcaae4a6363538.mpf_cache
+2026-06-01 23:46:31,000 : DEBUG : YamlMultifileConfigLoader : Loading mode multiball_einstein from /Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/modes/multiball_einstein/config/multiball_einstein.yaml
+2026-06-01 23:46:31,000 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/9f86e0f716be9932a6ee645f4848fc86.mpf_cache
+2026-06-01 23:46:31,000 : INFO : Machine : Mission Pinball Framework Core Engine v0.81.0.dev2
+2026-06-01 23:46:31,000 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'force_assets_load': False, 'platform_integration_test': False, 'jsonlogging': False, 'logfile': 'logs/2026-06-01-23-46-30-mpf-macbook-air-de-guillaume1.home.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 10, 'consoleloglevel': 20, 'force_platform': 'smart_virtual', 'syslog_address': None, 'full_logfile_path': '/Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB/logs/2026-06-01-23-46-30-mpf-macbook-air-de-guillaume1.home.log'}
+2026-06-01 23:46:31,000 : INFO : Machine : MPF path: /Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf
+2026-06-01 23:46:31,000 : INFO : Machine : Machine path: /Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB
+2026-06-01 23:46:31,000 : INFO : Machine : Platform: darwin
+2026-06-01 23:46:31,000 : INFO : Machine : Python executable location: /Users/guillaumebarre/mpf/bin/python3.12
+2026-06-01 23:46:31,000 : INFO : Machine : Python version: 3.12.9 (64-bit)
+2026-06-01 23:46:31,001 : DEBUG : asyncio : Using selector: KqueueSelector
+2026-06-01 23:46:31,001 : INFO : Machine : Initializing MPF...
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.widget : Widget blur: <asciimatics.widgets.label.Label object at 0x102834a00>
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.widget : Widget blur: <asciimatics.widgets.label.Label object at 0x1029ed080>
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.widget : Widget blur: <asciimatics.widgets.label.Label object at 0x1029ed220>
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.layout : Blur: <asciimatics.widgets.layout.Layout object at 0x1029e2920>
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.layout : Blur: <mpf.core.text_ui.MpfLayout object at 0x102817e70>
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.widget : Widget blur: <asciimatics.widgets.label.Label object at 0x1029ed630>
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.widget : Widget blur: <asciimatics.widgets.label.Label object at 0x1029ed560>
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.widget : Widget blur: <asciimatics.widgets.label.Label object at 0x1029ed700>
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.widget : Widget blur: <asciimatics.widgets.label.Label object at 0x1029ed490>
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.widget : Widget blur: <asciimatics.widgets.label.Label object at 0x1029ed3c0>
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.widget : Widget blur: <asciimatics.widgets.label.Label object at 0x1029ed2f0>
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.layout : Blur: <asciimatics.widgets.layout.Layout object at 0x1029e2980>
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.layout : Focus: <asciimatics.widgets.layout.Layout object at 0x1029e2920>
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.layout : Focus: <mpf.core.text_ui.MpfLayout object at 0x102817e70>
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.layout : Focus: <asciimatics.widgets.layout.Layout object at 0x1029e2980>
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.frame : Cloning: Test
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-01 23:46:31,052 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-01 23:46:31,053 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-01 23:46:31,053 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-01 23:46:31,053 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-01 23:46:31,053 : DEBUG : asciimatics.widgets.layout : Updating: None
+2026-06-01 23:46:31,066 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2026-06-01 23:46:31,075 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.5, 'prev_value': None, 'change': True}
+2026-06-01 23:46:31,075 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'Mission Pinball Framework v0.81.0.dev2', 'prev_value': None, 'change': True}
+2026-06-01 23:46:31,075 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'Mission Pinball Framework v0.81.0.dev2, Config version:6, Show version: 6, BCP version:1.1', 'prev_value': None, 'change': True}
+2026-06-01 23:46:31,075 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.12.9', 'prev_value': None, 'change': True}
+2026-06-01 23:46:31,103 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'macOS-26.3-arm64-arm-64bit', 'prev_value': None, 'change': True}
+2026-06-01 23:46:31,103 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Darwin', 'prev_value': None, 'change': True}
+2026-06-01 23:46:31,103 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '25.3.0', 'prev_value': None, 'change': True}
+2026-06-01 23:46:31,103 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': 'Darwin Kernel Version 25.3.0: Wed Jan 28 20:53:01 PST 2026; root:xnu-12377.81.4~5/RELEASE_ARM64_T8103', 'prev_value': None, 'change': True}
+2026-06-01 23:46:31,103 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'arm64', 'prev_value': None, 'change': True}
+2026-06-01 23:46:31,103 : INFO : EventManager : Event: ======'machine_var_log_file_path'====== Args={'value': '/Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB/logs/2026-06-01-23-46-30-mpf-macbook-air-de-guillaume1.home.log', 'prev_value': None, 'change': True}
+2026-06-01 23:46:31,103 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2026-06-01 23:46:31,106 : DEBUG : ModeController : Loaded mode game
+2026-06-01 23:46:31,107 : DEBUG : ModeController : Loaded mode multiball_einstein
+2026-06-01 23:46:31,107 : DEBUG : ModeController : Loaded mode base
+2026-06-01 23:46:31,110 : DEBUG : ModeController : Loaded mode attract
+2026-06-01 23:46:31,114 : DEBUG : ball_device.bd_trough : Configuring device with settings: '{'ball_switches': 's_trough1, s_trough2, s_trough3, s_trough4, s_trough5, s_trough_jam', 'eject_coil': 'c_trough_eject', 'tags': ['trough', 'home', 'drain'], 'jam_switch': 's_trough_jam', 'eject_coil_jam_pulse': '15ms', 'eject_targets': [<ball_device.bd_plunger>], 'eject_timeouts': [3000], 'entrance_count_delay': '300ms', 'debug': True, 'label': '%', 'console_log': 'full', 'file_log': 'full', 'entrance_events': {}, 'idle_missing_ball_timeout': 5.0, 'confirm_eject_type': 'target', 'captures_from': <playfield.playfield>, 'ball_missing_timeouts': [], 'ball_missing_target': <playfield.playfield>, 'confirm_eject_switch': None, 'confirm_eject_event': None, 'max_eject_attempts': 0, 'request_ball_events': {}, 'eject_events': {}, 'eject_all_events': {}, 'mechanical_eject': False, 'player_controlled_eject_event': None, 'ball_search_order': 200, 'auto_fire_on_unexpected_ball': True, 'target_on_unexpected_ball': None}'
+2026-06-01 23:46:31,114 : DEBUG : ball_device.bd_bras_rotatif : Configuring device with settings: '{'tags': ['lock'], 'ball_switches': 's_bras_slot1, s_bras_slot2, s_bras_slot3', 'mechanical_eject': True, 'eject_targets': [<playfield.playfield>], 'eject_timeouts': [4000], 'debug': True, 'label': '%', 'console_log': 'full', 'file_log': 'full', 'entrance_events': {}, 'idle_missing_ball_timeout': 5.0, 'confirm_eject_type': 'target', 'captures_from': <playfield.playfield>, 'ball_missing_timeouts': [], 'ball_missing_target': <playfield.playfield>, 'confirm_eject_switch': None, 'confirm_eject_event': None, 'max_eject_attempts': 0, 'request_ball_events': {}, 'eject_events': {}, 'eject_all_events': {}, 'player_controlled_eject_event': None, 'ball_search_order': 200, 'auto_fire_on_unexpected_ball': True, 'target_on_unexpected_ball': None}'
+2026-06-01 23:46:31,115 : ERROR : asyncio : Exception in callback EventManager._async_handler_done(<QueuedEvent>)(<Task finishe...rt to float')>) at /Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/events.py:124
+handle: <Handle EventManager._async_handler_done(<QueuedEvent>)(<Task finishe...rt to float')>) at /Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/events.py:124>
+Traceback (most recent call last):
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/config_validator.py", line 533, in _validate_type_float
+    value = float(item)
+            ^^^^^^^^^^^
+ValueError: could not convert string to float: 'attente_chargement'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/events.py", line 127, in _async_handler_done
+    future.result()
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/device_manager.py", line 88, in _load_device_modules
+    self.load_devices_config(validate=True)
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/device_manager.py", line 146, in load_devices_config
+    config[device_name] = collection[device_name].validate_and_parse_config(config[device_name], False)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/device.py", line 108, in validate_and_parse_config
+    self.machine.config_validator.validate_config(
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/config_validator.py", line 164, in validate_config
+    return self._validate_config(config_spec, source, base_spec=base_spec, add_missing_keys=add_missing_keys,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/config_validator.py", line 204, in _validate_config
+    processed_config[k] = self.validate_config_item(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/config_validator.py", line 274, in validate_config_item
+    return self._validate_dict(item_type, validation, validation_failure_info, item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/config_validator.py", line 302, in _validate_dict
+    item_dict[self.validate_item(k, validators[0], validation_failure_info)] = (
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/config_validator.py", line 701, in validate_item
+    return self.validator_list[validator](item, validation_failure_info=validation_failure_info)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/config_validator.py", line 535, in _validate_type_float
+    raise self.validation_error(item, validation_failure_info, "Could not convert to float")
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in ConfigValidator: Config validation error: Entry servos:servo_bras_einstein:positions = "attente_chargement" is not valid. Could not convert to float Error Code: CFE-ConfigValidator-5 (https://missionpinball.org/latest/logs)
+2026-06-01 23:46:31,119 : INFO : Machine : Starting the main run loop with active modes: []
+2026-06-01 23:46:31,119 : WARNING : Machine : Attract mode is not active, game will not be playable. Please check your attract mode configuration.
+2026-06-01 23:46:31,119 : INFO : Machine : Shutting down...
+2026-06-01 23:46:31,119 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2026-06-01 23:46:31,119 : DEBUG : ball_device.bd_trough : Stopping ball device
+2026-06-01 23:46:31,119 : DEBUG : ball_device.bd_bras_rotatif : Stopping ball device
+2026-06-01 23:46:32,121 : ERROR : Machine : Runtime Exception
+Traceback (most recent call last):
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/config_validator.py", line 533, in _validate_type_float
+    value = float(item)
+            ^^^^^^^^^^^
+ValueError: could not convert string to float: 'attente_chargement'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/machine.py", line 810, in _run_loop
+    raise self._exception['exception']
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/events.py", line 127, in _async_handler_done
+    future.result()
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/device_manager.py", line 88, in _load_device_modules
+    self.load_devices_config(validate=True)
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/device_manager.py", line 146, in load_devices_config
+    config[device_name] = collection[device_name].validate_and_parse_config(config[device_name], False)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/device.py", line 108, in validate_and_parse_config
+    self.machine.config_validator.validate_config(
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/config_validator.py", line 164, in validate_config
+    return self._validate_config(config_spec, source, base_spec=base_spec, add_missing_keys=add_missing_keys,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/config_validator.py", line 204, in _validate_config
+    processed_config[k] = self.validate_config_item(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/config_validator.py", line 274, in validate_config_item
+    return self._validate_dict(item_type, validation, validation_failure_info, item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/config_validator.py", line 302, in _validate_dict
+    item_dict[self.validate_item(k, validators[0], validation_failure_info)] = (
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/config_validator.py", line 701, in validate_item
+    return self.validator_list[validator](item, validation_failure_info=validation_failure_info)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/config_validator.py", line 535, in _validate_type_float
+    raise self.validation_error(item, validation_failure_info, "Could not convert to float")
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in ConfigValidator: Config validation error: Entry servos:servo_bras_einstein:positions = "attente_chargement" is not valid. Could not convert to float Error Code: CFE-ConfigValidator-5 (https://missionpinball.org/latest/logs)
+2026-06-01 23:46:32,124 : INFO : root : MPF run loop ended.

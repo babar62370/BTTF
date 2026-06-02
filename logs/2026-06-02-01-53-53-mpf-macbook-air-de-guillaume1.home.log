@@ -1,0 +1,101 @@
+2026-06-02 01:53:53,082 : INFO : root : Loading config.
+2026-06-02 01:53:53,085 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2026-06-02 01:53:53,085 : WARNING : ConfigProcessor : Config file in cache changed: /Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB/config/config.yaml
+2026-06-02 01:53:53,085 : INFO : ConfigProcessor : Loading config from file /Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/mpfconfig.yaml.
+2026-06-02 01:53:53,091 : INFO : ConfigProcessor : Loading config: /Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/mpfconfig.yaml
+2026-06-02 01:53:53,092 : INFO : ConfigProcessor : Loading config from file /Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB/config/config.yaml.
+2026-06-02 01:53:53,096 : INFO : ConfigProcessor : Loading config: /Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB/config/config.yaml
+2026-06-02 01:53:53,097 : INFO : ConfigProcessor : Config file cache created: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/888a835b5fde052b87252136c50b804e.mpf_cache
+2026-06-02 01:53:53,138 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/8622cd1fe0050c6b0179be5a651e22f5.mpf_cache
+2026-06-02 01:53:53,138 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/58f948f5e9fe219120f05e295bb3ef65.mpf_cache
+2026-06-02 01:53:53,138 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/8622cd1fe0050c6b0179be5a651e22f5.mpf_cache
+2026-06-02 01:53:53,138 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/369243a5c0d089a5c3bcaae4a6363538.mpf_cache
+2026-06-02 01:53:53,139 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/9f86e0f716be9932a6ee645f4848fc86.mpf_cache
+2026-06-02 01:53:53,139 : INFO : Machine : Mission Pinball Framework Core Engine v0.81.0.dev2
+2026-06-02 01:53:53,139 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'force_assets_load': False, 'platform_integration_test': False, 'jsonlogging': False, 'logfile': 'logs/2026-06-02-01-53-53-mpf-macbook-air-de-guillaume1.home.log', 'pause': False, 'production': False, 'text_ui': True, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': 'smart_virtual', 'syslog_address': None, 'full_logfile_path': '/Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB/logs/2026-06-02-01-53-53-mpf-macbook-air-de-guillaume1.home.log'}
+2026-06-02 01:53:53,139 : INFO : Machine : MPF path: /Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf
+2026-06-02 01:53:53,139 : INFO : Machine : Machine path: /Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB
+2026-06-02 01:53:53,139 : INFO : Machine : Platform: darwin
+2026-06-02 01:53:53,139 : INFO : Machine : Python executable location: /Users/guillaumebarre/mpf/bin/python3.12
+2026-06-02 01:53:53,139 : INFO : Machine : Python version: 3.12.9 (64-bit)
+2026-06-02 01:53:53,139 : INFO : Machine : Initializing MPF...
+2026-06-02 01:53:53,200 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2026-06-02 01:53:53,208 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.5, 'prev_value': None, 'change': True}
+2026-06-02 01:53:53,208 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'Mission Pinball Framework v0.81.0.dev2', 'prev_value': None, 'change': True}
+2026-06-02 01:53:53,208 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'Mission Pinball Framework v0.81.0.dev2, Config version:6, Show version: 6, BCP version:1.1', 'prev_value': None, 'change': True}
+2026-06-02 01:53:53,208 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.12.9', 'prev_value': None, 'change': True}
+2026-06-02 01:53:53,235 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'macOS-26.3-arm64-arm-64bit', 'prev_value': None, 'change': True}
+2026-06-02 01:53:53,235 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Darwin', 'prev_value': None, 'change': True}
+2026-06-02 01:53:53,235 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '25.3.0', 'prev_value': None, 'change': True}
+2026-06-02 01:53:53,235 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': 'Darwin Kernel Version 25.3.0: Wed Jan 28 20:53:01 PST 2026; root:xnu-12377.81.4~5/RELEASE_ARM64_T8103', 'prev_value': None, 'change': True}
+2026-06-02 01:53:53,235 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'arm64', 'prev_value': None, 'change': True}
+2026-06-02 01:53:53,235 : INFO : EventManager : Event: ======'machine_var_log_file_path'====== Args={'value': '/Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB/logs/2026-06-02-01-53-53-mpf-macbook-air-de-guillaume1.home.log', 'prev_value': None, 'change': True}
+2026-06-02 01:53:53,235 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2026-06-02 01:53:53,250 : ERROR : asyncio : Task exception was never retrieved
+future: <Task finished name='Task-97' coro=<SystemWideDevice.device_added_system_wide() done, defined at /Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/system_wide_device.py:15> exception=ConfigFileError('Configuration error in bd_bras_rotatif ball device. Device needs an eject_coil, a hold_coil, or "mechanical_eject: True"')>
+Traceback (most recent call last):
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/system_wide_device.py", line 17, in device_added_system_wide
+    await self._initialize()
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/devices/ball_device/ball_device.py", line 90, in _initialize
+    self._configure_targets()
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/devices/ball_device/ball_device.py", line 365, in _configure_targets
+    self._validate_config()
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/devices/ball_device/ball_device.py", line 310, in _validate_config
+    self.raise_config_error('Configuration error in {} ball device. '
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/logging.py", line 175, in raise_config_error
+    raise ConfigFileError(msg, error_no, self.log.name if self.log else "", context, self._url_base) \
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in ball_device.bd_bras_rotatif: Configuration error in bd_bras_rotatif ball device. Device needs an eject_coil, a hold_coil, or "mechanical_eject: True" Error Code: CFE-ball_device-4 (https://missionpinball.org/latest/logs)
+2026-06-02 01:53:53,252 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2026-06-02 01:53:53,252 : INFO : Machine : Starting the main run loop with active modes: []
+2026-06-02 01:53:53,252 : WARNING : Machine : Attract mode is not active, game will not be playable. Please check your attract mode configuration.
+2026-06-02 01:53:53,252 : INFO : Machine : Shutting down...
+2026-06-02 01:53:53,252 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2026-06-02 01:53:53,252 : INFO : SwitchController : Found active switch: ('1-0-40', <Platform.SmartVirtual>) <switch.s_trough1>
+2026-06-02 01:53:53,252 : INFO : SwitchController : Found active switch: ('1-0-41', <Platform.SmartVirtual>) <switch.s_trough2>
+2026-06-02 01:53:53,252 : INFO : SwitchController : Found active switch: ('1-0-42', <Platform.SmartVirtual>) <switch.s_trough3>
+2026-06-02 01:53:53,252 : INFO : SwitchController : Found active switch: ('1-0-43', <Platform.SmartVirtual>) <switch.s_trough4>
+2026-06-02 01:53:53,254 : INFO : EventManager : Event: ======'bcp_connection_attempt'====== Args={'name': 'local_display', 'host': 'localhost', 'port': 5050}
+2026-06-02 01:53:53,256 : ERROR : asyncio : Exception in callback EventManager.process_event_queue()
+handle: <Handle EventManager.process_event_queue()>
+Traceback (most recent call last):
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/events.py", line 755, in _run_handlers
+    result = handler.callback(**merged_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/text_ui.py", line 459, in _bcp_connection_attempt
+    self._pending_bcp_connection = PopUpDialog(self.screen,
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/asciimatics/widgets/popupdialog.py", line 39, in __init__
+    string_len = wcswidth if screen.unicode_aware else len
+                             ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'unicode_aware'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/events.py", line 846, in process_event_queue
+    self._process_event(event=event[0],
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/events.py", line 808, in _process_event
+    result = self._run_handlers(event, ev_type, kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/events.py", line 757, in _run_handlers
+    raise EventHandlerException(
+mpf.core.events.EventHandlerException: Exception while processing RegisteredHandler(callback=<bound method TextUi._bcp_connection_attempt of <mpf.core.text_ui.TextUi object at 0x106c47220>>, priority=1, kwargs={}, key=UUID('c3024410-1028-4f7b-bccd-c1a008b54470'), condition=None, blocking_facility=None) for event bcp_connection_attempt. 'NoneType' object has no attribute 'unicode_aware'
+2026-06-02 01:53:53,259 : INFO : BCPClientSocket : Connecting BCP to 'local_display' at localhost:5050...
+2026-06-02 01:53:54,254 : ERROR : Machine : Runtime Exception
+Traceback (most recent call last):
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/machine.py", line 810, in _run_loop
+    raise self._exception['exception']
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/system_wide_device.py", line 17, in device_added_system_wide
+    await self._initialize()
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/devices/ball_device/ball_device.py", line 90, in _initialize
+    self._configure_targets()
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/devices/ball_device/ball_device.py", line 365, in _configure_targets
+    self._validate_config()
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/devices/ball_device/ball_device.py", line 310, in _validate_config
+    self.raise_config_error('Configuration error in {} ball device. '
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/logging.py", line 175, in raise_config_error
+    raise ConfigFileError(msg, error_no, self.log.name if self.log else "", context, self._url_base) \
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in ball_device.bd_bras_rotatif: Configuration error in bd_bras_rotatif ball device. Device needs an eject_coil, a hold_coil, or "mechanical_eject: True" Error Code: CFE-ball_device-4 (https://missionpinball.org/latest/logs)
+2026-06-02 01:53:54,255 : INFO : root : MPF run loop ended.

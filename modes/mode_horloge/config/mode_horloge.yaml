@@ -4,6 +4,24 @@ mode:
   start_events: mode_horloge_started
   priority: 500
 
++++++ A METTRE DANS LE FICHIER CONFIG SI JE CHANGE D'AVIS +++++
+
+  # Broche COIL CobraPin reliée à la pin DIR du TMC2209 du moteur de l'horloge
+  c_horloge_dir:
+    number: 1-0-1
+
+# Broche COIL CobraPin reliée à la pin STEP du TMC2209 du moteur de l'horloge
+steppers:
+  moteur_horloge:
+    number: 1-0-2
+    direction_pin: c_horloge_dir
+    homing_speed: 10
+    move_speed: 150               # Vitesse max de l'emballement
+    acceleration: 600             # Démarrage rapide lors du choc
+    deceleration: 150             # Décélération basse pour un arrêt progressif ("effet cinéma"
+
+    +++++ +++++
+
 # On analyse le nombre d'impulsions reçues dans une fenêtre de tir très courte
 counters:
   analyseur_force_choc:

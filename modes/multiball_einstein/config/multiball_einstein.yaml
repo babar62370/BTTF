@@ -4,34 +4,39 @@ mode:
   start_events: ball_started
   priority: 500
 
-# 1. Progression de la difficulté pour allumer le Lock (inchangé)
+# 1. Compteur de tirs standard
 counters:
   compteur_tirs_einstein:
     count_events: s_lane_cafe_einstein_active
-    value_list: 3, 6, 9, 12
-    events_when_complete: activer_deviateur_einstein
+    count_complete_value: 3
+    events_when_complete: einstein_palier_atteint
     persist_state: true
-    reset_on_complete: false
+    reset_on_complete: true
 
-# 2. Logique de verrouillage physique pour les 3 slots
+# 2. Gestion dynamique de la progression des paliers et des actions de sécurité
+event_player:
+  einstein_palier_atteint{device.counters.compteur_tirs_einstein.value == 3}:
+    - activer_deviateur_einstein
+  einstein_palier_atteint{device.counters.compteur_tirs_einstein.value == 6}:
+    - activer_deviateur_einstein
+  einstein_palier_atteint{device.counters.compteur_tirs_einstein.value == 9}:
+    - activer_deviateur_einstein
+  einstein_palier_atteint{device.counters.compteur_tirs_einstein.value == 12}:
+    - activer_deviateur_einstein
+  
+  # Sécurités du déviateur déplacées ici sous forme d'événements standards
+  multiball_lock_lock_einstein_full: desactiver_deviateur_bras
+  mode_multiball_einstein_started: desactiver_deviateur_bras
+
+# 3. Logique de verrouillage physique pour les 3 slots
 multiball_locks:
   lock_einstein:
-    ball_device: bd_bras_rotatif
-    balls_to_lock: 3                            # On veut bloquer 3 billes au total
-    lock_events: s_lane_cafe_einstein_active    # Le tir dans le café valide le lock
-    reset_on_multiball: true
+    lock_devices: bd_bras_rotatif
+    balls_to_lock: 3                            
 
-# 3. Déclenchement de la multibille à 3 billes
+# 4. Déclenchement de la multibille à 3 billes
 multiballs:
   multiball_einstein:
     ball_count: 3
-    ball_locks: lock_einstein
-    start_events: multiball_lock_lock_einstein_full # Se lance quand les 3 switchs de slot sont activés
-
-  multiball_lock_lock_einstein_full:            # Dès que la 3e bille entre, on ferme !
-    diverter: c_deviateur_bras_actuate
-    action: deactivate
-
-  mode_multiball_einstein_started:              # Sécurité vis-à-vis du lancement du multiball
-    diverter: c_deviateur_bras_actuate
-    action: deactivate
+    ball_locks: bd_bras_rotatif                 
+    start_events: multiball_lock_lock_einstein_full
