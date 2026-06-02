@@ -24,3 +24,6 @@ theme_override_font_sizes/font_size = 77
 text = "RETOUR VERS LE FUTUR..."
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="AudioStreamPlayerM" type="AudioStreamPlayer" parent="." unique_id=2016224634]
+bus = &"music"
