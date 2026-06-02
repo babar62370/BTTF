@@ -8,24 +8,15 @@ mode:
   stop_events: ball_will_end
   priority: 100
 
-# Sauvegarde de bille (Évite de perdre instantanément la bille au lanceur)
-ball_saves:
-  default_ball_save:
-    active_time: 10s
-    hurry_up_time: 2s
-    grace_period: 1s
-    start_events: ball_started
-    auto_launch: true
-
 # Gestion des scores de base (Exemples pour valider que le mode tourne)
-variable_player:
-  s_left_slingshot_active:
-    score: 100
-  s_right_slingshot_active:
-    score: 100
-  s_lower_jet_active:
-    score: 500
-  s_left_jet_active:
-    score: 500
-  s_right_jet_active:
-    score: 500
+# variable_player:
+  # s_left_slingshot_active:
+    # score: 100
+  # s_right_slingshot_active:
+    # score: 100
+  # s_lower_jet_active:
+    # score: 500
+  # s_left_jet_active:
+    # score: 500
+  # s_right_jet_active:
+    # score: 500
