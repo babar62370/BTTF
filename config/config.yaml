@@ -1,34 +1,30 @@
 #config_version=6
 
 ## MPF Main Machine Config File
-#
-# This file defines your system-wide properties like switches,
-# drivers, ball devices, hardware platforms, and more. You can
-# include everything here, or create sub-config files to be
-# imported and merged with this one.
-
-#CobraPin
 
 modes:
   - attract
-  # ATTRACT. C'est le mode "sommeil" du flipper quand personne ne joue.
-  # Il gère le défilement des lumières sur le plateau,
-  # l'affichage sur l'écran qui dit "Appuyez sur Start",
-  # et attend que le joueur lance une partie.
   - base
-  # BASE. Dès qu'un joueur appuie sur Start, le mode attract s'arrête et le mode base se lance.
-  # C'est lui qui gère le déroulement d'une partie classique.
   - einstein_multiball
-  # MULTIBALL EINSTEIN. C'est un mode qui gère une multibille à 3 billes, déclenchée par le bras rotatif.
 
 hardware:
   platform: opp
   driverboards: cobrapin
 
 opp:
-  ports: /dev/tty.usbmodem568441744C001, /dev/tty.usbmodem5683416F4C001
-  # SI SUR MINI-PC = ports: COM4, COM3
-  # SI SUR MAC = ports: /dev/tty.usbmodem568441744C001, /dev/tty.usbmodem5683416F4C001
+  ports: 
+  - /dev/tty.usbmodem568441744C001
+  - /dev/tty.usbmodem5683416F4C001
+
+# displays:
+  # DefaultDisplay:
+  # width: 1920
+  # height: 1080
+  # fps: 75
+#
+# sound_pools:
+  # music:
+  # folder: music
 
 psus:
   default:
@@ -41,31 +37,26 @@ switches:
   s_right_flipper:
     number: 0-0-2
     tags: right_flipper
-
   s_start:
     number: 0-0-3
     tags: start
-
   s_trough5:
     number: 0-0-8
-  s_trough_jam:     # OPTO
+  s_trough_jam:
     number: 0-0-9
     type: NC
   s_plunger:
     number: 0-0-10
-
   s_left_slingshot:
     number: 0-0-11
   s_right_slingshot:
     number: 0-0-27
-
   s_lower_jet:
     number: 0-0-26
   s_left_jet:
     number: 0-0-25
   s_right_jet:
     number: 0-0-24
-
   s_left_popper:
     number: 0-0-19
   s_right_popper:
@@ -73,27 +64,27 @@ switches:
   s_top_popper:
     number: 0-0-17
 
-  # OPTOS:
+  # OPTOS
   s_ramp_1985_entree:
     number: 0-0-16
     type: NC
   s_ramp_hotel_de_ville:
-    number: 1-0-2
+    number: 1-0-1
     type: NC
   s_horloge:
-    number: 1-0-3
+    number: 1-0-2
     type: NC
   s_ramp_2015_lower:
-    number: 1-0-8
+    number: 1-0-3
     type: NC
   s_ramp_marty_lower:
-    number: 1-0-9
+    number: 1-0-8
     type: NC
   s_ramp_george:
-    number: 1-0-10
+    number: 1-0-9
     type: NC
   s_ramp_bttf:
-    number: 1-0-11
+    number: 1-0-10
     type: NC  
 
   s_left_inlane:
@@ -219,52 +210,43 @@ switches:
     tags: playfield_active
 
 coils:
-  # === CÔTÉ GAUCHE ===
   c_flipper_left_main:
     number: 0-0-8
     default_pulse_ms: 15
     default_hold_power: 0.125
-    allow_enable: true        # Autorise le maintien par PWM
-
+    allow_enable: true
   c_flipper_left_mini_main:
     number: 0-0-9
     default_pulse_ms: 10
     default_hold_power: 0.10
     allow_enable: true
-
-  # === CÔTÉ DROIT ===
   c_flipper_right_bas_main:
     number: 0-0-10
     default_pulse_ms: 12
     default_hold_power: 0.125
     allow_enable: true
-
   c_flipper_right_haut_main:
     number: 0-0-11
     default_pulse_ms: 10
     default_hold_power: 0.10
     allow_enable: true
-
   c_flipper_right_mini_main:
     number: 0-0-0
     default_pulse_ms: 10
     default_hold_power: 0.10
     allow_enable: true
-
   c_trough_eject:
     number: 0-0-12
     default_pulse_ms: 20
   c_plunger_eject:
     number: 0-0-13
     default_pulse_ms: 25
-
   c_left_slingshot:
     number: 0-0-14
     default_pulse_ms: 10
   c_right_slingshot:
     number: 0-0-15
     default_pulse_ms: 10
-
   c_lower_jet_bumper:
     number: 0-0-7
     default_pulse_ms: 10
@@ -274,7 +256,6 @@ coils:
   c_right_jet_bumper:
     number: 0-0-5
     default_pulse_ms: 10
-
   c_left_popper:
     number: 0-0-4
     default_pulse_ms: 20
@@ -287,11 +268,9 @@ coils:
   c_top_popper:
     number: 0-0-1
     default_pulse_ms: 20
-
-  # Bobine virtuelle pour le bras rotatif, qui n'a pas de bobine d'éjection physique dédiée
   c_eject_bras_virtual:
-    number: 1               # Un numéro simple (pas de préfixe hardware réel)
-    platform: virtual       # <-- MAGIE : MPF ne cherchera JAMAIS cette bobine sur la CobraPin
+    number: 1
+    platform: virtual
     default_pulse_ms: 20
 
 autofire_coils:
@@ -301,7 +280,6 @@ autofire_coils:
   right_slingshot:
     coil: c_right_slingshot
     switch: s_right_slingshot
-
   lower_jet:
     coil: c_lower_jet_bumper
     switch: s_lower_jet
@@ -317,9 +295,8 @@ diverters:
     activation_coil: c_deviateur_bras_actuate
     type: pulse
     activate_events: multiball_lock_lock_einstein_enabled
-    disable_events: multiball_lock_lock_einstein_disabled                                     # 'hold' pour qu'il reste ouvert tant qu'on lui demande
+    disable_events: multiball_lock_lock_einstein_disabled
 
-# DERNIER COMMUTATEUR POUR SWITCH 1-0-X POUR LE SERVO
 servos:
   servo_bras_einstein:
     number: 1-0-11
@@ -335,54 +312,42 @@ servo_controllers:
     control_events:
       - event: start_multiball_einstein
         position: 0.8
-      - event: c_eject_bras_virtual_pulsed      # <-- Dès que MPF "active" la bobine virtuelle, le servo tourne !
+      - event: c_eject_bras_virtual_pulsed
         position: 0.8
       - event: multiball_einstein_ended
         position: 0.2
-      - event: balldevice_bd_bras_rotatif_ball_ejected # Dès que MPF voit qu'une bille a bien quitté les switchs
+      - event: balldevice_bd_bras_rotatif_ball_ejected
         position: 0.2
 
 flippers:
-  # === CONFIGURATION GAUCHE ===
   left_flipper_main:
     main_coil: c_flipper_left_main
     activation_switch: s_left_flipper
     enable_events: machine_reset_phase_3
-
   left_flipper_mini:
     main_coil: c_flipper_left_mini_main
     activation_switch: s_left_flipper
     enable_events: machine_reset_phase_3
-
-  # === CONFIGURATION DROITE ===
   right_flipper_bas:
     main_coil: c_flipper_right_bas_main
     activation_switch: s_right_flipper
     enable_events: machine_reset_phase_3
-
   right_flipper_haut:
     main_coil: c_flipper_right_haut_main
     activation_switch: s_right_flipper
     enable_events: machine_reset_phase_3
-
   right_flipper_mini:
     main_coil: c_flipper_right_mini_main
     activation_switch: s_right_flipper
     enable_events: machine_reset_phase_3
 
 machine:
-  balls_installed: 5 #How many balls are physically in your game
-  min_balls: 5 #How few balls can be accounted for before you can start a game
+  balls_installed: 5
+  min_balls: 5
 
 game:
   balls_per_game: 5
   max_players: 4
-
-displays:
-  window:
-    width: 1920
-    height: 1080
-    fps: 75
 
 virtual_platform_start_active_switches: s_trough1, s_trough2, s_trough3, s_trough4, s_trough5
 
@@ -403,29 +368,20 @@ ball_devices:
     eject_timeouts: 5s
     eject_coil: c_plunger_eject
     player_controlled_eject_event: sw_launch
-
   bd_left_vuk:
-    # Un VUK (Vertical Up Kicker) est un dispositif qui peut éjecter une bille vers le haut.
-    # Il a un switch pour détecter la présence de la bille, et une bobine pour l'éjecter.
     ball_switches: s_left_popper
     eject_coil: c_left_popper
     eject_timeouts: 2s
-
   bd_right_vuk:
     ball_switches: s_right_popper
     eject_coil: c_right_popper
     eject_timeouts: 2s
     eject_targets: playfield
-
-  # Le VUK de la rampe
   bd_upper_vuk:
-    ball_switches: s_top_popper         # Le switch au fond du trou du VUK
-    eject_coil: c_top_popper            # La bobine qui pousse la bille dans le tunnel vertical
+    ball_switches: s_top_popper
+    eject_coil: c_top_popper
     eject_timeouts: 2s
-    # Evite que la bobine ne grille si la bille a du mal à monter
-    eject_targets: bd_bras_rotatif      # Destination : le bras rotatif !
-
-  # Le Bras Rotatif complet (Tunnel + Partie horizontale)
+    eject_targets: bd_bras_rotatif
   bd_bras_rotatif:
     tags: lock
     ball_switches: s_bras_slot1, s_bras_slot2, s_bras_slot3

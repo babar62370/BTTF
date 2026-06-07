@@ -8,4 +8,4 @@ extends LoggingNode
 var mpf: MPFGMC
 
 func _init(mpf_gmc) -> void:
-    self.mpf = mpf_gmc
+	self.mpf = mpf_gmc

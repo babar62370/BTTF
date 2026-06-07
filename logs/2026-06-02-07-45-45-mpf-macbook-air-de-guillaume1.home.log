@@ -136,3 +136,6 @@
 2026-06-02 07:45:46,548 : INFO : EventManager : Event: ======'collecting_balls_complete'====== Args={}
 2026-06-02 07:45:46,548 : INFO : EventManager : Event: ======'reset_complete'====== Args={}
 2026-06-02 07:45:46,549 : INFO : Machine : Starting the main run loop with active modes: [<Mode.attract>]
+2026-06-02 07:55:07,483 : INFO : Machine : Shutting down...
+2026-06-02 07:55:07,484 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2026-06-02 07:55:07,487 : INFO : root : MPF run loop ended.

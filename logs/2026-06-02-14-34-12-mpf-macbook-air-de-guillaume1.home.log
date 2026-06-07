@@ -1,0 +1,5 @@
+2026-06-02 14:34:12,143 : INFO : root : Loading config.
+2026-06-02 14:34:12,145 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2026-06-02 14:34:12,146 : INFO : ConfigProcessor : Loading config from file /Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/mpfconfig.yaml.
+2026-06-02 14:34:12,152 : INFO : ConfigProcessor : Loading config: /Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/mpfconfig.yaml
+2026-06-02 14:34:12,152 : INFO : ConfigProcessor : Loading config from file /Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB/config/config.yaml.

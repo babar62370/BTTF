@@ -1,5 +1,5 @@
 # config_version=6
-
-slides:
-  attract:
-    file: slides/attract.tscn
+#
+#slides:
+  #attract:
+    #file: slides/attract.tscn

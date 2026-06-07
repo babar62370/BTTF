@@ -10,16 +10,15 @@ metadata/_custom_type_script = "uid://dru3usokwlhd3"
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=523241434]
 layout_mode = 0
-offset_right = 1280.0
-offset_bottom = 1024.0
+offset_right = 1920.0
+offset_bottom = 1080.0
 color = Color(0.96862745, 0.28235295, 0.007843138, 1)
 
 [node name="Label" type="Label" parent="ColorRect" unique_id=646680596]
 layout_mode = 0
-offset_left = -2.0
-offset_top = 398.0
-offset_right = 1278.0
-offset_bottom = 585.0
+offset_top = 438.0
+offset_right = 1920.0
+offset_bottom = 625.0
 theme_override_font_sizes/font_size = 77
 text = "RETOUR VERS LE FUTUR..."
 horizontal_alignment = 1
