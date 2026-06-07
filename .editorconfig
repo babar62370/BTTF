@@ -2,3 +2,11 @@ root = true
 
 [*]
 charset = utf-8
+# G AJOUTE TOUT CE QUI SUIT POUR EVITER QUE LES TABULATIONS SOIENT REINTRODUITES DANS LES YAML, SI BESOIN SUPPRIMER
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = false
+
+[*.{yaml,yml}]
+indent_style = space
+indent_size = 2
