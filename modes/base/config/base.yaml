@@ -8,6 +8,16 @@ mode:
   stop_events: ball_will_end
   priority: 100
 
+sound_player:
+  mode_attract_started:
+    power_of_love:
+      bus: music
+
+slide_player:
+  mode_base_started:
+    base_infos:
+      action: play
+
 # Gestion des scores de base (Exemples pour valider que le mode tourne)
 # variable_player:
   # s_left_slingshot_active:
