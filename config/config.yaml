@@ -2,6 +2,12 @@
 
 ## MPF Main Machine Config File
 
+# config_monitor:
+  # enabled: false
+
+# mpf:
+  # config_cache: false
+
 modes:
   - attract
   - base

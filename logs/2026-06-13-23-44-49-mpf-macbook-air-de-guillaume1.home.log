@@ -1,0 +1,8 @@
+2026-06-13 23:44:49,015 : INFO : root : Loading config.
+2026-06-13 23:44:49,036 : INFO : ConfigProcessor : Config spec file cache created: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/config_spec.mpf_cache
+2026-06-13 23:44:49,036 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2026-06-13 23:44:49,037 : WARNING : ConfigProcessor : Config file in cache changed: /Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/mpfconfig.yaml
+2026-06-13 23:44:49,037 : INFO : ConfigProcessor : Loading config from file /Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/mpfconfig.yaml.
+2026-06-13 23:44:49,041 : INFO : ConfigProcessor : Loading config: /Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/mpfconfig.yaml
+2026-06-13 23:44:49,041 : INFO : ConfigProcessor : Loading config from file /Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB/config/config.yaml.
+2026-06-13 23:44:49,046 : INFO : ConfigProcessor : Loading config: /Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB/config/config.yaml

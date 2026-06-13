@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_qqsk2"]
 [ext_resource type="Texture2D" uid="uid://i12rjdolc88g" path="res://Page 1.png" id="2_ha116"]
+[ext_resource type="AudioStream" uid="uid://8238u6w8mmsy" path="res://sounds/music/power_of_love.mp3" id="3_d8l0k"]
 
 [node name="BaseInfos" type="Control" unique_id=669278098]
 layout_mode = 3
@@ -16,3 +17,5 @@ offset_bottom = 1080.0
 texture = ExtResource("2_ha116")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=2127697789]
+stream = ExtResource("3_d8l0k")
+bus = &"music"
