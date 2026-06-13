@@ -1,0 +1,12 @@
+2026-06-13 17:20:04,917 : INFO : root : Loading config.
+2026-06-13 17:20:04,920 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2026-06-13 17:20:04,920 : WARNING : ConfigProcessor : Config file in cache changed: /Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB/config/config.yaml
+2026-06-13 17:20:04,920 : INFO : ConfigProcessor : Loading config from file /Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/mpfconfig.yaml.
+2026-06-13 17:20:04,927 : INFO : ConfigProcessor : Loading config: /Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/mpfconfig.yaml
+2026-06-13 17:20:04,927 : INFO : ConfigProcessor : Loading config from file /Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB/config/config.yaml.
+2026-06-13 17:20:04,931 : INFO : ConfigProcessor : Loading config: /Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB/config/config.yaml
+2026-06-13 17:20:04,932 : INFO : ConfigProcessor : Config file cache created: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/888a835b5fde052b87252136c50b804e.mpf_cache
+2026-06-13 17:20:04,985 : WARNING : ConfigProcessor : Config file in cache changed: /Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB/modes/attract/config/attract.yaml
+2026-06-13 17:20:04,985 : INFO : ConfigProcessor : Loading config from file /Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/modes/attract/config/attract.yaml.
+2026-06-13 17:20:04,986 : INFO : ConfigProcessor : Loading config: /Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/modes/attract/config/attract.yaml
+2026-06-13 17:20:04,986 : INFO : ConfigProcessor : Loading config from file /Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB/modes/attract/config/attract.yaml.

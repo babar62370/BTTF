@@ -4,9 +4,11 @@
 # whenever a game is started, and re-starts after the game ends.
 
 slide_player:
-  mode_attract_started: attract
+  mode_attract_started:
+    attract:
+      target: DefaultDisplay
 
 sound_player:
   mode_attract_started:
-	theme_bttf:
-	  bus: music
+    theme_bttf:
+      bus: music

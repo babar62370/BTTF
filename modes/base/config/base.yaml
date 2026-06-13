@@ -8,15 +8,15 @@ mode:
   stop_events: ball_will_end
   priority: 100
 
-sound_player:
-  mode_attract_started:
-    power_of_love:
-      bus: music
-
 slide_player:
   mode_base_started:
     base_infos:
-      action: play
+      target: DefaultDisplay
+
+sound_player:
+  mode_base_started:
+    power_of_love:
+      bus: music
 
 # Gestion des scores de base (Exemples pour valider que le mode tourne)
 # variable_player:
