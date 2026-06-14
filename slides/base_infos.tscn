@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_qqsk2"]
 [ext_resource type="Texture2D" uid="uid://i12rjdolc88g" path="res://Page 1.png" id="2_ha116"]
 [ext_resource type="AudioStream" uid="uid://8238u6w8mmsy" path="res://sounds/music/power_of_love.mp3" id="3_d8l0k"]
+[ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="4_tve0m"]
 
 [node name="BaseInfos" type="Control" unique_id=669278098]
 layout_mode = 3
@@ -19,3 +20,14 @@ texture = ExtResource("2_ha116")
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=2127697789]
 stream = ExtResource("3_d8l0k")
 bus = &"music"
+
+[node name="MPFVariable" type="Label" parent="." unique_id=1218815169]
+layout_mode = 0
+offset_left = 921.0
+offset_top = 54.0
+offset_right = 1875.0
+offset_bottom = 176.0
+script = ExtResource("4_tve0m")
+variable_name = "score"
+template_string = "%s"
+metadata/_custom_type_script = "uid://bfvhmv2eirpua"

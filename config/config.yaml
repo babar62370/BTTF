@@ -2,12 +2,6 @@
 
 ## MPF Main Machine Config File
 
-# config_monitor:
-  # enabled: false
-
-# mpf:
-  # config_cache: false
-
 modes:
   - attract
   - base
@@ -19,336 +13,332 @@ hardware:
 
 opp:
   ports:
-    - /dev/tty.usbmodem568441744C001
-    - /dev/tty.usbmodem5683416F4C001
+	- /dev/tty.usbmodem568441744C001
+	- /dev/tty.usbmodem5683416F4C001
 
 displays:
   DefaultDisplay:
-    width: 1920
-    height: 1080
-    fps: 75
-
-# sound_pools:
-#   music:
-#     folder: music
+	width: 1920
+	height: 1080
+	fps: 75
 
 psus:
   default:
-    release_wait_ms: 50
+	release_wait_ms: 50
 
 switches:
   s_left_flipper:
-    number: 0-0-1
-    tags: left_flipper
+	number: 0-0-1
+	tags: left_flipper
   s_right_flipper:
-    number: 0-0-2
-    tags: right_flipper
+	number: 0-0-2
+	tags: right_flipper
   s_start:
-    number: 0-0-3
-    tags: start
+	number: 0-0-3
+	tags: start
   s_trough5:
-    number: 0-0-8
+	number: 0-0-8
   s_trough_jam:
-    number: 0-0-9
-    type: NC
+	number: 0-0-9
+	type: NC
   s_plunger:
-    number: 0-0-10
+	number: 0-0-10
   s_left_slingshot:
-    number: 0-0-11
+	number: 0-0-11
   s_right_slingshot:
-    number: 0-0-27
+	number: 0-0-27
   s_lower_jet:
-    number: 0-0-26
+	number: 0-0-26
   s_left_jet:
-    number: 0-0-25
+	number: 0-0-25
   s_right_jet:
-    number: 0-0-24
+	number: 0-0-24
   s_left_popper:
-    number: 0-0-19
+	number: 0-0-19
   s_right_popper:
-    number: 0-0-18
+	number: 0-0-18
   s_top_popper:
-    number: 0-0-17
+	number: 0-0-17
 
   # OPTOS
   s_ramp_1985_entree:
-    number: 0-0-16
-    type: NC
+	number: 0-0-16
+	type: NC
   s_ramp_hotel_de_ville:
-    number: 1-0-1
-    type: NC
+	number: 1-0-1
+	type: NC
   s_horloge:
-    number: 1-0-2
-    type: NC
+	number: 1-0-2
+	type: NC
   s_ramp_2015_lower:
-    number: 1-0-3
-    type: NC
+	number: 1-0-3
+	type: NC
   s_ramp_marty_lower:
-    number: 1-0-8
-    type: NC
+	number: 1-0-8
+	type: NC
   s_ramp_george:
-    number: 1-0-9
-    type: NC
+	number: 1-0-9
+	type: NC
   s_ramp_bttf:
-    number: 1-0-10
-    type: NC
+	number: 1-0-10
+	type: NC
 
   s_left_inlane:
-    number: 1-0-32
-    tags: playfield_active
+	number: 1-0-32
+	tags: playfield_active
   s_left_outlane:
-    number: 1-0-33
-    tags: playfield_active
+	number: 1-0-33
+	tags: playfield_active
   s_target_plutonium:
-    number: 1-0-34
-    tags: playfield_active
+	number: 1-0-34
+	tags: playfield_active
   s_1955_lane:
-    number: 1-0-35
-    tags: playfield_active
+	number: 1-0-35
+	tags: playfield_active
   s_bank_dmc_lower:
-    number: 1-0-36
-    tags: playfield_active
+	number: 1-0-36
+	tags: playfield_active
   s_bank_dmc_middle:
-    number: 1-0-37
-    tags: playfield_active
+	number: 1-0-37
+	tags: playfield_active
   s_bank_dmc_upper:
-    number: 1-0-38
-    tags: playfield_active
+	number: 1-0-38
+	tags: playfield_active
   s_entree_souterrain:
-    number: 1-0-39
-    tags: playfield_active
+	number: 1-0-39
+	tags: playfield_active
 
   s_trough1:
-    number: 1-0-40
+	number: 1-0-40
   s_trough2:
-    number: 1-0-41
+	number: 1-0-41
   s_trough3:
-    number: 1-0-42
+	number: 1-0-42
   s_trough4:
-    number: 1-0-43
+	number: 1-0-43
   s_right_outlane:
-    number: 1-0-44
-    tags: playfield_active
+	number: 1-0-44
+	tags: playfield_active
   s_right_inlane:
-    number: 1-0-45
-    tags: playfield_active
+	number: 1-0-45
+	tags: playfield_active
   s_ramp_1955:
-    number: 1-0-46
-    tags: playfield_active
+	number: 1-0-46
+	tags: playfield_active
   s_ramp_1985_sortie:
-    number: 1-0-47
-    tags: playfield_active
+	number: 1-0-47
+	tags: playfield_active
 
   s_lane_1885:
-    number: 1-0-48
-    tags: playfield_active
+	number: 1-0-48
+	tags: playfield_active
   s_target_hill_valley:
-    number: 1-0-49
-    tags: playfield_active
+	number: 1-0-49
+	tags: playfield_active
   s_lane_cafe_einstein:
-    number: 1-0-50
-    tags: playfield_active
+	number: 1-0-50
+	tags: playfield_active
   s_lane_einstein_upper:
-    number: 1-0-51
-    tags: playfield_active
+	number: 1-0-51
+	tags: playfield_active
   s_bras_slot1:
-    number: 1-0-52
+	number: 1-0-52
   s_bras_slot2:
-    number: 1-0-53
+	number: 1-0-53
   s_bras_slot3:
-    number: 1-0-54
+	number: 1-0-54
 
   s_spinner_almanach:
-    number: 1-0-56
-    tags: playfield_active
+	number: 1-0-56
+	tags: playfield_active
   s_lane_biff:
-    number: 1-0-57
-    tags: playfield_active
+	number: 1-0-57
+	tags: playfield_active
   s_lane_doc_lower:
-    number: 1-0-58
-    tags: playfield_active
+	number: 1-0-58
+	tags: playfield_active
   s_lane_doc_upper:
-    number: 1-0-59
-    tags: playfield_active
+	number: 1-0-59
+	tags: playfield_active
   s_lane_horloge:
-    number: 1-0-60
-    tags: playfield_active
+	number: 1-0-60
+	tags: playfield_active
   s_target_foudre:
-    number: 1-0-61
-    tags: playfield_active
+	number: 1-0-61
+	tags: playfield_active
 
   s_target_overboard:
-    number: 1-0-64
-    tags: playfield_active
+	number: 1-0-64
+	tags: playfield_active
   s_bank_doc_lower:
-    number: 1-0-65
-    tags: playfield_active
+	number: 1-0-65
+	tags: playfield_active
   s_bank_doc_middle:
-    number: 1-0-66
-    tags: playfield_active
+	number: 1-0-66
+	tags: playfield_active
   s_bank_doc_upper:
-    number: 1-0-67
-    tags: playfield_active
+	number: 1-0-67
+	tags: playfield_active
   s_ramp_2015_upper:
-    number: 1-0-68
-    tags: playfield_active
+	number: 1-0-68
+	tags: playfield_active
 
   s_lane_marty_lower:
-    number: 1-0-72
-    tags: playfield_active
+	number: 1-0-72
+	tags: playfield_active
   s_lane_marty_upper:
-    number: 1-0-73
-    tags: playfield_active
+	number: 1-0-73
+	tags: playfield_active
   s_ramp_marty_upper:
-    number: 1-0-74
-    tags: playfield_active
+	number: 1-0-74
+	tags: playfield_active
   s_spinner_lorraine:
-    number: 1-0-75
-    tags: playfield_active
+	number: 1-0-75
+	tags: playfield_active
   s_lane_lorraine:
-    number: 1-0-76
-    tags: playfield_active
+	number: 1-0-76
+	tags: playfield_active
   s_lane_marvin:
-    number: 1-0-77
-    tags: playfield_active
+	number: 1-0-77
+	tags: playfield_active
   s_lane_guitar:
-    number: 1-0-78
-    tags: playfield_active
+	number: 1-0-78
+	tags: playfield_active
 
   s_tilt:
-    number: 1-0-80
+	number: 1-0-80
 
 coils:
   c_flipper_left_main:
-    number: 0-0-8
-    default_pulse_ms: 15
-    default_hold_power: 0.125
-    allow_enable: true
+	number: 0-0-8
+	default_pulse_ms: 15
+	default_hold_power: 0.125
+	allow_enable: true
   c_flipper_left_mini_main:
-    number: 0-0-9
-    default_pulse_ms: 10
-    default_hold_power: 0.10
-    allow_enable: true
+	number: 0-0-9
+	default_pulse_ms: 10
+	default_hold_power: 0.10
+	allow_enable: true
   c_flipper_right_bas_main:
-    number: 0-0-10
-    default_pulse_ms: 12
-    default_hold_power: 0.125
-    allow_enable: true
+	number: 0-0-10
+	default_pulse_ms: 12
+	default_hold_power: 0.125
+	allow_enable: true
   c_flipper_right_haut_main:
-    number: 0-0-11
-    default_pulse_ms: 10
-    default_hold_power: 0.10
-    allow_enable: true
+	number: 0-0-11
+	default_pulse_ms: 10
+	default_hold_power: 0.10
+	allow_enable: true
   c_flipper_right_mini_main:
-    number: 0-0-0
-    default_pulse_ms: 10
-    default_hold_power: 0.10
-    allow_enable: true
+	number: 0-0-0
+	default_pulse_ms: 10
+	default_hold_power: 0.10
+	allow_enable: true
   c_trough_eject:
-    number: 0-0-12
-    default_pulse_ms: 20
+	number: 0-0-12
+	default_pulse_ms: 20
   c_plunger_eject:
-    number: 0-0-13
-    default_pulse_ms: 25
+	number: 0-0-13
+	default_pulse_ms: 25
   c_left_slingshot:
-    number: 0-0-14
-    default_pulse_ms: 10
+	number: 0-0-14
+	default_pulse_ms: 10
   c_right_slingshot:
-    number: 0-0-15
-    default_pulse_ms: 10
+	number: 0-0-15
+	default_pulse_ms: 10
   c_lower_jet_bumper:
-    number: 0-0-7
-    default_pulse_ms: 10
+	number: 0-0-7
+	default_pulse_ms: 10
   c_left_jet_bumper:
-    number: 0-0-6
-    default_pulse_ms: 10
+	number: 0-0-6
+	default_pulse_ms: 10
   c_right_jet_bumper:
-    number: 0-0-5
-    default_pulse_ms: 10
+	number: 0-0-5
+	default_pulse_ms: 10
   c_left_popper:
-    number: 0-0-4
-    default_pulse_ms: 20
+	number: 0-0-4
+	default_pulse_ms: 20
   c_right_popper:
-    number: 0-0-3
-    default_pulse_ms: 20
+	number: 0-0-3
+	default_pulse_ms: 20
   c_deviateur_bras_actuate:
-    number: 0-0-2
-    default_pulse_ms: 30
+	number: 0-0-2
+	default_pulse_ms: 30
   c_top_popper:
-    number: 0-0-1
-    default_pulse_ms: 20
+	number: 0-0-1
+	default_pulse_ms: 20
   c_eject_bras_virtual:
-    number: 1
-    platform: virtual
-    default_pulse_ms: 20
+	number: 1
+	platform: virtual
+	default_pulse_ms: 20
 
 autofire_coils:
   left_slingshot:
-    coil: c_left_slingshot
-    switch: s_left_slingshot
+	coil: c_left_slingshot
+	switch: s_left_slingshot
   right_slingshot:
-    coil: c_right_slingshot
-    switch: s_right_slingshot
+	coil: c_right_slingshot
+	switch: s_right_slingshot
   lower_jet:
-    coil: c_lower_jet_bumper
-    switch: s_lower_jet
+	coil: c_lower_jet_bumper
+	switch: s_lower_jet
   left_jet:
-    coil: c_left_jet_bumper
-    switch: s_left_jet
+	coil: c_left_jet_bumper
+	switch: s_left_jet
   right_jet:
-    coil: c_right_jet_bumper
-    switch: s_right_jet
+	coil: c_right_jet_bumper
+	switch: s_right_jet
 
 diverters:
   deviateur_rampe_bras:
-    activation_coil: c_deviateur_bras_actuate
-    type: pulse
-    activate_events: multiball_lock_lock_einstein_enabled
-    disable_events: multiball_lock_lock_einstein_disabled
+	activation_coil: c_deviateur_bras_actuate
+	type: pulse
+	activate_events: multiball_lock_lock_einstein_enabled
+	disable_events: multiball_lock_lock_einstein_disabled
 
 servos:
   servo_bras_einstein:
-    number: 1-0-11
-    reset_position: 0.2
-    debug: true
-    positions:
-      0.2: 0.2
-      0.8: 0.8
+	number: 1-0-11
+	reset_position: 0.2
+	debug: true
+	positions:
+	  0.2: 0.2
+	  0.8: 0.8
 
 servo_controllers:
   controleur_bras_einstein:
-    servo: servo_bras_einstein
-    control_events:
-      - event: start_multiball_einstein
-        position: 0.8
-      - event: c_eject_bras_virtual_pulsed
-        position: 0.8
-      - event: multiball_einstein_ended
-        position: 0.2
-      - event: balldevice_bd_bras_rotatif_ball_ejected
-        position: 0.2
+	servo: servo_bras_einstein
+	control_events:
+	  - event: start_multiball_einstein
+		position: 0.8
+	  - event: c_eject_bras_virtual_pulsed
+		position: 0.8
+	  - event: multiball_einstein_ended
+		position: 0.2
+	  - event: balldevice_bd_bras_rotatif_ball_ejected
+		position: 0.2
 
 flippers:
   left_flipper_main:
-    main_coil: c_flipper_left_main
-    activation_switch: s_left_flipper
-    enable_events: machine_reset_phase_3
+	main_coil: c_flipper_left_main
+	activation_switch: s_left_flipper
+	enable_events: machine_reset_phase_3
   left_flipper_mini:
-    main_coil: c_flipper_left_mini_main
-    activation_switch: s_left_flipper
-    enable_events: machine_reset_phase_3
+	main_coil: c_flipper_left_mini_main
+	activation_switch: s_left_flipper
+	enable_events: machine_reset_phase_3
   right_flipper_bas:
-    main_coil: c_flipper_right_bas_main
-    activation_switch: s_right_flipper
-    enable_events: machine_reset_phase_3
+	main_coil: c_flipper_right_bas_main
+	activation_switch: s_right_flipper
+	enable_events: machine_reset_phase_3
   right_flipper_haut:
-    main_coil: c_flipper_right_haut_main
-    activation_switch: s_right_flipper
-    enable_events: machine_reset_phase_3
+	main_coil: c_flipper_right_haut_main
+	activation_switch: s_right_flipper
+	enable_events: machine_reset_phase_3
   right_flipper_mini:
-    main_coil: c_flipper_right_mini_main
-    activation_switch: s_right_flipper
-    enable_events: machine_reset_phase_3
+	main_coil: c_flipper_right_mini_main
+	activation_switch: s_right_flipper
+	enable_events: machine_reset_phase_3
 
 machine:
   balls_installed: 5
@@ -362,54 +352,50 @@ virtual_platform_start_active_switches: s_trough1, s_trough2, s_trough3, s_troug
 
 ball_devices:
   bd_trough:
-    ball_switches: s_trough1, s_trough2, s_trough3, s_trough4, s_trough5, s_trough_jam
-    eject_coil: c_trough_eject
-    tags: trough, home, drain
-    jam_switch: s_trough_jam
-    eject_coil_jam_pulse: 15ms
-    eject_targets: bd_plunger
-    eject_timeouts: 3s
-    entrance_count_delay: 300ms
-    debug: true
+	ball_switches: s_trough1, s_trough2, s_trough3, s_trough4, s_trough5, s_trough_jam
+	eject_coil: c_trough_eject
+	tags: trough, home, drain
+	jam_switch: s_trough_jam
+	eject_coil_jam_pulse: 15ms
+	eject_targets: bd_plunger
+	eject_timeouts: 3s
+	entrance_count_delay: 300ms
+	debug: true
   bd_plunger:
-    ball_switches: s_plunger
-    entrance_count_delay: 300ms
-    eject_timeouts: 5s
-    eject_coil: c_plunger_eject
-    player_controlled_eject_event: sw_launch
+	ball_switches: s_plunger
+	entrance_count_delay: 300ms
+	eject_timeouts: 5s
+	eject_coil: c_plunger_eject
+	player_controlled_eject_event: sw_launch
   bd_left_vuk:
-    ball_switches: s_left_popper
-    eject_coil: c_left_popper
-    eject_timeouts: 2s
+	ball_switches: s_left_popper
+	eject_coil: c_left_popper
+	eject_timeouts: 2s
   bd_right_vuk:
-    ball_switches: s_right_popper
-    eject_coil: c_right_popper
-    eject_timeouts: 2s
-    eject_targets: playfield
+	ball_switches: s_right_popper
+	eject_coil: c_right_popper
+	eject_timeouts: 2s
+	eject_targets: playfield
   bd_upper_vuk:
-    ball_switches: s_top_popper
-    eject_coil: c_top_popper
-    eject_timeouts: 2s
-    eject_targets: bd_bras_rotatif
+	ball_switches: s_top_popper
+	eject_coil: c_top_popper
+	eject_timeouts: 2s
+	eject_targets: bd_bras_rotatif
   bd_bras_rotatif:
-    tags: lock
-    ball_switches: s_bras_slot1, s_bras_slot2, s_bras_slot3
-    eject_coil: c_eject_bras_virtual
-    debug: true
+	tags: lock
+	ball_switches: s_bras_slot1, s_bras_slot2, s_bras_slot3
+	eject_coil: c_eject_bras_virtual
+	debug: true
 
 playfields:
   playfield:
-    default_source_device: bd_plunger
-    tags: default
+	default_source_device: bd_plunger
+	tags: default
 
 ball_saves:
   default_ball_save:
-    active_time: 10s
-    hurry_up_time: 2s
-    grace_period: 1s
-    enable_events: ball_started
-    auto_launch: true
-
-# slide_player:
-  # init_done: welcome_slide
-  # mode_attract_started: attract_started
+	active_time: 10s
+	hurry_up_time: 2s
+	grace_period: 1s
+	enable_events: ball_started
+	auto_launch: true

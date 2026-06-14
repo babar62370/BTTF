@@ -25,8 +25,14 @@ player_vars:
 
 # in your base mode (modes/base/config/base.yaml)
 variable_player:
+  # LES 3 PREMIERS SONT DES EXEMPLES AVEC POTATO A GARDER EN TETE
   # s_right_inlane_active:
     # score: 100
+  # s_left_flipper_active:
+    # score: 1000
+    # potato: 1
+  # s_right_flipper_active:
+    # potato: -2
   s_left_flipper_active:
     score: 100
   s_right_flipper_active:
