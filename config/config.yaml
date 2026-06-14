@@ -22,11 +22,11 @@ opp:
     - /dev/tty.usbmodem568441744C001
     - /dev/tty.usbmodem5683416F4C001
 
-# displays:
-#   DefaultDisplay:
-#     width: 1920
-#     height: 1080
-#     fps: 75
+displays:
+  DefaultDisplay:
+    width: 1920
+    height: 1080
+    fps: 75
 
 # sound_pools:
 #   music:
@@ -214,6 +214,9 @@ switches:
   s_lane_guitar:
     number: 1-0-78
     tags: playfield_active
+
+  s_tilt:
+    number: 1-0-80
 
 coils:
   c_flipper_left_main:

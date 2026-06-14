@@ -18,15 +18,132 @@ sound_player:
     power_of_love:
       bus: music
 
-# Gestion des scores de base (Exemples pour valider que le mode tourne)
-# variable_player:
-  # s_left_slingshot_active:
+# we will initially set the value to 0 when the machine starts up
+player_vars:
+  potato:
+    initial_value: 0
+
+# in your base mode (modes/base/config/base.yaml)
+variable_player:
+  # s_right_inlane_active:
     # score: 100
-  # s_right_slingshot_active:
+  s_left_flipper_active:
+    score: 100
+  s_right_flipper_active:
+    score: 100
+  # s_start:
+    # number: 0-0-3
+    # tags: start
+  s_left_slingshot_active:
+    score: 100
+  s_right_slingshot_active:
+    score: 100
+  s_lower_jet_active:
+    score: 500
+  s_left_jet_active:
+    score: 100
+  s_right_jet_active:
+    score: 100
+  s_left_popper_active:
+    score: 100
+  s_right_popper_active:
+    score: 100
+  # s_top_popper_active:
     # score: 100
-  # s_lower_jet_active:
-    # score: 500
-  # s_left_jet_active:
-    # score: 500
-  # s_right_jet_active:
-    # score: 500
+  # OPTOS
+  s_ramp_1985_entree_active:
+    score: 100
+  s_ramp_hotel_de_ville_active:
+    score: 100
+  s_ramp_2015_lower_active:
+    score: 100
+  s_ramp_marty_lower_active:
+    score: 100
+  s_ramp_george_active:
+    score: 100
+  s_ramp_bttf_active:
+    score: 100
+  s_left_inlane_active:
+    score: 100
+  s_left_outlane_active:
+    score: 100
+  s_target_plutonium_active:
+    score: 100
+  s_1955_lane_active:
+    score: 100
+  s_bank_dmc_lower_active:
+    score: 100
+  s_bank_dmc_middle_active:
+    score: 100
+  s_bank_dmc_upper_active:
+    score: 100
+  s_entree_souterrain_active:
+    score: 100
+  s_trough1_active:
+    score: 100
+  s_trough2_active:
+    score: 100
+  s_trough3_active:
+    score: 100
+  s_trough4_active:
+    score: 100
+  s_right_outlane_active:
+    score: 100
+  s_right_inlane_active:
+    score: 100
+  s_ramp_1955_active:
+    score: 100
+  s_ramp_1985_sortie_active:
+    score: 100
+  s_lane_1885_active:
+    score: 100
+  s_target_hill_valley_active:
+    score: 100
+  s_lane_cafe_einstein_active:
+    score: 100
+  s_lane_einstein_upper_active:
+    score: 100
+  s_bras_slot1_active:
+    score: 100
+  s_bras_slot2_active:
+    score: 100
+  s_bras_slot3_active:
+    score: 100
+  s_spinner_almanach_active:
+    score: 100
+  s_lane_biff_active:
+    score: 100
+  s_lane_doc_lower_active:
+    score: 100
+  s_lane_doc_upper_active:
+    score: 100
+  s_lane_horloge_active:
+    score: 100
+  s_target_foudre_active:
+    score: 100
+  s_target_overboard_active:
+    score: 100
+  s_bank_doc_lower_active:
+    score: 100
+  s_bank_doc_middle_active:
+    score: 100
+  s_bank_doc_upper_active:
+    score: 100
+  s_ramp_2015_upper_active:
+    score: 100
+  s_lane_marty_lower_active:
+    score: 100
+  s_lane_marty_upper_active:
+    score: 100
+  s_ramp_marty_upper_active:
+    score: 100
+  s_spinner_lorraine_active:
+    score: 100
+  s_lane_lorraine_active:
+    score: 100
+    s_lane_marvin_active:
+    score: 100
+  s_lane_guitar_active:
+    score: 100
+  # s_tilt:
+    # number: 1-0-80
