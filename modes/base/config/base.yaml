@@ -18,11 +18,6 @@ sound_player:
     power_of_love:
       bus: music
 
-# we will initially set the value to 0 when the machine starts up
-player_vars:
-  potato:
-    initial_value: 0
-
 # in your base mode (modes/base/config/base.yaml)
 variable_player:
   # LES 3 PREMIERS SONT DES EXEMPLES AVEC POTATO A GARDER EN TETE
@@ -147,7 +142,7 @@ variable_player:
     score: 100
   s_lane_lorraine_active:
     score: 100
-    s_lane_marvin_active:
+  s_lane_marvin_active:
     score: 100
   s_lane_guitar_active:
     score: 100

@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://5btmxveidkc"]
+
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_dyuk6"]
+[ext_resource type="Script" uid="uid://cnc7dblwai6nd" path="res://addons/mpf-gmc/classes/mpf_display.gd" id="2_u4e8v"]
+[ext_resource type="Texture2D" uid="uid://jgpf550ahn33" path="res://thumb-1920-653673.jpg" id="3_rcpbx"]
+[ext_resource type="AudioStream" uid="uid://c26cuahqw37h1" path="res://sounds/music/bttf_attract.mp3" id="4_e5wve"]
+
+[node name="AttractDisplayLoop" type="Control" unique_id=1530251242]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_dyuk6")
+metadata/_custom_type_script = "uid://dru3usokwlhd3"
+
+[node name="MPFDisplay" type="Control" parent="." unique_id=704448301]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_u4e8v")
+metadata/_custom_type_script = "uid://cnc7dblwai6nd"
+
+[node name="TextureRect" type="TextureRect" parent="MPFDisplay" unique_id=1703640820]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("3_rcpbx")
+
+[node name="Label" type="Label" parent="MPFDisplay" unique_id=1424052536]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Label2" type="Label" parent="MPFDisplay" unique_id=158674580]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=468415122]
+stream = ExtResource("4_e5wve")
+bus = &"music"
