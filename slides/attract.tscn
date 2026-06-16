@@ -1,7 +1,9 @@
 [gd_scene format=3 uid="uid://vvn78hjmx3dp"]
 
 [ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_r1mnt"]
+[ext_resource type="Script" uid="uid://cnc7dblwai6nd" path="res://addons/mpf-gmc/classes/mpf_display.gd" id="2_f161n"]
 [ext_resource type="AudioStream" uid="uid://hp1gj25a3y4j" path="res://sounds/music/theme_bttf.mp3" id="2_m2s46"]
+[ext_resource type="Texture2D" uid="uid://jgpf550ahn33" path="res://thumb-1920-653673.jpg" id="3_cq3lo"]
 
 [node name="Attract" type="Control" unique_id=1371654811]
 layout_mode = 3
@@ -9,21 +11,18 @@ anchors_preset = 0
 script = ExtResource("1_r1mnt")
 metadata/_custom_type_script = "uid://dru3usokwlhd3"
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=523241434]
-layout_mode = 0
+[node name="MPFDisplay" type="Control" parent="." unique_id=840686046]
+anchors_preset = 0
 offset_right = 1920.0
 offset_bottom = 1080.0
-color = Color(0.96862745, 0.28235295, 0.007843138, 1)
+script = ExtResource("2_f161n")
+metadata/_custom_type_script = "uid://cnc7dblwai6nd"
 
-[node name="Label" type="Label" parent="ColorRect" unique_id=646680596]
+[node name="TextureRect" type="TextureRect" parent="MPFDisplay" unique_id=123960129]
 layout_mode = 0
-offset_top = 438.0
-offset_right = 1920.0
-offset_bottom = 625.0
-theme_override_font_sizes/font_size = 77
-text = "RETOUR VERS LE FUTUR..."
-horizontal_alignment = 1
-vertical_alignment = 1
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("3_cq3lo")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=2016224634]
 stream = ExtResource("2_m2s46")

@@ -18,6 +18,11 @@ sound_player:
     power_of_love:
       bus: music
 
+mode_settings:
+  game_ending:
+    mode_start:
+      - attract
+
 # in your base mode (modes/base/config/base.yaml)
 variable_player:
   # LES 3 PREMIERS SONT DES EXEMPLES AVEC POTATO A GARDER EN TETE

@@ -1,14 +1,17 @@
 #config_version=6
 
-# Attract mode that starts when the machine boots up, stops
-# whenever a game is started, and re-starts after the game ends.
+sound_player:
+  mode_attract_started:
+    theme_bttf:
+      bus: music
+  mode_attract_display_loop_started:
+    bttf_attract:
+      bus: music
+  mode_attract_game_over_started:
+    bttf_theme:
+      bus: music
 
 slide_player:
   mode_attract_started:
     attract:
       target: DefaultDisplay
-
-sound_player:
-  mode_attract_started:
-    theme_bttf:
-      bus: music

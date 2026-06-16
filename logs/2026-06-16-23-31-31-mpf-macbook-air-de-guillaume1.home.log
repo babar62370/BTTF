@@ -1,0 +1,101 @@
+2026-06-16 23:31:31,037 : INFO : root : Loading config.
+2026-06-16 23:31:31,040 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2026-06-16 23:31:31,040 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/888a835b5fde052b87252136c50b804e.mpf_cache
+2026-06-16 23:31:31,080 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/8622cd1fe0050c6b0179be5a651e22f5.mpf_cache
+2026-06-16 23:31:31,081 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/58f948f5e9fe219120f05e295bb3ef65.mpf_cache
+2026-06-16 23:31:31,081 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/8622cd1fe0050c6b0179be5a651e22f5.mpf_cache
+2026-06-16 23:31:31,081 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/369243a5c0d089a5c3bcaae4a6363538.mpf_cache
+2026-06-16 23:31:31,082 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/6b2ea6a059b1471fc11c0d698e7bdf4d.mpf_cache
+2026-06-16 23:31:31,082 : WARNING : ConfigProcessor : Config file in cache changed: /Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB/modes/attract/shows/./attract_display_loop.yaml
+2026-06-16 23:31:31,082 : INFO : ConfigProcessor : Loading config from file /Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB/modes/attract/shows/./attract_display_loop.yaml.
+2026-06-16 23:31:31,085 : INFO : ConfigProcessor : Loading config: /Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB/modes/attract/shows/./attract_display_loop.yaml
+2026-06-16 23:31:31,085 : INFO : ConfigProcessor : Config file cache created: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/0d9f9158edcd8a544f1cc762de36862e.mpf_cache
+2026-06-16 23:31:31,085 : WARNING : ConfigProcessor : Config file in cache changed: /Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB/modes/attract/shows/./attract_game_over.yaml
+2026-06-16 23:31:31,085 : INFO : ConfigProcessor : Loading config from file /Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB/modes/attract/shows/./attract_game_over.yaml.
+2026-06-16 23:31:31,086 : INFO : ConfigProcessor : Loading config: /Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB/modes/attract/shows/./attract_game_over.yaml
+2026-06-16 23:31:31,086 : INFO : ConfigProcessor : Config file cache created: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/48e025c4983ab137c223b7f5838fabeb.mpf_cache
+2026-06-16 23:31:31,086 : INFO : Machine : Mission Pinball Framework Core Engine v0.80.0
+2026-06-16 23:31:31,086 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'force_assets_load': False, 'platform_integration_test': False, 'jsonlogging': False, 'logfile': 'logs/2026-06-16-23-31-31-mpf-macbook-air-de-guillaume1.home.log', 'pause': False, 'production': False, 'text_ui': False, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': 'smart_virtual', 'syslog_address': None, 'full_logfile_path': '/Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB/logs/2026-06-16-23-31-31-mpf-macbook-air-de-guillaume1.home.log'}
+2026-06-16 23:31:31,086 : INFO : Machine : MPF path: /Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf
+2026-06-16 23:31:31,086 : INFO : Machine : Machine path: /Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB
+2026-06-16 23:31:31,086 : INFO : Machine : Platform: darwin
+2026-06-16 23:31:31,086 : INFO : Machine : Python executable location: /Users/guillaumebarre/mpf/bin/python
+2026-06-16 23:31:31,086 : INFO : Machine : Python version: 3.12.9 (64-bit)
+2026-06-16 23:31:31,087 : INFO : Machine : Initializing MPF...
+2026-06-16 23:31:31,132 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2026-06-16 23:31:31,140 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.5, 'prev_value': None, 'change': True}
+2026-06-16 23:31:31,140 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'Mission Pinball Framework v0.80.0', 'prev_value': None, 'change': True}
+2026-06-16 23:31:31,140 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'Mission Pinball Framework v0.80.0, Config version:6, Show version: 6, BCP version:1.1', 'prev_value': None, 'change': True}
+2026-06-16 23:31:31,141 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.12.9', 'prev_value': None, 'change': True}
+2026-06-16 23:31:31,157 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'macOS-26.3-arm64-arm-64bit', 'prev_value': None, 'change': True}
+2026-06-16 23:31:31,157 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Darwin', 'prev_value': None, 'change': True}
+2026-06-16 23:31:31,157 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '25.3.0', 'prev_value': None, 'change': True}
+2026-06-16 23:31:31,157 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': 'Darwin Kernel Version 25.3.0: Wed Jan 28 20:53:01 PST 2026; root:xnu-12377.81.4~5/RELEASE_ARM64_T8103', 'prev_value': None, 'change': True}
+2026-06-16 23:31:31,157 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'arm64', 'prev_value': None, 'change': True}
+2026-06-16 23:31:31,157 : INFO : EventManager : Event: ======'machine_var_log_file_path'====== Args={'value': '/Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB/logs/2026-06-16-23-31-31-mpf-macbook-air-de-guillaume1.home.log', 'prev_value': None, 'change': True}
+2026-06-16 23:31:31,157 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2026-06-16 23:31:31,169 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2026-06-16 23:31:31,169 : INFO : SwitchController : Found active switch: ('0-0-8', <Platform.SmartVirtual>) <switch.s_trough5>
+2026-06-16 23:31:31,169 : INFO : SwitchController : Found active switch: ('1-0-40', <Platform.SmartVirtual>) <switch.s_trough1>
+2026-06-16 23:31:31,169 : INFO : SwitchController : Found active switch: ('1-0-41', <Platform.SmartVirtual>) <switch.s_trough2>
+2026-06-16 23:31:31,169 : INFO : SwitchController : Found active switch: ('1-0-42', <Platform.SmartVirtual>) <switch.s_trough3>
+2026-06-16 23:31:31,169 : INFO : SwitchController : Found active switch: ('1-0-43', <Platform.SmartVirtual>) <switch.s_trough4>
+2026-06-16 23:31:31,171 : INFO : EventManager : Event: ======'bcp_connection_attempt'====== Args={'name': 'local_display', 'host': 'localhost', 'port': 5050}
+2026-06-16 23:31:31,172 : INFO : BCPClientSocket : Connecting BCP to 'local_display' at localhost:5050...
+2026-06-16 23:31:32,503 : INFO : BCPClientSocket : Connected BCP to 'local_display' localhost:5050
+2026-06-16 23:31:32,503 : INFO : EventManager : Event: ======'bcp_clients_connected'====== Args={}
+2026-06-16 23:31:32,504 : INFO : ball_device.bd_trough : BCH: Initial count: 5
+2026-06-16 23:31:32,504 : INFO : ball_device.bd_trough : State: idle
+2026-06-16 23:31:32,504 : INFO : ball_device.bd_plunger : BCH: Initial count: 0
+2026-06-16 23:31:32,504 : INFO : ball_device.bd_plunger : State: idle
+2026-06-16 23:31:32,505 : INFO : ball_device.bd_left_vuk : BCH: Initial count: 0
+2026-06-16 23:31:32,505 : INFO : ball_device.bd_left_vuk : State: idle
+2026-06-16 23:31:32,505 : INFO : ball_device.bd_right_vuk : BCH: Initial count: 0
+2026-06-16 23:31:32,505 : INFO : ball_device.bd_right_vuk : State: idle
+2026-06-16 23:31:32,505 : INFO : ball_device.bd_upper_vuk : BCH: Initial count: 0
+2026-06-16 23:31:32,506 : INFO : ball_device.bd_upper_vuk : State: idle
+2026-06-16 23:31:32,506 : INFO : ball_device.bd_bras_rotatif : BCH: Initial count: 0
+2026-06-16 23:31:32,506 : INFO : ball_device.bd_bras_rotatif : State: idle
+2026-06-16 23:31:32,509 : INFO : EventManager : Event: ======'init_phase_3'====== Args={}
+2026-06-16 23:31:32,510 : ERROR : asyncio : Exception in callback EventManager._queue_task_done(<Task finishe...:" instead?')>)
+handle: <Handle EventManager._queue_task_done(<Task finishe...:" instead?')>)>
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/events.py", line 795, in _queue_task_done
+    future.result()
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/events.py", line 708, in _run_handlers_sequential
+    handler.callback(queue=queue, **merged_kwargs)
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/show_controller.py", line 53, in _load_shows
+    self.machine.shows[show_name].load(show_config)
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/assets/show.py", line 171, in load
+    self._process_step_actions(step, actions)
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/assets/show.py", line 207, in _process_step_actions
+    self._show_validation_error(
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/assets/show.py", line 184, in _show_validation_error
+    raise ConfigFileError('"{}" >> {}'.format(self.name, msg), error_code, "show", self.name)
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in show: "attract_display_loop" >> Invalid section "slide:" found. Did you mean "slides:" instead? Context: attract_display_loop Error Code: CFE-show-3 (https://missionpinball.org/latest/logs)
+2026-06-16 23:31:32,513 : INFO : Machine : Starting the main run loop with active modes: []
+2026-06-16 23:31:32,513 : WARNING : Machine : Attract mode is not active, game will not be playable. Please check your attract mode configuration.
+2026-06-16 23:31:32,513 : INFO : Machine : Shutting down...
+2026-06-16 23:31:32,513 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2026-06-16 23:31:33,516 : ERROR : Machine : Runtime Exception
+Traceback (most recent call last):
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/machine.py", line 810, in _run_loop
+    raise self._exception['exception']
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/events.py", line 795, in _queue_task_done
+    future.result()
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/events.py", line 708, in _run_handlers_sequential
+    handler.callback(queue=queue, **merged_kwargs)
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/show_controller.py", line 53, in _load_shows
+    self.machine.shows[show_name].load(show_config)
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/assets/show.py", line 171, in load
+    self._process_step_actions(step, actions)
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/assets/show.py", line 207, in _process_step_actions
+    self._show_validation_error(
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/assets/show.py", line 184, in _show_validation_error
+    raise ConfigFileError('"{}" >> {}'.format(self.name, msg), error_code, "show", self.name)
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in show: "attract_display_loop" >> Invalid section "slide:" found. Did you mean "slides:" instead? Context: attract_display_loop Error Code: CFE-show-3 (https://missionpinball.org/latest/logs)
+2026-06-16 23:31:33,519 : INFO : root : MPF run loop ended.

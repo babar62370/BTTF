@@ -1,6 +1,6 @@
 #show_version=6
 
-- duration: 588s
+- duration: 10s
   slides:
-    attract_display_loop:
+    attract_game_over:
       target: DefaultDisplay

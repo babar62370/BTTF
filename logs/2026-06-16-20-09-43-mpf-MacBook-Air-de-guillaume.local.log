@@ -1,0 +1,26 @@
+2026-06-16 20:09:43,894 : INFO : root : Loading config.
+2026-06-16 20:09:43,897 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2026-06-16 20:09:43,897 : INFO : ConfigProcessor : Loading config from file /Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/mpfconfig.yaml.
+2026-06-16 20:09:43,903 : INFO : ConfigProcessor : Loading config: /Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/mpfconfig.yaml
+2026-06-16 20:09:43,903 : INFO : ConfigProcessor : Loading config from file /Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB/config/config.yaml.
+2026-06-16 20:09:43,907 : INFO : ConfigProcessor : Loading config: /Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB/config/config.yaml
+2026-06-16 20:09:43,908 : INFO : ConfigProcessor : Config file cache created: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/888a835b5fde052b87252136c50b804e.mpf_cache
+2026-06-16 20:09:43,958 : INFO : ConfigProcessor : Loading config from file /Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/modes/attract/config/attract.yaml.
+2026-06-16 20:09:43,958 : INFO : ConfigProcessor : Loading config: /Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/modes/attract/config/attract.yaml
+2026-06-16 20:09:43,958 : INFO : ConfigProcessor : Loading config from file /Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB/modes/attract/config/attract.yaml.
+2026-06-16 20:09:43,959 : INFO : ConfigProcessor : Loading config: /Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB/modes/attract/config/attract.yaml
+2026-06-16 20:09:43,959 : INFO : ConfigProcessor : Config file cache created: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/8622cd1fe0050c6b0179be5a651e22f5.mpf_cache
+2026-06-16 20:09:43,959 : INFO : ConfigProcessor : Loading config from file /Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/modes/game/config/game.yaml.
+2026-06-16 20:09:43,960 : INFO : ConfigProcessor : Loading config: /Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/modes/game/config/game.yaml
+2026-06-16 20:09:43,960 : INFO : ConfigProcessor : Config file cache created: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/58f948f5e9fe219120f05e295bb3ef65.mpf_cache
+2026-06-16 20:09:43,961 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/8622cd1fe0050c6b0179be5a651e22f5.mpf_cache
+2026-06-16 20:09:43,961 : INFO : ConfigProcessor : Loading config from file /Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB/modes/base/config/base.yaml.
+2026-06-16 20:09:43,962 : INFO : ConfigProcessor : Loading config: /Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB/modes/base/config/base.yaml
+2026-06-16 20:09:43,963 : INFO : ConfigProcessor : Config file cache created: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/369243a5c0d089a5c3bcaae4a6363538.mpf_cache
+2026-06-16 20:09:43,963 : INFO : ConfigProcessor : Loading config from file /Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB/modes/einstein_multiball/config/einstein_multiball.yaml.
+2026-06-16 20:09:43,964 : INFO : ConfigProcessor : Loading config: /Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB/modes/einstein_multiball/config/einstein_multiball.yaml
+2026-06-16 20:09:43,964 : INFO : ConfigProcessor : Config file cache created: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/6b2ea6a059b1471fc11c0d698e7bdf4d.mpf_cache
+2026-06-16 20:09:43,964 : INFO : ConfigProcessor : Loading config from file /Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB/modes/attract/shows/./attract_display_loop.yaml.
+2026-06-16 20:09:43,965 : INFO : ConfigProcessor : Loading config: /Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB/modes/attract/shows/./attract_display_loop.yaml
+2026-06-16 20:09:43,965 : INFO : ConfigProcessor : Config file cache created: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/0d9f9158edcd8a544f1cc762de36862e.mpf_cache
+2026-06-16 20:09:43,965 : INFO : ConfigProcessor : Loading config from file /Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB/modes/attract/shows/./attract_game_over.yaml.
