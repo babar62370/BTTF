@@ -15,3 +15,21 @@ slide_player:
   mode_attract_started:
     attract:
       target: DefaultDisplay
+
+show_player:
+  mode_attract_started:
+    attract_display_loop:
+      speed: 1
+    attract_light_show:
+      speed: 4
+# OU PAR EXEMPLE
+# show_player:
+    # mode_attract_started:
+      # attract_display_loop:
+        # speed: 1
+      # flipper_red_flashing:
+        # speed: 2
+      # purple_mode_sweep:
+        # speed: 4
+      # inlane_alternating:
+        # speed: 3

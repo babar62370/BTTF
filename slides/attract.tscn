@@ -19,6 +19,7 @@ script = ExtResource("2_f161n")
 metadata/_custom_type_script = "uid://cnc7dblwai6nd"
 
 [node name="TextureRect" type="TextureRect" parent="MPFDisplay" unique_id=123960129]
+z_index = 1
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0

@@ -395,3 +395,7 @@ ball_saves:
 player_vars:
   potato:
     initial_value: 0
+    
+lights:
+  l_light2:
+    number: ... # Mettez ici le numéro de broche (pin) correspondant sur votre carte contrôleur

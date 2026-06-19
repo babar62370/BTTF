@@ -148,3 +148,6 @@
 2026-06-16 23:46:27,569 : INFO : EventManager : Event: ======'slide_attract_created'====== Args={'_from_bcp': True}
 2026-06-16 23:46:27,569 : INFO : EventManager : Event: ======'slide__removed'====== Args={'_from_bcp': True}
 2026-06-16 23:46:27,569 : INFO : EventManager : Event: ======'slide_attract_active'====== Args={'original_context': 'attract', 'original_calling_context': 'mode_attract_started', 'priority': 10.0, 'cmd': 'slides_play', '_from_bcp': True}
+2026-06-18 20:36:13,919 : INFO : Machine : Shutting down...
+2026-06-18 20:36:13,927 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2026-06-18 20:36:13,948 : INFO : root : MPF run loop ended.

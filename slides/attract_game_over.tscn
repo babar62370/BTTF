@@ -13,8 +13,8 @@ metadata/_custom_type_script = "uid://dru3usokwlhd3"
 
 [node name="MPFDisplay" type="Control" parent="." unique_id=1468598811]
 anchors_preset = 0
-offset_right = 1028.0
-offset_bottom = 584.0
+offset_right = 1920.0
+offset_bottom = 1080.0
 script = ExtResource("2_bn1i2")
 metadata/_custom_type_script = "uid://cnc7dblwai6nd"
 
