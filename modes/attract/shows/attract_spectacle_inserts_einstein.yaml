@@ -1,3 +1,5 @@
+#show_version=6
+
   l_insert_target_hill_valley:
     number: 1-0-36
   l_insert_lane_cafe_einstein:

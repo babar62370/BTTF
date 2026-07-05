@@ -1,3 +1,5 @@
+#show_version=6
+
   l_left_inter_lower:
     number: 0-0-10
   l_left_inter_top:

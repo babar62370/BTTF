@@ -1,3 +1,5 @@
+#show_version=6
+
   l_insert_shoot_again:
     number: 1-0-0
   l_insert_left_inlane:
