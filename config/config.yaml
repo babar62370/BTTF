@@ -43,6 +43,7 @@ switches:
     type: NC
   s_plunger:
     number: 0-0-10
+  # SERVO
   s_servo_bras_einstein:
     number: 0-0-11
   s_left_slingshot:
@@ -292,7 +293,7 @@ diverters:
 
 servos:
   servo_bras_einstein:
-    number: 1-0-11
+    number: 0-0-11
     reset_position: 0.2
     debug: true
     positions:
@@ -456,245 +457,245 @@ lights:
     number: 0-0-24
 
   l_left_outlane:
-    number: 0-0-1
+    number: 0-0-0
   l_left_inlane_lower:
-    number: 0-0-2
+    number: 0-0-1
   l_left_inlane_top:
     number: 0-0-2
   l_left_slingshot_lower:
-    number: 0-0-11
+    number: 0-0-3
   l_left_slingshot_top:
-    number: 0-0-11
+    number: 0-0-4
   l_right_outlane:
-    number: 0-0-1
+    number: 0-0-5
   l_right_inlane_lower:
-    number: 0-0-2
+    number: 0-0-6
   l_right_inlane_top:
-    number: 0-0-2
+    number: 0-0-7
   l_right_slingshot_lower:
-    number: 0-0-11
+    number: 0-0-8
   l_right_slingshot_top:
-    number: 0-0-11
+    number: 0-0-9
     
   l_left_inter_lower:
-    number: 0-0-11
+    number: 0-0-10
   l_left_inter_top:
     number: 0-0-11
   l_right_inter_lower:
-    number: 0-0-11
+    number: 0-0-12
   l_right_inter_middle_lower:
-    number: 0-0-11
+    number: 0-0-13
   l_right_inter_middle_top:
-    number: 0-0-11
+    number: 0-0-14
   l_right_inter_top:
-    number: 0-0-11
+    number: 0-0-15
     
   l_left_top_lower:
-    number: 0-0-11
+    number: 0-0-16
   l_left_top_top:
-    number: 0-0-11
+    number: 0-0-17
   l_left_top_left:
-    number: 0-0-11
+    number: 0-0-18
   l_left_top_right:
-    number: 0-0-11
+    number: 0-0-19
   l_miniplayfield_lower:
-    number: 0-0-11
+    number: 0-0-20
   l_miniplayfield_top:
-    number: 0-0-11
+    number: 0-0-21
     
   l_up_middle:
-    number: 0-0-11
+    number: 0-0-22
   l_up_middle_left:
-    number: 0-0-11
+    number: 0-0-23
   l_up_left:
-    number: 0-0-11
+    number: 0-0-24
   l_up_middle_right:
-    number: 0-0-11
+    number: 0-0-25
   l_up_right:
-    number: 0-0-11
+    number: 0-0-26
   
   l_insert_shoot_again:
-    number: 0-0-3
+    number: 1-0-0
   l_insert_left_inlane:
-    number: 0-0-1
+    number: 1-0-1
   l_insert_left_outlane:
-    number: 0-0-2
+    number: 1-0-2
   l_insert_right_inlane:
-    number: 0-0-1
+    number: 1-0-3
   l_insert_right_outlane:
-    number: 0-0-2
+    number: 1-0-4
     
   l_insert_1885:
-    number: 0-0-3
+    number: 1-0-5
   l_insert_1955:
-    number: 0-0-1
+    number: 1-0-6
   l_insert_1985:
-    number: 0-0-2
+    number: 1-0-7
   l_insert_2015:
-    number: 0-0-1
+    number: 1-0-8
   l_insert_biff:
-    number: 0-0-2
+    number: 1-0-9
   l_insert_bttf:
-    number: 0-0-2
+    number: 1-0-10
   l_insert_x2:
-    number: 0-0-2
+    number: 1-0-11
   l_insert_extraball:
-    number: 0-0-2
+    number: 1-0-12
   
   l_entree_souterrain:
-    number: 1-0-39
+    number: 0-0-27
   l_delorean:
-    number: 1-0-39
+    number: 0-0-28
   l_insert_delorean_left_1:
-    number: 1-0-39
+    number: 1-0-13
   l_insert_delorean_left_2:
-    number: 1-0-39
+    number: 1-0-14
   l_insert_delorean_left_3:
-    number: 1-0-39
+    number: 1-0-15
   l_insert_delorean_left_4:
-    number: 1-0-39
+    number: 1-0-16
   l_insert_delorean_right_1:
-    number: 1-0-39
+    number: 1-0-17
   l_insert_delorean_right_2:
-    number: 1-0-39
+    number: 1-0-18
   l_insert_delorean_right_3:
-    number: 1-0-39
+    number: 1-0-19
   l_insert_delorean_right_4:
-    number: 1-0-39
+    number: 1-0-20
   
   l_lower_jet_1:
-    number: 0-0-26
+    number: 0-0-29
   l_lower_jet_2:
-    number: 0-0-26
+    number: 0-0-30
   l_lower_jet_3:
-    number: 0-0-26
+    number: 0-0-31
   l_lower_jet_4:
-    number: 0-0-26
+    number: 0-0-32
   l_lower_jet_lower:
-    number: 0-0-26
+    number: 0-0-33
   l_lower_jet:
-    number: 0-0-26
-  l_left__jet_1:
-    number: 0-0-26
-  l_left__jet_2:
-    number: 0-0-26
-  l_left__jet_3:
-    number: 0-0-26
-  l_left__jet_4:
-    number: 0-0-26
+    number: 0-0-34
+  l_left_jet_1:
+    number: 0-0-35
+  l_left_jet_2:
+    number: 0-0-36
+  l_left_jet_3:
+    number: 0-0-37
+  l_left_jet_4:
+    number: 0-0-38
   l_left_jet_lower:
-    number: 0-0-26
+    number: 0-0-39
   l_left_jet:
-    number: 0-0-25
+    number: 0-0-40
   l_right_jet_1:
-    number: 0-0-26
+    number: 0-0-41
   l_right_jet_2:
-    number: 0-0-26
+    number: 0-0-42
   l_right_jet_3:
-    number: 0-0-26
+    number: 0-0-43
   l_right_jet_4:
-    number: 0-0-26
+    number: 0-0-44
   l_right_jet_lower:
-    number: 0-0-26
+    number: 0-0-45
   l_right_jet:
-    number: 0-0-24
+    number: 0-0-46
     
   # OPTOS
   l_ramp_1985_entree:
-    number: 0-0-16
+    number: 0-0-47
   l_insert_mode_1985:
-    number: 1-0-48
+    number: 1-0-21
   l_insert_ramp_hotel_de_ville:
-    number: 1-0-1
+    number: 1-0-22
   l_ramp_2015_lower:
-    number: 1-0-3
+    number: 0-0-48
     
   l_insert_mode_2015:
-    number: 1-0-48
+    number: 1-0-23
   l_insert_ramp_george:
-    number: 1-0-9
+    number: 1-0-24
   l_insert_ramp_bttf:
-    number: 1-0-10
+    number: 1-0-25
     
   l_insert_target_plutonium:
-    number: 1-0-34
+    number: 1-0-26
   l_insert_lane_1955:
-    number: 1-0-35
+    number: 1-0-27
   l_insert_mode_1955:
-    number: 1-0-35
+    number: 1-0-28
   l_left_popper:
-    number: 0-0-19
+    number: 0-0-49
   l_insert_bank_dmc_lower:
-    number: 1-0-36
+    number: 1-0-29
   l_insert_bank_dmc_middle:
-    number: 1-0-37
+    number: 1-0-30
   l_insert_bank_dmc_upper:
-    number: 1-0-38
+    number: 1-0-31
   l_insert_entree_souterrain:
-    number: 1-0-39
+    number: 1-0-32
   
   l_insert_ramp_1955:
-    number: 1-0-46
+    number: 1-0-33
   l_insert_lane_1885:
-    number: 1-0-48
+    number: 1-0-34
   l_insert_mode_1885:
-    number: 1-0-48
+    number: 1-0-35
   l_right_popper:
-    number: 0-0-18
+    number: 0-0-50
   
   l_insert_target_hill_valley:
-    number: 1-0-49
+    number: 1-0-36
   l_insert_lane_cafe_einstein:
-    number: 1-0-50
+    number: 1-0-37
   l_insert_lane_einstein_upper:
-    number: 1-0-51
+    number: 1-0-38
   l_insert_einstein_multiball:
-    number: 0-0-2
+    number: 1-0-39
  
   l_insert_lane_biff:
-    number: 1-0-57
+    number: 1-0-40
   l_insert_lane_doc_lower:
-    number: 1-0-58
+    number: 1-0-41
   l_insert_lane_doc_upper:
-    number: 1-0-59
+    number: 1-0-42
   l_insert_lane_horloge:
-    number: 1-0-60
+    number: 1-0-43
   l_insert_target_foudre:
-    number: 1-0-61
+    number: 1-0-44
   l_insert_target_overboard:
-    number: 1-0-64
+    number: 1-0-45
   l_insert_bank_doc_lower:
-    number: 1-0-65
+    number: 1-0-46
   l_insert_bank_doc_middle:
-    number: 1-0-66
+    number: 1-0-47
   l_insert_bank_doc_upper:
-    number: 1-0-67
+    number: 1-0-48
   l_insert_ramp_2015_upper:
-    number: 1-0-68
+    number: 1-0-49
   l_insert_lane_marty:
-    number: 1-0-72
+    number: 1-0-50
   l_insert_lane_lorraine:
-    number: 1-0-76
+    number: 1-0-51
   l_insert_lane_marvin:
-    number: 1-0-77
+    number: 1-0-52
     
   l_insert_lane_guitar_1:
-    number: 1-0-78
+    number: 1-0-53
   l_insert_lane_guitar_2:
-    number: 1-0-78
+    number: 1-0-54
   l_insert_lane_guitar_3:
-    number: 1-0-78
+    number: 1-0-55
   l_insert_lane_guitar_4:
-    number: 1-0-78
+    number: 1-0-56
   l_insert_lane_guitar_5:
-    number: 1-0-78
+    number: 1-0-57
   l_insert_lane_guitar_6:
-    number: 1-0-78
+    number: 1-0-58
   l_insert_lane_guitar_7:
-    number: 1-0-78
+    number: 1-0-59
   l_insert_lane_guitar_8:
-    number: 1-0-78
+    number: 1-0-60
   l_insert_lane_guitar_9:
-    number: 1-0-78
+    number: 1-0-61
   l_insert_lane_guitar_10:
-    number: 1-0-78
+    number: 1-0-62

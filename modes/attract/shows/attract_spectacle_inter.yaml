@@ -1,0 +1,12 @@
+  l_left_inter_lower:
+    number: 0-0-10
+  l_left_inter_top:
+    number: 0-0-11
+  l_right_inter_lower:
+    number: 0-0-12
+  l_right_inter_middle_lower:
+    number: 0-0-13
+  l_right_inter_middle_top:
+    number: 0-0-14
+  l_right_inter_top:
+    number: 0-0-15

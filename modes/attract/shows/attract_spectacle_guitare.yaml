@@ -1,0 +1,47 @@
+  l_insert_lane_biff:
+    number: 1-0-40
+  l_insert_lane_doc_lower:
+    number: 1-0-41
+  l_insert_lane_doc_upper:
+    number: 1-0-42
+  l_insert_lane_horloge:
+    number: 1-0-43
+  l_insert_target_foudre:
+    number: 1-0-44
+  l_insert_target_overboard:
+    number: 1-0-45
+  l_insert_bank_doc_lower:
+    number: 1-0-46
+  l_insert_bank_doc_middle:
+    number: 1-0-47
+  l_insert_bank_doc_upper:
+    number: 1-0-48
+  l_insert_ramp_2015_upper:
+    number: 1-0-49
+  l_insert_lane_marty:
+    number: 1-0-50
+  l_insert_lane_lorraine:
+    number: 1-0-51
+  l_insert_lane_marvin:
+    number: 1-0-52
+    
+  l_insert_lane_guitar_1:
+    number: 1-0-53
+  l_insert_lane_guitar_2:
+    number: 1-0-54
+  l_insert_lane_guitar_3:
+    number: 1-0-55
+  l_insert_lane_guitar_4:
+    number: 1-0-56
+  l_insert_lane_guitar_5:
+    number: 1-0-57
+  l_insert_lane_guitar_6:
+    number: 1-0-58
+  l_insert_lane_guitar_7:
+    number: 1-0-59
+  l_insert_lane_guitar_8:
+    number: 1-0-60
+  l_insert_lane_guitar_9:
+    number: 1-0-61
+  l_insert_lane_guitar_10:
+    number: 1-0-62

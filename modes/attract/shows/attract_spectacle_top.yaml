@@ -1,0 +1,12 @@
+  l_left_top_lower:
+    number: 0-0-16
+  l_left_top_top:
+    number: 0-0-17
+  l_left_top_left:
+    number: 0-0-18
+  l_left_top_right:
+    number: 0-0-19
+  l_miniplayfield_lower:
+    number: 0-0-20
+  l_miniplayfield_top:
+    number: 0-0-21
