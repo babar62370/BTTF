@@ -266,6 +266,10 @@ coils:
     number: 1
     platform: virtual
     default_pulse_ms: 20
+  c_shaker:
+    number: 1-0-0
+    default_pulse_ms: 1
+    default_hold_power: 0.125
 
 autofire_coils:
   left_slingshot:
@@ -699,3 +703,6 @@ lights:
     number: 1-0-61
   l_insert_lane_guitar_10:
     number: 1-0-62
+    
+  l_start_button:
+    number: 0-0-51
