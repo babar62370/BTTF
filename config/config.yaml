@@ -92,18 +92,26 @@ switches:
     tags: playfield_active
   s_target_plutonium:
     number: 1-0-34
+    debounce: quick
+    #ignore_window_ms: 2ms
     tags: playfield_active
   s_1955_lane:
     number: 1-0-35
     tags: playfield_active
   s_bank_dmc_lower:
     number: 1-0-36
+    debounce: quick
+    #ignore_window_ms: 2ms
     tags: playfield_active
   s_bank_dmc_middle:
     number: 1-0-37
+    debounce: quick
+    #ignore_window_ms: 2ms
     tags: playfield_active
   s_bank_dmc_upper:
     number: 1-0-38
+    debounce: quick
+    #ignore_window_ms: 2ms
     tags: playfield_active
   s_entree_souterrain:
     number: 1-0-39
@@ -133,6 +141,8 @@ switches:
     tags: playfield_active
   s_target_hill_valley:
     number: 1-0-49
+    debounce: quick
+    #ignore_window_ms: 2ms
     tags: playfield_active
   s_lane_cafe_einstein:
     number: 1-0-50
@@ -163,18 +173,28 @@ switches:
     tags: playfield_active
   s_target_foudre:
     number: 1-0-61
+    debounce: quick
+    #ignore_window_ms: 2ms
     tags: playfield_active
   s_target_overboard:
     number: 1-0-64
+    debounce: quick
+    #ignore_window_ms: 2ms
     tags: playfield_active
   s_bank_doc_lower:
     number: 1-0-65
+    debounce: quick
+    #ignore_window_ms: 2ms
     tags: playfield_active
   s_bank_doc_middle:
     number: 1-0-66
+    debounce: quick
+    #ignore_window_ms: 2ms
     tags: playfield_active
   s_bank_doc_upper:
     number: 1-0-67
+    debounce: quick
+    #ignore_window_ms: 2ms
     tags: playfield_active
   s_ramp_2015_upper:
     number: 1-0-68
@@ -202,6 +222,8 @@ switches:
     tags: playfield_active
   s_tilt:
     number: 1-0-80
+  s_launch_button:
+    number: 1-0-81
 
 coils:
   c_flipper_left_main:
@@ -362,34 +384,41 @@ ball_devices:
     debug: true
   bd_plunger:
     ball_switches: s_plunger
-    entrance_count_delay: 300ms
     eject_timeouts: 5s
+    entrance_count_delay: 300ms
     eject_coil: c_plunger_eject
-    player_controlled_eject_event: sw_launch
+    eject_targets: playfield
+    player_controlled_eject_event: sw_launch #bouton d'action
+    debug: true
   bd_left_vuk:
     ball_switches: s_left_popper
-    eject_coil: c_left_popper
     eject_timeouts: 2s
+    eject_coil: c_left_popper
+    eject_targets: playfield
+    debug: true
   bd_right_vuk:
     ball_switches: s_right_popper
-    eject_coil: c_right_popper
     eject_timeouts: 2s
+    eject_coil: c_right_popper
     eject_targets: playfield
+    debug: true
   bd_upper_vuk:
     ball_switches: s_top_popper
-    eject_coil: c_top_popper
     eject_timeouts: 2s
+    eject_coil: c_top_popper
     eject_targets: bd_bras_rotatif
   bd_bras_rotatif:
-    tags: lock
     ball_switches: s_bras_slot1, s_bras_slot2, s_bras_slot3
     eject_coil: c_eject_bras_virtual
+    eject_targets: playfield
+    tags: lock
     debug: true
 
 playfields:
   playfield:
     default_source_device: bd_plunger
     tags: default
+    enable_ball_search: true
 
 ball_saves:
   default_ball_save:
@@ -410,55 +439,55 @@ lights:
 # VOIR COMMENT GERER LED DE LA DELOREAN
 # VOIR POUR LES 2 LAMPES SUR PIED
   l_translite_1:
-    number: 0-0-1
+    number: 0-0-53
   l_translite_2:
-    number: 0-0-2
+    number: 0-0-54
   l_translite_3:
-    number: 0-0-3
+    number: 0-0-55
   l_translite_4:
-    number: 0-0-4
+    number: 0-0-56
   l_translite_5:
-    number: 0-0-5
+    number: 0-0-57
   l_translite_6:
-    number: 0-0-6
+    number: 0-0-58
   l_translite_7:
-    number: 0-0-7
+    number: 0-0-59
   l_translite_8:
-    number: 0-0-8
+    number: 0-0-60
   l_translite_9:
-    number: 0-0-8
+    number: 0-0-61
   l_translite_10:
-    number: 0-0-9
+    number: 0-0-62
   l_translite_11:
-    number: 0-0-10
+    number: 0-0-63
   l_translite_12:
-    number: 0-0-11
+    number: 0-0-64
   l_translite_13:
-    number: 0-0-12
+    number: 0-0-65
   l_translite_14:
-    number: 0-0-13
+    number: 0-0-66
   l_translite_15:
-    number: 0-0-14
+    number: 0-0-67
   l_translite_16:
-    number: 0-0-15
+    number: 0-0-68
   l_translite_17:
-    number: 0-0-16
+    number: 0-0-69
   l_translite_18:
-    number: 0-0-17
+    number: 0-0-70
   l_translite_19:
-    number: 0-0-18
+    number: 0-0-71
   l_translite_20:
-    number: 0-0-19
+    number: 0-0-72
   l_translite_21:
-    number: 0-0-20
+    number: 0-0-73
   l_translite_22:
-    number: 0-0-21
+    number: 0-0-74
   l_translite_23:
-    number: 0-0-22
+    number: 0-0-75
   l_translite_24:
-    number: 0-0-23
-  l_translite_8:
-    number: 0-0-24
+    number: 0-0-76
+  l_translite_25:
+    number: 0-0-77
 
   l_left_outlane:
     number: 0-0-0
@@ -706,3 +735,5 @@ lights:
     
   l_start_button:
     number: 0-0-51
+  l_launch_button:
+    number: 0-0-52

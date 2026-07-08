@@ -1,25 +1,38 @@
 #show_version=6
+loop: 3
+- duration: 1
+  lights:
+  l_left_outlane: white
+- duration: 1
+  lights:
+    l_left_outlane: off
+    l_insert_shoot_again: white
+- duration: 1
+  lights:
+    l_insert_shoot_again: off
+    l_left_inlane_lower: white
+    l_left_inlane_top: white
+- duration: 1
+  lights:
+    l_left_inlane_lower: off
+    l_left_inlane_top: off
+    l_left_slingshot_lower: white
+    l_left_slingshot_top: white
+- duration: 1
+  lights:
+    l_left_slingshot_lower: off
+    l_left_slingshot_top: off
+    l_insert_left_inlane: white
+- duration: 1
+  lights:
+    l_insert_left_inlane: off
+    l_insert_left_outlane: white
+- duration: 1
+  lights:
+    l_insert_left_outlane: off
 
-  l_left_outlane:
-    number: 0-0-0
-  l_left_inlane_lower:
-    number: 0-0-1
-  l_left_inlane_top:
-    number: 0-0-2
-  l_left_slingshot_lower:
-    number: 0-0-3
-  l_left_slingshot_top:
-    number: 0-0-4
-  l_right_outlane:
-    number: 0-0-5
-  l_right_inlane_lower:
-    number: 0-0-6
-  l_right_inlane_top:
-    number: 0-0-7
-  l_right_slingshot_lower:
-    number: 0-0-8
-  l_right_slingshot_top:
-    number: 0-0-9
+
+
     
   l_left_inter_lower:
     number: 0-0-10
@@ -110,3 +123,37 @@
     number: 0-0-49
   l_right_popper:
     number: 0-0-50
+
+
+- duration: 1
+  lights:
+  
+    l_insert_right_outlane: white
+- duration: 1
+  lights:
+    l_insert_right_outlane: off
+    l_insert_right_inlane: white
+- duration: 1
+  lights:
+    l_insert_right_inlane: off
+    l_right_slingshot_lower: white
+    l_right_slingshot_top: white
+- duration: 1
+  lights:
+    l_right_slingshot_lower: off
+    l_right_slingshot_top: off
+    l_right_inlane_lower: white
+    l_right_inlane_top: white
+- duration: 1
+  lights:
+     l_right_inlane_lower: off
+     l_right_inlane_top: off
+     l_insert_shoot_again: white
+- duration: 1
+  lights:
+      l_insert_shoot_again: off
+      l_right_outlane: white
+- duration: 0
+  lights:
+      l_right_outlane: off
+      

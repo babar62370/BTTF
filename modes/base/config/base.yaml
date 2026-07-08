@@ -153,3 +153,193 @@ variable_player:
     score: 100
   # s_tilt:
     # number: 1-0-80
+    
+shots:
+  s_shoot_again:
+    switches: s_left_outlane, s_right_outlane
+    show_tokens:
+      leds: l_insert_shoot_again
+  s_left_inlane:
+    switches: s_left_inlane
+    show_tokens:
+      leds: l_insert_left_inlane
+  s_left_outlane:
+    switches: s_left_outlane
+    show_tokens:
+      leds: l_insert_left_outlane
+  s_right_inlane:
+    switches: s_right_inlane
+    show_tokens:
+      leds: l_insert_right_inlane
+  s_right_outlane:
+    switches: s_right_outlane
+    show_tokens:
+      leds: l_insert_right_outlane
+  s_1885:
+    switches: s_left_popper
+    show_tokens:
+      leds: l_insert_1885
+  s_1955:
+    switches: s_left_popper
+    show_tokens:
+      leds: l_insert_1955
+  s_1985:
+    switches: s_left_popper
+    show_tokens:
+      leds: l_insert_1985
+  s_2015:
+    switches: s_left_popper
+    show_tokens:
+      leds: l_insert_2015
+  s_biff:
+    switches: s_left_popper
+    show_tokens:
+      leds: l_insert_biff
+  s_bttf:
+    switches: s_left_popper
+    show_tokens:
+      leds: l_insert_bttf
+  #s_x2:
+    #switches: 
+    #show_tokens:
+      #leds: l_insert_x2
+  #s_extraball:
+    #switches: 
+    #show_tokens:
+      #leds: l_insert_extraball
+  s_mode_1985:
+    switches: s_ramp_1985_sortie
+    show_tokens:
+      leds: l_insert_mode_1985
+  s_ramp_hotel_de_ville:
+    switches: s_ramp_hotel_de_ville
+    show_tokens:
+      leds: l_insert_ramp_hotel_de_ville
+  s_mode_2015:
+    switches: s_ramp_2015_upper
+    show_tokens:
+      leds: l_insert_mode_2015
+  s_ramp_george:
+    switches: s_ramp_george
+    show_tokens:
+      leds: l_insert_ramp_george
+  s_ramp_bttf:
+    switches: s_ramp_bttf
+    show_tokens:
+      leds: l_insert_ramp_bttf
+  s_target_plutonium:
+    switches: s_target_plutonium
+    show_tokens:
+      leds: l_insert_target_plutonium
+  s_lane_1955:
+    switches: s_lane_1955
+    show_tokens:
+      leds: l_insert_lane_1955
+  s_mode_1955:
+    switches: s_ramp_1955
+    show_tokens:
+      leds: l_insert_mode_1955
+  s_bank_dmc_lower:
+    switches: s_bank_dmc_lower
+    show_tokens:
+      leds: l_insert_bank_dmc_lower
+  s_bank_dmc_middle:
+    switches: s_bank_dmc_middle
+    show_tokens:
+      leds: l_insert_bank_dmc_middle
+  s_bank_dmc_upper:
+    switches: s_bank_dmc_upper
+    show_tokens:
+      leds: l_insert_bank_dmc_upper
+  s_entree_souterrain:
+    switches: s_entree_souterrain
+    show_tokens:
+      leds: l_insert_entree_souterrain
+  s_ramp_1955:
+    switches: s_ramp_1955
+    show_tokens:
+      leds: l_insert_ramp_1955
+  s_lane_1885:
+    switches: s_lane_1885
+    show_tokens:
+      leds: l_insert_lane_1885
+  s_mode_1885:
+    switches: s_lane_1885
+    show_tokens:
+      leds: l_insert_mode_1885
+  s_target_hill_valley:
+    switches: s_target_hill_valley
+    show_tokens:
+      leds: l_insert_target_hill_valley
+  s_lane_cafe_einstein:
+    switches: s_lane_cafe_einstein
+    show_tokens:
+      leds: l_insert_lane_cafe_einstein
+  s_lane_einstein_upper:
+    switches: s_lane_einstein_upper
+    show_tokens:
+      leds: l_insert_lane_einstein_upper
+  s_mode_einstein_multiball:
+    switches: s_top_popper
+    show_tokens:
+      leds: l_insert_einstein_multiball
+  s_lane_biff:
+    switches: s_lane_biff
+    show_tokens:
+      leds: l_insert_lane_biff
+  #?????
+  #s_lane_doc_lower:
+    #switches: s_lane_doc_lower
+    #show_tokens:
+      #leds: l_insert_lane_doc_lower
+  #s_lane_doc_upper:
+    #switches: s_lane_doc_upper
+    #show_tokens:
+      #leds: l_insert_lane_doc_upper
+  s_lane_horloge:
+    switches: s_lane_horloge
+    show_tokens:
+      leds: l_insert_lane_horloge
+  s_target_foudre:
+    switches: s_target_foudre
+    show_tokens:
+      leds: l_insert_target_foudre
+  s_target_overboard:
+    switches: s_target_overboard
+    show_tokens:
+      leds: l_insert_target_overboard
+  s_bank_doc_lower:
+    switches: s_bank_doc_lower
+    show_tokens:
+      leds: l_insert_bank_doc_lower
+  s_bank_doc_middle:
+    switches: s_bank_doc_middle
+    show_tokens:
+      leds: l_insert_bank_doc_middle
+  s_bank_doc_upper:
+    switches: s_bank_doc_upper
+    show_tokens:
+      leds: l_insert_bank_doc_upper
+  s_ramp_2015_upper:
+    switches: s_ramp_2015_upper
+    show_tokens:
+      leds: l_insert_ramp_2015_upper
+  s_lane_marty:
+    switches: s_lane_marty
+    show_tokens:
+      leds: l_insert_lane_marty
+  s_lane_lorraine:
+    switches: s_lane_lorraine
+    show_tokens:
+      leds: l_insert_lane_lorraine
+  s_lane_marvin:
+    switches: s_lane_marvin
+    show_tokens:
+      leds: l_insert_lane_marvin
+  s_lane_guitar:
+    switches: s_lane_guitar
+    show_tokens:
+      leds: l_insert_lane_guitar_1, l_insert_lane_guitar_2, l_insert_lane_guitar_3, l_insert_lane_guitar_4, l_insert_lane_guitar_5, l_insert_lane_guitar_6, l_insert_lane_guitar_7, l_insert_lane_guitar_8, l_insert_lane_guitar_9, l_insert_lane_guitar_10
+      
+      
+#PENSER A FAIRE ETTEINDRE LES BUMPERS TEMPORAIREMENT LORSQU'ILS SONT TOUCHES
