@@ -2,12 +2,8 @@
   
   l_ramp_1985_entree:
     number: 0-0-47
-  l_insert_mode_1985:
-    number: 1-0-21
+
   l_insert_ramp_hotel_de_ville:
     number: 1-0-22
   l_ramp_2015_lower:
     number: 0-0-48
-    
-  l_insert_mode_2015:
-    number: 1-0-23

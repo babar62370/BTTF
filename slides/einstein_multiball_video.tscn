@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://b7aea6b5r0ry3"]
+
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_u4ijs"]
+
+[node name="EinsteinMultiballVideo" type="Control" unique_id=1662474164]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_u4ijs")
+metadata/_custom_type_script = "uid://dru3usokwlhd3"

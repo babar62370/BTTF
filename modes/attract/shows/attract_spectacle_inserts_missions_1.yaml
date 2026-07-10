@@ -1,0 +1,28 @@
+#show_version=6
+loop: 3
+- duration: 1
+  lights:
+    l_insert_1885: white
+- duration: 1
+  lights:
+  l_insert_1885: off
+  l_insert_1955: white
+- duration: 1
+  lights:
+  l_insert_1955: off
+  l_insert_1985: white
+- duration: 1
+  lights:
+  l_insert_1985: off
+  l_insert_2015: white
+- duration: 1
+  lights:
+  l_insert_2015: off
+  l_insert_bttf: white
+- duration: 0
+  lights:
+  l_insert_bttf: off
+  
+  
+  # l_insert_x2:
+  # l_insert_extraball:

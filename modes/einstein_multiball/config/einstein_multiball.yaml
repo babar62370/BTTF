@@ -33,7 +33,7 @@ event_player:
 multiball_locks:
   lock_einstein:
     lock_devices: bd_bras_rotatif
-    balls_to_lock: 3                            
+    balls_to_lock: 3
 
 # 4. Déclenchement de la multibille à 3 billes
 multiballs:

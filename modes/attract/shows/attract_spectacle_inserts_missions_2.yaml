@@ -1,0 +1,20 @@
+#show_version=6
+loop: 3
+- duration: 1
+  lights:
+    l_insert_biff: white
+- duration: 1
+  lights:
+  l_insert_biff: off
+  l_insert_1885: white
+  l_insert_1955: white
+  l_insert_1985: white
+  l_insert_2015: white
+  l_insert_bttf: white
+- duration: 1
+  lights:
+  l_insert_1885: off
+  l_insert_1955: off
+  l_insert_1985: off
+  l_insert_2015: off
+  l_insert_bttf: off

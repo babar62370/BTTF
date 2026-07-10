@@ -45,7 +45,7 @@ loop: 3
     l_left_jet_lower: white
     l_right_jet_lower: white
     l_lower_jet_lower: white
-- duration: 0
+- duration: 1
   lights:
     l_left_jet_lower: off
     l_right_jet_lower: off

@@ -2,34 +2,34 @@
 
 sound_player:
   mode_attract_started:
-    theme_bttf:
-      bus: music
+	theme_bttf:
+	  bus: music
   mode_attract_display_loop_started:
-    bttf_attract:
-      bus: music
+	bttf_attract:
+	  bus: music
   mode_attract_game_over_started:
-    bttf_theme:
-      bus: music
+	bttf_theme:
+	  bus: music
 
 slide_player:
   mode_attract_started:
-    attract:
-      target: DefaultDisplay
+	attract:
+	  target: DefaultDisplay
 
 show_player:
   mode_attract_started:
-    attract_display_loop:
-      speed: 1
-    attract_light_show:
-      speed: 4
+	attract_display_loop:
+	  speed: 1
+	attract_light_show:
+	  speed: 4
 # OU PAR EXEMPLE
 # show_player:
-    # mode_attract_started:
-      # attract_display_loop:
-        # speed: 1
-      # flipper_red_flashing:
-        # speed: 2
-      # purple_mode_sweep:
-        # speed: 4
-      # inlane_alternating:
-        # speed: 3
+	# mode_attract_started:
+	  # attract_display_loop:
+		# speed: 1
+	  # flipper_red_flashing:
+		# speed: 2
+	  # purple_mode_sweep:
+		# speed: 4
+	  # inlane_alternating:
+		# speed: 3

@@ -45,13 +45,10 @@
   l_insert_delorean_right_4:
     number: 1-0-20
     
-  l_insert_mode_1985:
-    number: 1-0-21
+
   l_insert_ramp_hotel_de_ville:
     number: 1-0-22
-    
-  l_insert_mode_2015:
-    number: 1-0-23
+
   l_insert_ramp_george:
     number: 1-0-24
   l_insert_ramp_bttf:
@@ -61,8 +58,6 @@
     number: 1-0-26
   l_insert_lane_1955:
     number: 1-0-27
-  l_insert_mode_1955:
-    number: 1-0-28
     
   l_insert_bank_dmc_lower:
     number: 1-0-29
@@ -77,8 +72,6 @@
     number: 1-0-33
   l_insert_lane_1885:
     number: 1-0-34
-  l_insert_mode_1885:
-    number: 1-0-35
     
   l_insert_target_hill_valley:
     number: 1-0-36

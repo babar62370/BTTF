@@ -1,0 +1,8 @@
+#config_version=6
+
+event_player:
+  s_flipper_left_active: change_previous_mode_selection
+  s_flipper_right_active: change_next_mode_selection
+  s_launch_active: 
+    - start_selected_game_mode
+    - selection_completed  # Événement qui libère le ball_hold et éjecte la bille
