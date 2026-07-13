@@ -1,16 +1,25 @@
 #show_version=6
-
-  l_insert_target_plutonium:
-    number: 1-0-26
-  l_insert_lane_1955:
-    number: 1-0-27
-  l_left_popper:
-    number: 0-0-49
-  l_insert_bank_dmc_lower:
-    number: 1-0-29
-  l_insert_bank_dmc_middle:
-    number: 1-0-30
-  l_insert_bank_dmc_upper:
-    number: 1-0-31
-  l_insert_entree_souterrain:
-    number: 1-0-32
+# loop: 3
+- duration: 1
+  lights:
+    l_insert_target_plutonium: white
+- duration: 1
+  lights:
+    l_insert_target_plutonium: off
+    l_insert_lane_1955: white
+- duration: 1
+  lights:
+    l_insert_lane_1955: off
+    l_insert_bank_dmc_lower: white
+- duration: 1
+  lights:
+    l_insert_bank_dmc_lower: off
+    l_insert_bank_dmc_middle: white
+- duration: 1
+  lights:
+    l_insert_bank_dmc_middle: off
+    l_insert_bank_dmc_upper: white
+# VALEUR SUPERIEURE A ZERO POUR LE DERNIER
+- duration: 1
+  lights:
+    l_insert_bank_dmc_upper: off

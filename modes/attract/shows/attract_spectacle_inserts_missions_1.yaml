@@ -1,27 +1,28 @@
 #show_version=6
-loop: 3
+# loop: 3
 - duration: 1
   lights:
     l_insert_1885: white
 - duration: 1
   lights:
-  l_insert_1885: off
-  l_insert_1955: white
+    l_insert_1885: off
+    l_insert_1955: white
 - duration: 1
   lights:
-  l_insert_1955: off
-  l_insert_1985: white
+    l_insert_1955: off
+    l_insert_1985: white
 - duration: 1
   lights:
-  l_insert_1985: off
-  l_insert_2015: white
+    l_insert_1985: off
+    l_insert_2015: white
 - duration: 1
   lights:
-  l_insert_2015: off
-  l_insert_bttf: white
-- duration: 0
+    l_insert_2015: off
+    l_insert_bttf: white
+# VALEUR SUPERIEURE A ZERO POUR LE DERNIER
+- duration: 1
   lights:
-  l_insert_bttf: off
+    l_insert_bttf: off
   
   
   # l_insert_x2:

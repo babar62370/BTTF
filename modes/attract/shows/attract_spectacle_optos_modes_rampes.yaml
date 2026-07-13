@@ -1,9 +1,6 @@
 #show_version=6
-  
-  l_ramp_1985_entree:
-    number: 0-0-47
-
-  l_insert_ramp_hotel_de_ville:
-    number: 1-0-22
-  l_ramp_2015_lower:
-    number: 0-0-48
+- duration: 1
+  lights:
+    l_insert_ramp_1985: off
+    l_insert_ramp_hotel_de_ville: off
+    l_insert_ramp_2015: off

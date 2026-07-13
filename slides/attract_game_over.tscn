@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_044e0"]
 [ext_resource type="Script" uid="uid://cnc7dblwai6nd" path="res://addons/mpf-gmc/classes/mpf_display.gd" id="2_bn1i2"]
-[ext_resource type="Texture2D" uid="uid://itg0endkbv85" path="res://you_re_fired.jpeg" id="3_dmb7m"]
+[ext_resource type="Texture2D" uid="uid://dse87w750mwe4" path="res://pictures/you_re_fired.jpeg" id="3_dmb7m"]
 [ext_resource type="AudioStream" uid="uid://hp1gj25a3y4j" path="res://sounds/music/theme_bttf.mp3" id="4_dmb7m"]
 
 [node name="AttractGameOver" type="Control" unique_id=147791460]
@@ -27,3 +27,4 @@ texture = ExtResource("3_dmb7m")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1808476625]
 stream = ExtResource("4_dmb7m")
+bus = &"music"

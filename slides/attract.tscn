@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_r1mnt"]
 [ext_resource type="Script" uid="uid://cnc7dblwai6nd" path="res://addons/mpf-gmc/classes/mpf_display.gd" id="2_f161n"]
 [ext_resource type="AudioStream" uid="uid://hp1gj25a3y4j" path="res://sounds/music/theme_bttf.mp3" id="2_m2s46"]
-[ext_resource type="Texture2D" uid="uid://jgpf550ahn33" path="res://thumb-1920-653673.jpg" id="3_cq3lo"]
+[ext_resource type="Texture2D" uid="uid://0bhpfl88qscq" path="res://pictures/fond_attract.jpg" id="3_f161n"]
 
 [node name="Attract" type="Control" unique_id=1371654811]
 layout_mode = 3
@@ -23,7 +23,7 @@ z_index = 1
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
-texture = ExtResource("3_cq3lo")
+texture = ExtResource("3_f161n")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=2016224634]
 stream = ExtResource("2_m2s46")

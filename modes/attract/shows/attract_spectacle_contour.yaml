@@ -1,8 +1,8 @@
 #show_version=6
-loop: 3
+# loop: 3
 - duration: 1
   lights:
-  l_left_outlane: white
+    l_left_outlane: white
 - duration: 1
   lights:
     l_left_outlane: off
@@ -10,14 +10,14 @@ loop: 3
 - duration: 1
   lights:
     l_insert_shoot_again: off
-    l_left_inlane_lower: white
-    l_left_inlane_top: white
+    l_left_inlane_lower: floralwhite
+    l_left_inlane_top: red
 - duration: 1
   lights:
     l_left_inlane_lower: off
     l_left_inlane_top: off
-    l_left_slingshot_lower: white
-    l_left_slingshot_top: white
+    l_left_slingshot_lower: floralwhite
+    l_left_slingshot_top: red
 - duration: 1
   lights:
     l_left_slingshot_lower: off
@@ -30,104 +30,44 @@ loop: 3
 - duration: 1
   lights:
     l_insert_left_outlane: off
-
-
-
-    
-  l_left_inter_lower:
-    number: 0-0-10
-  l_left_inter_top:
-    number: 0-0-11
-  l_right_inter_lower:
-    number: 0-0-12
-  l_right_inter_middle_lower:
-    number: 0-0-13
-  l_right_inter_middle_top:
-    number: 0-0-14
-  l_right_inter_top:
-    number: 0-0-15
-    
-  l_left_top_lower:
-    number: 0-0-16
-  l_left_top_top:
-    number: 0-0-17
-  l_left_top_left:
-    number: 0-0-18
-  l_left_top_right:
-    number: 0-0-19
-  l_miniplayfield_lower:
-    number: 0-0-20
-  l_miniplayfield_top:
-    number: 0-0-21
-    
-  l_up_middle:
-    number: 0-0-22
-  l_up_middle_left:
-    number: 0-0-23
-  l_up_left:
-    number: 0-0-24
-  l_up_middle_right:
-    number: 0-0-25
-  l_up_right:
-    number: 0-0-26
-  
-  l_entree_souterrain:
-    number: 0-0-27
-  l_delorean:
-    number: 0-0-28
-  
-  l_lower_jet_1:
-    number: 0-0-29
-  l_lower_jet_2:
-    number: 0-0-30
-  l_lower_jet_3:
-    number: 0-0-31
-  l_lower_jet_4:
-    number: 0-0-32
-  l_lower_jet_lower:
-    number: 0-0-33
-  l_lower_jet:
-    number: 0-0-34
-  l_left_jet_1:
-    number: 0-0-35
-  l_left_jet_2:
-    number: 0-0-36
-  l_left_jet_3:
-    number: 0-0-37
-  l_left_jet_4:
-    number: 0-0-38
-  l_left_jet_lower:
-    number: 0-0-39
-  l_left_jet:
-    number: 0-0-40
-  l_right_jet_1:
-    number: 0-0-41
-  l_right_jet_2:
-    number: 0-0-42
-  l_right_jet_3:
-    number: 0-0-43
-  l_right_jet_4:
-    number: 0-0-44
-  l_right_jet_lower:
-    number: 0-0-45
-  l_right_jet:
-    number: 0-0-46
-    
-  # OPTOS
-  l_ramp_1985_entree:
-    number: 0-0-47
-  l_ramp_2015_lower:
-    number: 0-0-48
-    
-  l_left_popper:
-    number: 0-0-49
-  l_right_popper:
-    number: 0-0-50
-
-
 - duration: 1
   lights:
-  
+    l_left_inter_lower: floralwhite
+    l_left_inter_top: red
+- duration: 1
+  lights:
+    l_left_inter_lower: off
+    l_left_inter_top: off
+    l_left_top_lower: floralwhite
+    l_left_top_top: red
+- duration: 1
+  lights:
+    l_left_top_lower: off
+    l_left_top_top: off
+    l_left_top_left: floralwhite
+    l_left_top_right: red
+- duration: 1
+  lights:
+    l_left_top_left: off
+    l_left_top_right: off
+    l_miniplayfield_lower: floralwhite
+    l_miniplayfield_top: red
+- duration: 1
+  lights:
+    l_miniplayfield_lower: off
+    l_miniplayfield_top: off
+    l_right_inter_lower: floralwhite
+    l_right_inter_middle_lower: red
+- duration: 1
+  lights:
+    l_right_inter_lower: off
+    l_right_inter_middle_lower: off
+    l_right_inter_middle_top: floralwhite
+    l_right_inter_top: red
+- duration: 1
+  lights:
+    l_right_inter_middle_top: off
+    l_right_inter_top: off
     l_insert_right_outlane: white
 - duration: 1
   lights:
@@ -136,24 +76,24 @@ loop: 3
 - duration: 1
   lights:
     l_insert_right_inlane: off
-    l_right_slingshot_lower: white
-    l_right_slingshot_top: white
+    l_right_slingshot_lower: floralwhite
+    l_right_slingshot_top: red
 - duration: 1
   lights:
     l_right_slingshot_lower: off
     l_right_slingshot_top: off
-    l_right_inlane_lower: white
-    l_right_inlane_top: white
+    l_right_inlane_lower: floralwhite
+    l_right_inlane_top: red
 - duration: 1
   lights:
-     l_right_inlane_lower: off
-     l_right_inlane_top: off
-     l_insert_shoot_again: white
+    l_right_inlane_lower: off
+    l_right_inlane_top: off
+    l_insert_shoot_again: white
 - duration: 1
   lights:
-      l_insert_shoot_again: off
-      l_right_outlane: white
-- duration: 0
+    l_insert_shoot_again: off
+    l_right_outlane: white
+# VALEUR SUPERIEURE A ZERO POUR LE DERNIER
+- duration: 1
   lights:
-      l_right_outlane: off
-      
+    l_right_outlane: off

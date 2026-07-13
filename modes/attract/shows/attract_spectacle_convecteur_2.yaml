@@ -1,5 +1,5 @@
 #show_version=6
-loop: 3
+# loop: 3
 - duration: 1
   lights:
     l_lower_jet_1: white
@@ -31,7 +31,8 @@ loop: 3
     l_right_jet_3: white
     l_right_jet_4: white
     l_right_jet: white
-- duration: 0
+# VALEUR SUPERIEURE A ZERO POUR LE DERNIER
+- duration: 1
   lights:
     l_right_jet_1: off
     l_right_jet_2: off

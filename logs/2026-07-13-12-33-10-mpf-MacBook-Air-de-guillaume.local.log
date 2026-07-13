@@ -1,0 +1,152 @@
+2026-07-13 12:33:10,263 : INFO : root : Loading config.
+2026-07-13 12:33:10,264 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2026-07-13 12:33:10,265 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/888a835b5fde052b87252136c50b804e.mpf_cache
+2026-07-13 12:33:10,308 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/8622cd1fe0050c6b0179be5a651e22f5.mpf_cache
+2026-07-13 12:33:10,308 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/58f948f5e9fe219120f05e295bb3ef65.mpf_cache
+2026-07-13 12:33:10,308 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/8622cd1fe0050c6b0179be5a651e22f5.mpf_cache
+2026-07-13 12:33:10,309 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/369243a5c0d089a5c3bcaae4a6363538.mpf_cache
+2026-07-13 12:33:10,309 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/6b2ea6a059b1471fc11c0d698e7bdf4d.mpf_cache
+2026-07-13 12:33:10,310 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/f3729628e4da70e5a99b26bb51fe2181.mpf_cache
+2026-07-13 12:33:10,310 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/ecb4a8919cc1a87edeef7009f6830f34.mpf_cache
+2026-07-13 12:33:10,310 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/8eda3bfc3491af5b2d5a6601353f6605.mpf_cache
+2026-07-13 12:33:10,311 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/581d676710c2871be6f783a12bf98625.mpf_cache
+2026-07-13 12:33:10,311 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/a21553c1ac805a700d8b713d0f44e0c8.mpf_cache
+2026-07-13 12:33:10,311 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/0d9f9158edcd8a544f1cc762de36862e.mpf_cache
+2026-07-13 12:33:10,311 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/d53881144f70f949ef8c9a20bb6e0849.mpf_cache
+2026-07-13 12:33:10,311 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/7aaf5ab0d322ea9db6c1b184ff40287e.mpf_cache
+2026-07-13 12:33:10,311 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/ac3be5edfbbf92236ea88049c0ddb00a.mpf_cache
+2026-07-13 12:33:10,312 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/550a6f83f4caa58b35baf39eb1e7a728.mpf_cache
+2026-07-13 12:33:10,312 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/b82c39b8e9cf8883f5e2652efee2ee7b.mpf_cache
+2026-07-13 12:33:10,312 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/2b89fedbea910d9b86e5b4e70942be71.mpf_cache
+2026-07-13 12:33:10,312 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/48e025c4983ab137c223b7f5838fabeb.mpf_cache
+2026-07-13 12:33:10,312 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/0048e46cc60efa461e51e3f9e457df73.mpf_cache
+2026-07-13 12:33:10,313 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/d6ac7ae44e391f5f397a8f8b86ce675b.mpf_cache
+2026-07-13 12:33:10,313 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/f383f9f089ac5e4549ed7cad27cecfe8.mpf_cache
+2026-07-13 12:33:10,313 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/7ffc32fb62065f75d91e1dbaef21c48f.mpf_cache
+2026-07-13 12:33:10,313 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/65a10664aa893c4ab49802f04ca58985.mpf_cache
+2026-07-13 12:33:10,313 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/a3185994ee7b7973316218a20d02dc37.mpf_cache
+2026-07-13 12:33:10,313 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/23bd90c22533ccaef698d4044dfa0fb3.mpf_cache
+2026-07-13 12:33:10,314 : INFO : Machine : Mission Pinball Framework Core Engine v0.80.0
+2026-07-13 12:33:10,314 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'force_assets_load': False, 'platform_integration_test': False, 'jsonlogging': False, 'logfile': 'logs/2026-07-13-12-33-10-mpf-MacBook-Air-de-guillaume.local.log', 'pause': False, 'production': False, 'text_ui': False, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': 'smart_virtual', 'syslog_address': None, 'full_logfile_path': '/Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB/logs/2026-07-13-12-33-10-mpf-MacBook-Air-de-guillaume.local.log'}
+2026-07-13 12:33:10,314 : INFO : Machine : MPF path: /Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf
+2026-07-13 12:33:10,314 : INFO : Machine : Machine path: /Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB
+2026-07-13 12:33:10,314 : INFO : Machine : Platform: darwin
+2026-07-13 12:33:10,314 : INFO : Machine : Python executable location: /Users/guillaumebarre/mpf/bin/python
+2026-07-13 12:33:10,314 : INFO : Machine : Python version: 3.12.9 (64-bit)
+2026-07-13 12:33:10,314 : INFO : Machine : Initializing MPF...
+2026-07-13 12:33:10,361 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2026-07-13 12:33:10,370 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.5, 'prev_value': None, 'change': True}
+2026-07-13 12:33:10,370 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'Mission Pinball Framework v0.80.0', 'prev_value': None, 'change': True}
+2026-07-13 12:33:10,370 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'Mission Pinball Framework v0.80.0, Config version:6, Show version: 6, BCP version:1.1', 'prev_value': None, 'change': True}
+2026-07-13 12:33:10,370 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.12.9', 'prev_value': None, 'change': True}
+2026-07-13 12:33:10,390 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'macOS-26.5.1-arm64-arm-64bit', 'prev_value': None, 'change': True}
+2026-07-13 12:33:10,390 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Darwin', 'prev_value': None, 'change': True}
+2026-07-13 12:33:10,390 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '25.5.0', 'prev_value': None, 'change': True}
+2026-07-13 12:33:10,390 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': 'Darwin Kernel Version 25.5.0: Mon Apr 27 20:38:00 PDT 2026; root:xnu-12377.121.6~2/RELEASE_ARM64_T8103', 'prev_value': None, 'change': True}
+2026-07-13 12:33:10,390 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'arm64', 'prev_value': None, 'change': True}
+2026-07-13 12:33:10,390 : INFO : EventManager : Event: ======'machine_var_log_file_path'====== Args={'value': '/Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB/logs/2026-07-13-12-33-10-mpf-MacBook-Air-de-guillaume.local.log', 'prev_value': None, 'change': True}
+2026-07-13 12:33:10,390 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2026-07-13 12:33:10,413 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2026-07-13 12:33:10,414 : INFO : SwitchController : Found active switch: ('0-0-8', <Platform.SmartVirtual>) <switch.s_trough5>
+2026-07-13 12:33:10,414 : INFO : SwitchController : Found active switch: ('1-0-40', <Platform.SmartVirtual>) <switch.s_trough1>
+2026-07-13 12:33:10,414 : INFO : SwitchController : Found active switch: ('1-0-41', <Platform.SmartVirtual>) <switch.s_trough2>
+2026-07-13 12:33:10,414 : INFO : SwitchController : Found active switch: ('1-0-42', <Platform.SmartVirtual>) <switch.s_trough3>
+2026-07-13 12:33:10,414 : INFO : SwitchController : Found active switch: ('1-0-43', <Platform.SmartVirtual>) <switch.s_trough4>
+2026-07-13 12:33:10,416 : ERROR : asyncio : Exception in callback EventManager._queue_task_done(<Task finishe...pdate,queue')>)
+handle: <Handle EventManager._queue_task_done(<Task finishe...pdate,queue')>)>
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/events.py", line 795, in _queue_task_done
+    future.result()
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/events.py", line 708, in _run_handlers_sequential
+    handler.callback(queue=queue, **merged_kwargs)
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/mode_controller.py", line 97, in initialize_modes
+    item.method(config=mode.config[item.config_section],
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/config_player.py", line 150, in process_mode_config
+    config = self.validate_config(config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/config_player.py", line 113, in validate_config
+    validated_config[event] = self.validate_config_entry(settings, event)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/config_players/device_config_player.py", line 56, in validate_config_entry
+    raise e
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/config_players/device_config_player.py", line 52, in validate_config_entry
+    self._validate_config_item(device, device_settings))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/config_players/device_config_player.py", line 78, in _validate_config_item
+    device_settings = self._parse_config(device_settings, device)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/config_player.py", line 144, in _parse_config
+    return self.get_full_config(config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/config_player.py", line 216, in get_full_config
+    return self.machine.config_validator.validate_config(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/config_validator.py", line 164, in validate_config
+    return self._validate_config(config_spec, source, base_spec=base_spec, add_missing_keys=add_missing_keys,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/config_validator.py", line 204, in _validate_config
+    processed_config[k] = self.validate_config_item(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/config_validator.py", line 243, in validate_config_item
+    return self.validate_item(item, validation, validation_failure_info)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/config_validator.py", line 699, in validate_item
+    return self.validator_list[validator](item, validation_failure_info=validation_failure_info, param=param)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/config_validator.py", line 390, in _validate_type_enum
+    raise self.validation_error(
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in ConfigValidator: Failed to load config player start_einstein_multiball:shows with settings {'servo_bras_einstein': 'position_max_du_bras', 'einstein_multiball_video': {'action': 'play'}} >> Config validation error: Entry show_player:show_player:action = "position_max_du_bras" is not valid. Entry "position_max_du_bras" is not valid for enum. Valid values are: play,stop,pause,resume,advance,step_back,update,queue Error Code: CFE-ConfigValidator-5 (https://missionpinball.org/latest/logs)
+2026-07-13 12:33:10,420 : INFO : Machine : Starting the main run loop with active modes: []
+2026-07-13 12:33:10,420 : WARNING : Machine : Attract mode is not active, game will not be playable. Please check your attract mode configuration.
+2026-07-13 12:33:10,420 : INFO : Machine : Shutting down...
+2026-07-13 12:33:10,420 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2026-07-13 12:33:11,421 : ERROR : Machine : Runtime Exception
+Traceback (most recent call last):
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/machine.py", line 810, in _run_loop
+    raise self._exception['exception']
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/events.py", line 795, in _queue_task_done
+    future.result()
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/events.py", line 708, in _run_handlers_sequential
+    handler.callback(queue=queue, **merged_kwargs)
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/mode_controller.py", line 97, in initialize_modes
+    item.method(config=mode.config[item.config_section],
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/config_player.py", line 150, in process_mode_config
+    config = self.validate_config(config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/config_player.py", line 113, in validate_config
+    validated_config[event] = self.validate_config_entry(settings, event)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/config_players/device_config_player.py", line 56, in validate_config_entry
+    raise e
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/config_players/device_config_player.py", line 52, in validate_config_entry
+    self._validate_config_item(device, device_settings))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/config_players/device_config_player.py", line 78, in _validate_config_item
+    device_settings = self._parse_config(device_settings, device)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/config_player.py", line 144, in _parse_config
+    return self.get_full_config(config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/config_player.py", line 216, in get_full_config
+    return self.machine.config_validator.validate_config(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/config_validator.py", line 164, in validate_config
+    return self._validate_config(config_spec, source, base_spec=base_spec, add_missing_keys=add_missing_keys,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/config_validator.py", line 204, in _validate_config
+    processed_config[k] = self.validate_config_item(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/config_validator.py", line 243, in validate_config_item
+    return self.validate_item(item, validation, validation_failure_info)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/config_validator.py", line 699, in validate_item
+    return self.validator_list[validator](item, validation_failure_info=validation_failure_info, param=param)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/config_validator.py", line 390, in _validate_type_enum
+    raise self.validation_error(
+mpf.exceptions.config_file_error.ConfigFileError: Config File Error in ConfigValidator: Failed to load config player start_einstein_multiball:shows with settings {'servo_bras_einstein': 'position_max_du_bras', 'einstein_multiball_video': {'action': 'play'}} >> Config validation error: Entry show_player:show_player:action = "position_max_du_bras" is not valid. Entry "position_max_du_bras" is not valid for enum. Valid values are: play,stop,pause,resume,advance,step_back,update,queue Error Code: CFE-ConfigValidator-5 (https://missionpinball.org/latest/logs)
+2026-07-13 12:33:11,423 : INFO : root : MPF run loop ended.

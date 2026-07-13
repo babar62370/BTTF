@@ -12,6 +12,7 @@ slide_player:
   mode_base_started:
     base_infos:
       target: DefaultDisplay
+      action: play
 
 sound_player:
   mode_base_started:
@@ -23,18 +24,8 @@ mode_settings:
     mode_start:
       - attract
 
-# shows:
-  # toy_hit:
-    # - duration: 1s
-      # events: open_mouth
-    # - duration: 2s
-      # events: close_mouth
 show_player:
-  # Événement déclenché lorsque le verrouillage des 3 billes est complet (ex: lancement du multibille)
   start_einstein_multiball:
-    # 1. Le servo va directement à sa position maximale
-    servo_bras_einstein: position_max_du_bras
-    # 2. La vidéo est lancée en même temps
     einstein_multiball_video:
       action: play
 
@@ -185,7 +176,8 @@ sequence_shots:
   # QUE FAIRE DE s_ramp_hotel_de_ville ET s_ramp_george ET s_ramp_bttf CAR IL N'Y A PAS DE SORTIE, IL FAUT LE COMBINER AVEC UN AUTRE SWITCH ??
   # IDEM POUR s_ramp_bttf ET s_lane_cafe_einstein ET s_lane_einstein_upper
   shot_ramp_1955:
-    switch_sequence: s_lane_1955, s_ramp_1955
+  # A VERIFIER +++
+    switch_sequence: s_lane_1955, s_ramp_1955, s_ramp_1985_sortie
     sequence_timeout: 3s
   # REVOIR SEQUENCE TIMEOUT A 1S POUR LES RAMPES DE BAS DE PLATEAU
   
@@ -258,10 +250,24 @@ shots:
     switches: s_target_plutonium
     show_tokens:
       leds: l_insert_target_plutonium
+  # A REVOIR +++
   # shot_lane_1955:
     # switches: s_lane_1955
     # show_tokens:
       # leds: l_insert_lane_1955
+  # ET IL MANQUAIT POPPER GAUCHE ET DROITE, D'AUTRES OUBLIS ?
+  shot_left_popper:
+    switches: s_left_popper
+    show_tokens:
+      leds: l_insert_left_popper
+  shot_year:
+    switches: s_left_popper
+    show_tokens:
+      leds: l_insert_year
+  shot_right_popper:
+    switches: s_right_popper
+    show_tokens:
+      leds: l_insert_bank_dmc_middle
   shot_bank_dmc_lower:
     switches: s_bank_dmc_lower
     show_tokens:
@@ -278,10 +284,6 @@ shots:
     switches: s_entree_souterrain
     show_tokens:
       leds: l_insert_entree_souterrain
-  shot_ramp_1955:
-    switches: s_ramp_1955
-    show_tokens:
-      leds: l_insert_ramp_1955
   shot_lane_1885:
     switches: s_lane_1885
     show_tokens:
@@ -339,14 +341,6 @@ shots:
     switches: s_bank_doc_upper
     show_tokens:
       leds: l_insert_bank_doc_upper
-  shot_ramp_2015_upper:
-    switches: s_ramp_2015_upper
-    show_tokens:
-      leds: l_insert_ramp_2015_upper
-  shot_lane_marty:
-    switches: s_lane_marty
-    show_tokens:
-      leds: l_insert_lane_marty
   shot_lane_lorraine:
     switches: s_lane_lorraine
     show_tokens:
@@ -363,20 +357,23 @@ shots:
   shot_ramp_1985_complete:
     hit_events: shot_ramp_1985_hit
     show_tokens:
-      leds: l_ramp_1985_entree
-      # A REVOIR PK ENTREE ???
+      leds: l_insert_ramp_1985
   shot_ramp_2015_complete:
     hit_events: shot_ramp_2015_hit
     show_tokens:
-      leds: l_insert_ramp_2015_upper
+      leds: l_insert_ramp_2015
   shot_ramp_1955_complete:
     hit_events: shot_ramp_1955_hit
     show_tokens:
       leds: l_insert_ramp_1955
+  shot_ramp_marty_complete:
+    hit_events: shot_ramp_marty_hit
+    show_tokens:
+      leds: l_insert_lane_marty
 
 shot_groups:
   qualification_selection_modes_group:
-    shots: shot_lane_1885, shot_ramp_1955_complete, shot_ramp_1985_complete, shot_ramp_2015_complete, shot_lane_biff, shot_ramp_bttf
+    shots: shot_lane_1885, shot_ramp_1955_complete, shot_ramp_1985_complete, shot_ramp_2015_complete
     enable_events: ball_started
     reset_events: selection_modes_completed
       

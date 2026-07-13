@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://dw0eu8lash7u3"]
+
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_20v74"]
+[ext_resource type="Script" uid="uid://cnc7dblwai6nd" path="res://addons/mpf-gmc/classes/mpf_display.gd" id="2_bnoma"]
+[ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="3_n3prr"]
+
+[node name="SlideChoixEpoque" type="Control" unique_id=983252562]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+script = ExtResource("1_20v74")
+metadata/_custom_type_script = "uid://dru3usokwlhd3"
+
+[node name="MPFDisplay" type="Control" parent="." unique_id=1836618463]
+anchors_preset = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+script = ExtResource("2_bnoma")
+metadata/_custom_type_script = "uid://cnc7dblwai6nd"
+
+[node name="Label" type="Label" parent="MPFDisplay" unique_id=1396300608]
+layout_mode = 0
+offset_left = 154.0
+offset_top = 102.0
+offset_right = 718.0
+offset_bottom = 281.0
+
+[node name="MPFVariable" type="Label" parent="MPFDisplay/Label" unique_id=1181841917]
+layout_mode = 0
+offset_right = 623.0
+offset_bottom = 234.0
+script = ExtResource("3_n3prr")
+variable_name = "current_year"
+metadata/_custom_type_script = "uid://bfvhmv2eirpua"

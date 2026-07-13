@@ -1,16 +1,9 @@
 #show_version=6
-loop: 3
+# A REVOIR COMPLETEMENT +++
+# loop: 3
 - duration: 1
   lights:
-    l_left_jet: white
-    l_right_jet: white
-    l_lower_jet: white
-- duration: 1
-  lights:
-  l_insert_ramp_1955:
-    number: 1-0-33
-  l_insert_lane_1885:
-    number: 1-0-34
-  l_right_popper:
-    number: 0-0-50
+    l_insert_ramp_1955: off
+    l_insert_lane_1885: off
+    l_right_popper: off
   

@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://by4y2hwcs1cc8"]
 
 [ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_qqsk2"]
-[ext_resource type="Texture2D" uid="uid://ve7nl6kv2m8p" path="res://BTTF/DEF/BTTF_MINI-PC/GITHUB/Page 1.png" id="2_tve0m"]
+[ext_resource type="Script" uid="uid://cnc7dblwai6nd" path="res://addons/mpf-gmc/classes/mpf_display.gd" id="2_qdyu4"]
+[ext_resource type="Texture2D" path="res://BTTF/DEF/BTTF_MINI-PC/GITHUB/Page 1.png" id="2_tve0m"]
 [ext_resource type="AudioStream" uid="uid://8238u6w8mmsy" path="res://sounds/music/power_of_love.mp3" id="3_d8l0k"]
 [ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="4_tve0m"]
 
@@ -11,17 +12,27 @@ anchors_preset = 0
 script = ExtResource("1_qqsk2")
 metadata/_custom_type_script = "uid://dru3usokwlhd3"
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=1160991161]
+[node name="MPFDisplay" type="Control" parent="." unique_id=1279850273]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_qdyu4")
+metadata/_custom_type_script = "uid://cnc7dblwai6nd"
+
+[node name="TextureRect" type="TextureRect" parent="MPFDisplay" unique_id=1160991161]
 layout_mode = 0
 offset_right = 1920.0
 offset_bottom = 1080.0
 texture = ExtResource("2_tve0m")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=2127697789]
-stream = ExtResource("3_d8l0k")
-bus = &"music"
+[node name="MPFVariable" type="Label" parent="MPFDisplay/TextureRect" unique_id=1757881723]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+script = ExtResource("4_tve0m")
+metadata/_custom_type_script = "uid://bfvhmv2eirpua"
 
-[node name="MPFVariable" type="Label" parent="." unique_id=1218815169]
+[node name="MPFVariable2" type="Label" parent="MPFDisplay/TextureRect" unique_id=1218815169]
 layout_mode = 0
 offset_left = 921.0
 offset_top = 54.0
@@ -31,3 +42,49 @@ script = ExtResource("4_tve0m")
 variable_name = "score"
 template_string = "%s"
 metadata/_custom_type_script = "uid://bfvhmv2eirpua"
+
+[node name="MPFVariable3" type="Label" parent="MPFDisplay/TextureRect" unique_id=930603584]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+script = ExtResource("4_tve0m")
+metadata/_custom_type_script = "uid://bfvhmv2eirpua"
+
+[node name="MPFVariable4" type="Label" parent="MPFDisplay/TextureRect" unique_id=1130812285]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+script = ExtResource("4_tve0m")
+metadata/_custom_type_script = "uid://bfvhmv2eirpua"
+
+[node name="MPFVariable5" type="Label" parent="MPFDisplay/TextureRect" unique_id=1503003880]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+script = ExtResource("4_tve0m")
+metadata/_custom_type_script = "uid://bfvhmv2eirpua"
+
+[node name="MPFVariable6" type="Label" parent="MPFDisplay/TextureRect" unique_id=539799347]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+script = ExtResource("4_tve0m")
+metadata/_custom_type_script = "uid://bfvhmv2eirpua"
+
+[node name="MPFVariable7" type="Label" parent="MPFDisplay/TextureRect" unique_id=1668097488]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+script = ExtResource("4_tve0m")
+metadata/_custom_type_script = "uid://bfvhmv2eirpua"
+
+[node name="MPFVariable8" type="Label" parent="MPFDisplay/TextureRect" unique_id=1199585868]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+script = ExtResource("4_tve0m")
+metadata/_custom_type_script = "uid://bfvhmv2eirpua"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="MPFDisplay" unique_id=2127697789]
+stream = ExtResource("3_d8l0k")
+bus = &"music"

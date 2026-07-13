@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ve7nl6kv2m8p"
-path="res://.godot/imported/Page 1.png-9f114ca86875c97775936bd8bd1a7f24.ctex"
+uid="uid://dse87w750mwe4"
+path="res://.godot/imported/you_re_fired.jpeg-e9647e89528f851f96ad7ceab49b88a7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://BTTF/DEF/BTTF_MINI-PC/GITHUB/Page 1.png"
-dest_files=["res://.godot/imported/Page 1.png-9f114ca86875c97775936bd8bd1a7f24.ctex"]
+source_file="res://pictures/you_re_fired.jpeg"
+dest_files=["res://.godot/imported/you_re_fired.jpeg-e9647e89528f851f96ad7ceab49b88a7.ctex"]
 
 [params]
 

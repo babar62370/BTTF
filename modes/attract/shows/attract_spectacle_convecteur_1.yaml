@@ -1,5 +1,5 @@
 #show_version=6
-loop: 3
+# loop: 3
 - duration: 1
   lights:
     l_left_jet: white
@@ -18,7 +18,7 @@ loop: 3
     l_left_jet_1: off
     l_right_jet_1: off
     l_lower_jet_1: off
-    l_left_jet_1: white
+    l_left_jet_2: white
     l_right_jet_2: white
     l_lower_jet_2: white
 - duration: 1

@@ -1,9 +1,32 @@
 [gd_scene format=3 uid="uid://b7aea6b5r0ry3"]
 
 [ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_u4ijs"]
+[ext_resource type="Script" uid="uid://cnc7dblwai6nd" path="res://addons/mpf-gmc/classes/mpf_display.gd" id="2_7si8o"]
+[ext_resource type="VideoStream" uid="uid://jysxtio1ks5r" path="res://videos/einstein_multiball_video.ogv" id="3_rnd8b"]
 
 [node name="EinsteinMultiballVideo" type="Control" unique_id=1662474164]
 layout_mode = 3
 anchors_preset = 0
 script = ExtResource("1_u4ijs")
 metadata/_custom_type_script = "uid://dru3usokwlhd3"
+
+[node name="MPFDisplay" type="Control" parent="." unique_id=1775799646]
+anchors_preset = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+script = ExtResource("2_7si8o")
+metadata/_custom_type_script = "uid://cnc7dblwai6nd"
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="MPFDisplay" unique_id=1452594276]
+z_index = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("3_rnd8b")
+autoplay = true
+bus = &"effects"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="MPFDisplay/VideoStreamPlayer" unique_id=1993356772]

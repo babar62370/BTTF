@@ -1,22 +1,13 @@
 #show_version=6
-
-  l_insert_lane_biff:
-    number: 1-0-40
-  l_insert_lane_doc_lower:
-    number: 1-0-41
-  l_insert_lane_doc_upper:
-    number: 1-0-42
-  l_insert_lane_horloge:
-    number: 1-0-43
-  l_insert_target_foudre:
-    number: 1-0-44
-  l_insert_target_overboard:
-    number: 1-0-45
-  l_insert_bank_doc_lower:
-    number: 1-0-46
-  l_insert_bank_doc_middle:
-    number: 1-0-47
-  l_insert_bank_doc_upper:
-    number: 1-0-48
-  l_insert_ramp_2015_upper:
-    number: 1-0-49
+- duration: 1
+  lights:
+    l_insert_lane_biff: off
+    l_insert_lane_doc_lower: off
+    l_insert_lane_doc_upper: off
+    l_insert_lane_horloge: off
+    l_insert_target_foudre: off
+    l_insert_target_overboard: off
+    l_insert_bank_doc_lower: off
+    l_insert_bank_doc_middle: off
+    l_insert_bank_doc_upper: off
+    l_insert_ramp_2015: off

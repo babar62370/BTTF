@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://itg0endkbv85"
-path="res://.godot/imported/you_re_fired.jpeg-448d11320d4ba67591f1ceffe37e22f8.ctex"
+uid="uid://daqib2enns1gt"
+path="res://.godot/imported/mask.png-b945516e6475612c1c4c3b4f8dd0bdc6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://you_re_fired.jpeg"
-dest_files=["res://.godot/imported/you_re_fired.jpeg-448d11320d4ba67591f1ceffe37e22f8.ctex"]
+source_file="res://mask.png"
+dest_files=["res://.godot/imported/mask.png-b945516e6475612c1c4c3b4f8dd0bdc6.ctex"]
 
 [params]
 

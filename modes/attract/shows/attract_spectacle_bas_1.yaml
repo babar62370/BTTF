@@ -1,9 +1,9 @@
 #show_version=6
-loop: 2
+# loop: 2
 - duration: 1
   lights:
-  l_left_outlane: white
-  l_right_outlane: white
+    l_left_outlane: white
+    l_right_outlane: white
 - duration: 1
   lights:
     l_left_outlane: off
@@ -12,8 +12,8 @@ loop: 2
 - duration: 1
   lights:
     l_insert_shoot_again: off
-    l_left_inlane_lower: white
-    l_left_inlane_top: white
+    l_left_inlane_lower: floralwhite
+    l_left_inlane_top: red
 - duration: 1
   lights:
     l_left_inlane_lower: off
@@ -26,8 +26,8 @@ loop: 2
 - duration: 1
   lights:
     l_insert_left_inlane: off
-    l_left_slingshot_lower: white
-    l_left_slingshot_top: white
+    l_left_slingshot_lower: floralwhite
+    l_left_slingshot_top: red
 - duration: 1
   lights:
     l_left_slingshot_lower: off
@@ -36,8 +36,8 @@ loop: 2
 - duration: 1
   lights:
     l_insert_shoot_again: off
-    l_right_slingshot_lower: white
-    l_right_slingshot_top: white
+    l_right_slingshot_lower: floralwhite
+    l_right_slingshot_top: red
 - duration: 1
   lights:
     l_right_slingshot_lower: off
@@ -50,8 +50,8 @@ loop: 2
 - duration: 1
   lights:
     l_insert_right_outlane: off
-    l_right_inlane_lower: white
-    l_right_inlane_top: white
+    l_right_inlane_lower: floralwhite
+    l_right_inlane_top: red
 - duration: 1
   lights:
     l_right_inlane_lower: off
@@ -70,8 +70,8 @@ loop: 2
 - duration: 1
   lights:
     l_insert_shoot_again: off
-    l_right_inlane_lower: white
-    l_right_inlane_top: white
+    l_right_inlane_lower: floralwhite
+    l_right_inlane_top: red
 - duration: 1
   lights:
     l_right_inlane_lower: off
@@ -84,8 +84,8 @@ loop: 2
 - duration: 1
   lights:
     l_insert_right_inlane: off
-    l_right_slingshot_lower: white
-    l_right_slingshot_top: white
+    l_right_slingshot_lower: floralwhite
+    l_right_slingshot_top: red
 - duration: 1
   lights:
     l_right_slingshot_lower: off
@@ -94,8 +94,8 @@ loop: 2
 - duration: 1
   lights:
     l_insert_shoot_again: off
-    l_left_slingshot_lower: white
-    l_left_slingshot_top: white
+    l_left_slingshot_lower: floralwhite
+    l_left_slingshot_top: red
 - duration: 1
   lights:
     l_left_slingshot_lower: off
@@ -108,13 +108,14 @@ loop: 2
 - duration: 1
   lights:
     l_insert_left_outlane: off
-    l_left_inlane_lower: white
-    l_left_inlane_top: white
+    l_left_inlane_lower: floralwhite
+    l_left_inlane_top: red
 - duration: 1
   lights:
     l_left_inlane_lower: off
     l_left_inlane_top: off
     l_insert_shoot_again: white
-- duration: 0
+# VALEUR SUPERIEURE A ZERO POUR LE DERNIER
+- duration: 1
   lights:
     l_insert_shoot_again: off
