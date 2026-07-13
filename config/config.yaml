@@ -7,6 +7,7 @@ modes:
   - base
   - selection_modes
   - einstein_multiball
+  - banane
 
 hardware:
   platform: opp
@@ -365,9 +366,13 @@ flippers:
     enable_events: machine_reset_phase_3
 
 spinners:
-  basic_spinner:
+  spinner_almanach:
     switch: s_spinner_almanach
-    #active_ms: 500
+    # active_ms: 500
+
+  spinner_pierre_cardin:
+    switch: s_spinner_pierre_cardin
+    # active_ms: 500
 
 machine:
   balls_installed: 5

@@ -1,0 +1,41 @@
+#config_version=6
+
+mode:
+  start_events: ball_started
+  stop_events: timer_banana_duration_complete
+  priority: 600
+
+counters:
+  banana_spin_counter:
+    count_events: s_spinner_almanach
+    count_complete_value: 110
+    reset_on_complete: true    # Correction de "restart_on_complete" en "reset_on_complete"
+    events_when_complete: banana_mode_trigger_active
+
+timers:
+  banana_duration:
+    start_value: 20
+    end_value: 0
+    direction: down
+    control_events:
+      - action: start
+        event: banana_mode_trigger_active
+      - action: stop
+        event: timer_banana_duration_complete
+
+variable_player:
+  s_spinner_almanach{device.timers.banana_duration.running}:
+    score: 5000
+
+show_player:
+  banana_mode_trigger_active:
+    banana_exponential_flashing_show:
+      action: play
+      loops: 0
+  timer_banana_duration_complete:
+    banana_exponential_flashing_show:
+      action: stop
+
+event_player:
+  timer_banana_duration_complete:
+    - banana_mode_ended

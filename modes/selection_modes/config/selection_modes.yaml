@@ -4,16 +4,10 @@ mode:
   start_events: qualification_selection_modes_group_complete
   priority: 500
 
-# La section player_vars: a été supprimée d'ici (réservée à config.yaml).
-# L'initialisation de current_year se fera automatiquement ou via variable_player.
-
-# 1. Le variable_player gère précisément les changements de dates et l'initialisation par défaut
 variable_player:
-  # Initialisation ou valeur par défaut au démarrage du mode si non définie
   mode_selection_modes_started{current_player.current_year == none}:
     current_year: 1985
 
-  # Si on appuie sur le flipper gauche et qu'on est sur 1985, on passe à 1955
   s_flipper_left_active{current_player.current_year == 1985}:
     current_year: 1955
   s_flipper_left_active{current_player.current_year == 1955}:
@@ -23,7 +17,6 @@ variable_player:
   s_flipper_left_active{current_player.current_year == 2015}:
     current_year: 1985
 
-  # Si on appuie sur le flipper droit, on tourne dans l'autre sens
   s_flipper_right_active{current_player.current_year == 1985}:
     current_year: 2015
   s_flipper_right_active{current_player.current_year == 2015}:
@@ -34,35 +27,53 @@ variable_player:
     current_year: 1985
 
 light_player:
-  # --- SI L'ANNÉE ACTIVE EST 1885 ---
   s_flipper_left_active{current_player.current_year == 1885}, s_flipper_right_active{current_player.current_year == 1885}, mode_selection_modes_started{current_player.current_year == 1885}:
     l_insert_1885: white
     l_insert_1955: off
     l_insert_1985: off
     l_insert_2015: off
 
-  # --- SI L'ANNÉE ACTIVE EST 1955 ---
   s_flipper_left_active{current_player.current_year == 1955}, s_flipper_right_active{current_player.current_year == 1955}, mode_selection_modes_started{current_player.current_year == 1955}:
     l_insert_1885: off
     l_insert_1955: white
     l_insert_1985: off
     l_insert_2015: off
 
-  # --- SI L'ANNÉE ACTIVE EST 1985 (Défaut) ---
   s_flipper_left_active{current_player.current_year == 1985}, s_flipper_right_active{current_player.current_year == 1985}, mode_selection_modes_started{current_player.current_year == 1985}:
     l_insert_1885: off
     l_insert_1955: off
     l_insert_1985: white
     l_insert_2015: off
 
-  # --- SI L'ANNÉE ACTIVE EST 2015 ---
   s_flipper_left_active{current_player.current_year == 2015}, s_flipper_right_active{current_player.current_year == 2015}, mode_selection_modes_started{current_player.current_year == 2015}:
     l_insert_1885: off
     l_insert_1955: off
     l_insert_1985: off
     l_insert_2015: white
 
-# 2. Pour l'affichage dans Godot (Remplacé slide_player par widget_player si besoin)
+  s_left_popper_active:
+    l_launch_button: orange
+
+  s_launch_active:
+    l_insert_year: off
+    l_launch_button: off
+
+show_player:
+  qualification_selection_modes_group_complete:
+    base_year:
+      action: play
+      loops: -1
+  s_left_popper_active:
+    base_year:
+      action: play
+      loops: -1
+      # Correction de "tokens" en "show_tokens"
+      show_tokens:
+        light: l_launch_button
+  s_launch_active:
+    base_year:
+      action: stop
+
 slide_player:
   mode_selection_modes_started:
     slide_choix_epoque:
@@ -70,6 +81,7 @@ slide_player:
 
 event_player:
   s_launch_active:
-    - start_mode_{current_player.current_year}  # Lance start_mode_1955, start_mode_1885, etc.
-    - selection_completed                        # Remet à zéro le groupe de tirs de la base
-    - stop_mode                                  # Quitte le mode de sélection
+    - start_mode_{current_player.current_year}
+    - selection_completed
+    - bd_left_vuk_eject
+    - stop_mode

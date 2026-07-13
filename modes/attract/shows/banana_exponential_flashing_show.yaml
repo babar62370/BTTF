@@ -1,0 +1,346 @@
+#show_version=6
+# Début : Battement rapide (~1 seconde d'écart)
+- time: 0.00
+  lights:
+    l_insert_biff: ff
+- time: 0.50
+  lights:
+    l_insert_biff: 00
+- time: 1.00
+  lights:
+    l_insert_biff: ff
+- time: 1.45
+  lights:
+    l_insert_biff: 00
+- time: 1.90
+  lights:
+    l_insert_biff: ff
+- time: 2.30
+  lights:
+    l_insert_biff: 00
+- time: 2.70
+  lights:
+    l_insert_biff: ff
+- time: 3.05
+  lights:
+    l_insert_biff: 00
+- time: 3.40
+  lights:
+    l_insert_biff: ff
+- time: 3.72
+  lights:
+    l_insert_biff: 00
+- time: 4.04
+  lights:
+    l_insert_biff: ff
+- time: 4.33
+  lights:
+    l_insert_biff: 00
+- time: 4.62
+  lights:
+    l_insert_biff: ff
+- time: 4.88
+  lights:
+    l_insert_biff: 00
+- time: 5.14
+  lights:
+    l_insert_biff: ff
+- time: 5.38
+  lights:
+    l_insert_biff: 00
+- time: 5.62
+  lights:
+    l_insert_biff: ff
+- time: 5.84
+  lights:
+    l_insert_biff: 00
+- time: 6.06
+  lights:
+    l_insert_biff: ff
+- time: 6.26
+  lights:
+    l_insert_biff: 00
+- time: 6.46
+  lights:
+    l_insert_biff: ff
+- time: 6.64
+  lights:
+    l_insert_biff: 00
+- time: 6.82
+  lights:
+    l_insert_biff: ff
+- time: 6.99
+  lights:
+    l_insert_biff: 00
+- time: 7.16
+  lights:
+    l_insert_biff: ff
+- time: 7.31
+  lights:
+    l_insert_biff: 00
+- time: 7.46
+  lights:
+    l_insert_biff: ff
+- time: 7.60
+  lights:
+    l_insert_biff: 00
+- time: 7.74
+  lights:
+    l_insert_biff: ff
+- time: 7.87
+  lights:
+    l_insert_biff: 00
+- time: 8.00
+  lights:
+    l_insert_biff: ff
+- time: 8.12
+  lights:
+    l_insert_biff: 00
+- time: 8.24
+  lights:
+    l_insert_biff: ff
+- time: 8.35
+  lights:
+    l_insert_biff: 00
+- time: 8.46
+  lights:
+    l_insert_biff: ff
+- time: 8.56
+  lights:
+    l_insert_biff: 00
+- time: 8.66
+  lights:
+    l_insert_biff: ff
+- time: 8.76
+  lights:
+    l_insert_biff: 00
+- time: 8.85
+  lights:
+    l_insert_biff: ff
+- time: 8.94
+  lights:
+    l_insert_biff: 00
+- time: 9.03
+  lights:
+    l_insert_biff: ff
+- time: 9.11
+  lights:
+    l_insert_biff: 00
+- time: 9.19
+  lights:
+    l_insert_biff: ff
+- time: 9.27
+  lights:
+    l_insert_biff: 00
+- time: 9.35
+  lights:
+    l_insert_biff: ff
+- time: 9.42
+  lights:
+    l_insert_biff: 00
+- time: 9.49
+  lights:
+    l_insert_biff: ff
+- time: 9.56
+  lights:
+    l_insert_biff: 00
+- time: 9.63
+  lights:
+    l_insert_biff: ff
+- time: 9.69
+  lights:
+    l_insert_biff: 00
+- time: 9.75
+  lights:
+    l_insert_biff: ff
+- time: 9.81
+  lights:
+    l_insert_biff: 00
+- time: 9.87
+  lights:
+    l_insert_biff: ff
+- time: 9.93
+  lights:
+    l_insert_biff: 00
+# Milieu : Accélération soutenue
+- time: 9.99
+  lights:
+    l_insert_biff: ff
+- time: 10.04
+  lights:
+    l_insert_biff: 00
+- time: 10.09
+  lights:
+    l_insert_biff: ff
+- time: 10.14
+  lights:
+    l_insert_biff: 00
+- time: 10.19
+  lights:
+    l_insert_biff: ff
+- time: 10.24
+  lights:
+    l_insert_biff: 00
+- time: 10.29
+  lights:
+    l_insert_biff: ff
+- time: 10.33
+  lights:
+    l_insert_biff: 00
+- time: 10.37
+  lights:
+    l_insert_biff: ff
+- time: 10.41
+  lights:
+    l_insert_biff: 00
+- time: 10.45
+  lights:
+    l_insert_biff: ff
+- time: 10.49
+  lights:
+    l_insert_biff: 00
+- time: 10.53
+  lights:
+    l_insert_biff: ff
+- time: 10.56
+  lights:
+    l_insert_biff: 00
+- time: 10.59
+  lights:
+    l_insert_biff: ff
+- time: 10.62
+  lights:
+    l_insert_biff: 00
+- time: 10.65
+  lights:
+    l_insert_biff: ff
+- time: 10.68
+  lights:
+    l_insert_biff: 00
+- time: 10.71
+  lights:
+    l_insert_biff: ff
+- time: 10.73
+  lights:
+    l_insert_biff: 00
+- time: 10.75
+  lights:
+    l_insert_biff: ff
+- time: 10.77
+  lights:
+    l_insert_biff: 00
+- time: 10.79
+  lights:
+    l_insert_biff: ff
+- time: 10.81
+  lights:
+    l_insert_biff: 00
+- time: 10.83
+  lights:
+    l_insert_biff: ff
+- time: 10.85
+  lights:
+    l_insert_biff: 00
+- time: 10.87
+  lights:
+    l_insert_biff: ff
+- time: 10.89
+  lights:
+    l_insert_biff: 00
+# Fin : Accélération extrême et frénétique jusqu'à 20s
+- time: 11.20
+  lights:
+    l_insert_biff: ff
+- time: 11.50
+  lights:
+    l_insert_biff: 00
+- time: 11.80
+  lights:
+    l_insert_biff: ff
+- time: 12.10
+  lights:
+    l_insert_biff: 00
+- time: 12.40
+  lights:
+    l_insert_biff: ff
+- time: 12.70
+  lights:
+    l_insert_biff: 00
+- time: 13.00
+  lights:
+    l_insert_biff: ff
+- time: 13.30
+  lights:
+    l_insert_biff: 00
+- time: 13.60
+  lights:
+    l_insert_biff: ff
+- time: 13.90
+  lights:
+    l_insert_biff: 00
+- time: 14.20
+  lights:
+    l_insert_biff: ff
+- time: 14.50
+  lights:
+    l_insert_biff: 00
+- time: 14.80
+  lights:
+    l_insert_biff: ff
+- time: 15.10
+  lights:
+    l_insert_biff: 00
+- time: 15.40
+  lights:
+    l_insert_biff: ff
+- time: 15.70
+  lights:
+    l_insert_biff: 00
+- time: 16.00
+  lights:
+    l_insert_biff: ff
+- time: 16.30
+  lights:
+    l_insert_biff: 00
+- time: 16.60
+  lights:
+    l_insert_biff: ff
+- time: 16.90
+  lights:
+    l_insert_biff: 00
+- time: 17.20
+  lights:
+    l_insert_biff: ff
+- time: 17.50
+  lights:
+    l_insert_biff: 00
+- time: 17.80
+  lights:
+    l_insert_biff: ff
+- time: 18.10
+  lights:
+    l_insert_biff: 00
+- time: 18.40
+  lights:
+    l_insert_biff: ff
+- time: 18.70
+  lights:
+    l_insert_biff: 00
+- time: 19.00
+  lights:
+    l_insert_biff: ff
+- time: 19.30
+  lights:
+    l_insert_biff: 00
+- time: 19.60
+  lights:
+    l_insert_biff: ff
+- time: 19.80
+  lights:
+    l_insert_biff: 00
+- time: 19.95
+  lights:
+    l_insert_biff: ff
+- time: 20.00
+  lights:
+    l_insert_biff: 00

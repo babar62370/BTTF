@@ -1,0 +1,7 @@
+#show_version=6
+- time: 0
+  lights:
+    l_insert_year: white
+- time: 0.5
+  lights:
+    l_insert_year: off
