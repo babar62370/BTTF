@@ -8,23 +8,63 @@ variable_player:
   mode_selection_modes_started{current_player.current_year == none}:
     current_year: 1985
 
-  s_flipper_left_active{current_player.current_year == 1985}:
+  # --- FLIPPER GAUCHE ---
+  s_flipper_left_active{current_player.current_year == 1985 and current_player.year_1955_completed != 1}:
     current_year: 1955
-  s_flipper_left_active{current_player.current_year == 1955}:
+  s_flipper_left_active{current_player.current_year == 1985 and current_player.year_1955_completed == 1 and current_player.year_1885_completed != 1}:
     current_year: 1885
-  s_flipper_left_active{current_player.current_year == 1885}:
+  s_flipper_left_active{current_player.current_year == 1985 and current_player.year_1955_completed == 1 and current_player.year_1885_completed == 1 and current_player.year_2015_completed != 1}:
     current_year: 2015
-  s_flipper_left_active{current_player.current_year == 2015}:
+    
+  s_flipper_left_active{current_player.current_year == 1955 and current_player.year_1885_completed != 1}:
+    current_year: 1885
+  s_flipper_left_active{current_player.current_year == 1955 and current_player.year_1885_completed == 1 and current_player.year_2015_completed != 1}:
+    current_year: 2015
+  s_flipper_left_active{current_player.current_year == 1955 and current_player.year_1885_completed == 1 and current_player.year_2015_completed == 1 and current_player.year_1985_completed != 1}:
     current_year: 1985
 
-  s_flipper_right_active{current_player.current_year == 1985}:
+  s_flipper_left_active{current_player.current_year == 1885 and current_player.year_2015_completed != 1}:
     current_year: 2015
-  s_flipper_right_active{current_player.current_year == 2015}:
-    current_year: 1885
-  s_flipper_right_active{current_player.current_year == 1885}:
-    current_year: 1955
-  s_flipper_right_active{current_player.current_year == 1955}:
+  s_flipper_left_active{current_player.current_year == 1885 and current_player.year_2015_completed == 1 and current_player.year_1985_completed != 1}:
     current_year: 1985
+  s_flipper_left_active{current_player.current_year == 1885 and current_player.year_2015_completed == 1 and current_player.year_1985_completed == 1 and current_player.year_1955_completed != 1}:
+    current_year: 1955
+
+  s_flipper_left_active{current_player.current_year == 2015 and current_player.year_1985_completed != 1}:
+    current_year: 1985
+  s_flipper_left_active{current_player.current_year == 2015 and current_player.year_1985_completed == 1 and current_player.year_1955_completed != 1}:
+    current_year: 1955
+  s_flipper_left_active{current_player.current_year == 2015 and current_player.year_1985_completed == 1 and current_player.year_1955_completed == 1 and current_player.year_1885_completed != 1}:
+    current_year: 1885
+
+  # --- FLIPPER DROIT ---
+  s_flipper_right_active{current_player.current_year == 1985 and current_player.year_2015_completed != 1}:
+    current_year: 2015
+  s_flipper_right_active{current_player.current_year == 1985 and current_player.year_2015_completed == 1 and current_player.year_1885_completed != 1}:
+    current_year: 1885
+  s_flipper_right_active{current_player.current_year == 1985 and current_player.year_2015_completed == 1 and current_player.year_1885_completed == 1 and current_player.year_1955_completed != 1}:
+    current_year: 1955
+
+  s_flipper_right_active{current_player.current_year == 2015 and current_player.year_1885_completed != 1}:
+    current_year: 1885
+  s_flipper_right_active{current_player.current_year == 2015 and current_player.year_1885_completed == 1 and current_player.year_1955_completed != 1}:
+    current_year: 1955
+  s_flipper_right_active{current_player.current_year == 2015 and current_player.year_1885_completed == 1 and current_player.year_1955_completed == 1 and current_player.year_1985_completed != 1}:
+    current_year: 1985
+
+  s_flipper_right_active{current_player.current_year == 1885 and current_player.year_1955_completed != 1}:
+    current_year: 1955
+  s_flipper_right_active{current_player.current_year == 1885 and current_player.year_1955_completed == 1 and current_player.year_1985_completed != 1}:
+    current_year: 1985
+  s_flipper_right_active{current_player.current_year == 1885 and current_player.year_1955_completed == 1 and current_player.year_1985_completed == 1 and current_player.year_2015_completed != 1}:
+    current_year: 2015
+
+  s_flipper_right_active{current_player.current_year == 1955 and current_player.year_1985_completed != 1}:
+    current_year: 1985
+  s_flipper_right_active{current_player.current_year == 1955 and current_player.year_1985_completed == 1 and current_player.year_2015_completed != 1}:
+    current_year: 2015
+  s_flipper_right_active{current_player.current_year == 1955 and current_player.year_1985_completed == 1 and current_player.year_2015_completed == 1 and current_player.year_1885_completed != 1}:
+    current_year: 1885
 
 light_player:
   s_flipper_left_active{current_player.current_year == 1885}, s_flipper_right_active{current_player.current_year == 1885}, mode_selection_modes_started{current_player.current_year == 1885}:
@@ -67,7 +107,6 @@ show_player:
     base_year:
       action: play
       loops: -1
-      # Correction de "tokens" en "show_tokens"
       show_tokens:
         light: l_launch_button
   s_launch_active:

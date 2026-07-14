@@ -378,3 +378,46 @@ shot_groups:
     reset_events: selection_modes_completed
       
 # PENSER A FAIRE ETTEINDRE LES BUMPERS TEMPORAIREMENT LORSQU'ILS SONT TOUCHES
+
+light_player:
+  # Événement qui se déclenche lorsque le mode base démarre
+  mode_base_started:
+    l_left_outlane: white
+    l_insert_shoot_again: white
+    l_left_inlane_lower: floralwhite
+    l_left_inlane_top: red
+    l_left_slingshot_lower: floralwhite
+    l_left_slingshot_top: red
+    l_insert_left_inlane: white
+    l_insert_left_outlane: white
+    l_left_inter_lower: floralwhite
+    l_left_inter_top: red
+    l_left_top_lower: floralwhite
+    l_left_top_top: red
+    l_left_top_left: floralwhite
+    l_left_top_right: red
+    l_miniplayfield_lower: floralwhite
+    l_miniplayfield_top: red
+    l_right_inter_lower: floralwhite
+    l_right_inter_middle_lower: red
+    l_right_inter_middle_top: floralwhite
+    l_right_inter_top: red
+    l_insert_right_outlane: white
+    l_insert_right_inlane: white
+    l_right_slingshot_lower: floralwhite
+    l_right_slingshot_top: red
+    l_right_inlane_lower: floralwhite
+    l_right_inlane_top: red
+    l_right_outlane: white
+    l_up_middle: white
+    l_up_middle_left: white
+    l_up_left: white
+    l_up_middle_right: white
+    l_up_right: white
+    l_right_popper: red
+    l_lower_jet_lower: white
+    l_lower_jet: white
+    l_left_jet_lower: white
+    l_left_jet: white
+    l_right_jet_lower: white
+    l_right_jet: white

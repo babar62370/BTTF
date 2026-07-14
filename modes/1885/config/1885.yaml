@@ -1,0 +1,12 @@
+#config_version=6
+
+variable_player:
+  # Lorsque le mode 1985 se termine et est complété avec succès :
+  mode_1885_success:
+    year_1885_completed: 1
+    
+variable_player:
+  mode_1885_started:
+    year_1885_started: 1
+  mode_1885_success:
+    year_1885_completed: 1
