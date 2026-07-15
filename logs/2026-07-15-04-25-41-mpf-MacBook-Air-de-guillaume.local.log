@@ -1,0 +1,126 @@
+2026-07-15 04:25:41,153 : INFO : root : Loading config.
+2026-07-15 04:25:41,158 : INFO : YamlMultifileConfigLoader : Machine config file #1: config.yaml
+2026-07-15 04:25:41,159 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/888a835b5fde052b87252136c50b804e.mpf_cache
+2026-07-15 04:25:41,261 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/8622cd1fe0050c6b0179be5a651e22f5.mpf_cache
+2026-07-15 04:25:41,262 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/58f948f5e9fe219120f05e295bb3ef65.mpf_cache
+2026-07-15 04:25:41,263 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/8622cd1fe0050c6b0179be5a651e22f5.mpf_cache
+2026-07-15 04:25:41,263 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/369243a5c0d089a5c3bcaae4a6363538.mpf_cache
+2026-07-15 04:25:41,264 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/16129285b93b947981f841f7fcf44ad9.mpf_cache
+2026-07-15 04:25:41,265 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/6b2ea6a059b1471fc11c0d698e7bdf4d.mpf_cache
+2026-07-15 04:25:41,266 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/bed75defa12070121cea3c854f67d91d.mpf_cache
+2026-07-15 04:25:41,266 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/ecdfcc560c3e7244601242e850e12dca.mpf_cache
+2026-07-15 04:25:41,268 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/f3729628e4da70e5a99b26bb51fe2181.mpf_cache
+2026-07-15 04:25:41,269 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/ecb4a8919cc1a87edeef7009f6830f34.mpf_cache
+2026-07-15 04:25:41,270 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/8eda3bfc3491af5b2d5a6601353f6605.mpf_cache
+2026-07-15 04:25:41,270 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/581d676710c2871be6f783a12bf98625.mpf_cache
+2026-07-15 04:25:41,271 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/a21553c1ac805a700d8b713d0f44e0c8.mpf_cache
+2026-07-15 04:25:41,272 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/0d9f9158edcd8a544f1cc762de36862e.mpf_cache
+2026-07-15 04:25:41,272 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/d53881144f70f949ef8c9a20bb6e0849.mpf_cache
+2026-07-15 04:25:41,273 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/7aaf5ab0d322ea9db6c1b184ff40287e.mpf_cache
+2026-07-15 04:25:41,273 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/ac3be5edfbbf92236ea88049c0ddb00a.mpf_cache
+2026-07-15 04:25:41,274 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/550a6f83f4caa58b35baf39eb1e7a728.mpf_cache
+2026-07-15 04:25:41,275 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/b82c39b8e9cf8883f5e2652efee2ee7b.mpf_cache
+2026-07-15 04:25:41,275 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/2b89fedbea910d9b86e5b4e70942be71.mpf_cache
+2026-07-15 04:25:41,276 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/48e025c4983ab137c223b7f5838fabeb.mpf_cache
+2026-07-15 04:25:41,276 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/0048e46cc60efa461e51e3f9e457df73.mpf_cache
+2026-07-15 04:25:41,277 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/d6ac7ae44e391f5f397a8f8b86ce675b.mpf_cache
+2026-07-15 04:25:41,277 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/f383f9f089ac5e4549ed7cad27cecfe8.mpf_cache
+2026-07-15 04:25:41,278 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/7ffc32fb62065f75d91e1dbaef21c48f.mpf_cache
+2026-07-15 04:25:41,278 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/65a10664aa893c4ab49802f04ca58985.mpf_cache
+2026-07-15 04:25:41,279 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/a3185994ee7b7973316218a20d02dc37.mpf_cache
+2026-07-15 04:25:41,279 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/23bd90c22533ccaef698d4044dfa0fb3.mpf_cache
+2026-07-15 04:25:41,280 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/1d64ce4bf3a495db3c81774606b05cae.mpf_cache
+2026-07-15 04:25:41,281 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/50828b0e8db1bd2b96500f8c73821ec1.mpf_cache
+2026-07-15 04:25:41,281 : INFO : ConfigProcessor : Loading config from cache: /var/folders/5m/bcfj4qw962g1yt8bpfv4lq9c0000gn/T/735fb352d691372a988e386ccdbf2bcf.mpf_cache
+2026-07-15 04:25:41,282 : INFO : Machine : Mission Pinball Framework Core Engine v0.80.0
+2026-07-15 04:25:41,282 : INFO : Machine : Command line arguments: {'no_load_cache': False, 'create_config_cache': True, 'bcp': True, 'configfile': ['config.yaml'], 'force_assets_load': False, 'platform_integration_test': False, 'jsonlogging': False, 'logfile': 'logs/2026-07-15-04-25-41-mpf-MacBook-Air-de-guillaume.local.log', 'pause': False, 'production': False, 'text_ui': False, 'loglevel': 15, 'consoleloglevel': 20, 'force_platform': 'smart_virtual', 'syslog_address': None, 'full_logfile_path': '/Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB/logs/2026-07-15-04-25-41-mpf-MacBook-Air-de-guillaume.local.log'}
+2026-07-15 04:25:41,282 : INFO : Machine : MPF path: /Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf
+2026-07-15 04:25:41,282 : INFO : Machine : Machine path: /Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB
+2026-07-15 04:25:41,282 : INFO : Machine : Platform: darwin
+2026-07-15 04:25:41,283 : INFO : Machine : Python executable location: /Users/guillaumebarre/mpf/bin/python
+2026-07-15 04:25:41,283 : INFO : Machine : Python version: 3.12.9 (64-bit)
+2026-07-15 04:25:41,283 : INFO : Machine : Initializing MPF...
+2026-07-15 04:25:41,414 : INFO : EventManager : Event: ======'machine_var_credits_string'====== Args={'value': 'FREE PLAY', 'prev_value': None, 'change': True}
+2026-07-15 04:25:41,440 : INFO : EventManager : Event: ======'machine_var_master_volume'====== Args={'value': 0.5, 'prev_value': None, 'change': True}
+2026-07-15 04:25:41,440 : INFO : EventManager : Event: ======'machine_var_mpf_version'====== Args={'value': 'Mission Pinball Framework v0.80.0', 'prev_value': None, 'change': True}
+2026-07-15 04:25:41,441 : INFO : EventManager : Event: ======'machine_var_mpf_extended_version'====== Args={'value': 'Mission Pinball Framework v0.80.0, Config version:6, Show version: 6, BCP version:1.1', 'prev_value': None, 'change': True}
+2026-07-15 04:25:41,441 : INFO : EventManager : Event: ======'machine_var_python_version'====== Args={'value': '3.12.9', 'prev_value': None, 'change': True}
+2026-07-15 04:25:41,474 : INFO : EventManager : Event: ======'machine_var_platform'====== Args={'value': 'macOS-26.5.1-arm64-arm-64bit', 'prev_value': None, 'change': True}
+2026-07-15 04:25:41,474 : INFO : EventManager : Event: ======'machine_var_platform_system'====== Args={'value': 'Darwin', 'prev_value': None, 'change': True}
+2026-07-15 04:25:41,474 : INFO : EventManager : Event: ======'machine_var_platform_release'====== Args={'value': '25.5.0', 'prev_value': None, 'change': True}
+2026-07-15 04:25:41,474 : INFO : EventManager : Event: ======'machine_var_platform_version'====== Args={'value': 'Darwin Kernel Version 25.5.0: Mon Apr 27 20:38:00 PDT 2026; root:xnu-12377.121.6~2/RELEASE_ARM64_T8103', 'prev_value': None, 'change': True}
+2026-07-15 04:25:41,474 : INFO : EventManager : Event: ======'machine_var_platform_machine'====== Args={'value': 'arm64', 'prev_value': None, 'change': True}
+2026-07-15 04:25:41,475 : INFO : EventManager : Event: ======'machine_var_log_file_path'====== Args={'value': '/Users/guillaumebarre/Desktop/BTTF/DEF/BTTF_MINI-PC/GITHUB/logs/2026-07-15-04-25-41-mpf-MacBook-Air-de-guillaume.local.log', 'prev_value': None, 'change': True}
+2026-07-15 04:25:41,475 : INFO : EventManager : Event: ======'init_phase_1'====== Args={}
+2026-07-15 04:25:41,564 : INFO : EventManager : Event: ======'init_phase_2'====== Args={}
+2026-07-15 04:25:41,565 : INFO : SwitchController : Found active switch: ('0-0-8', <Platform.SmartVirtual>) <switch.s_trough5>
+2026-07-15 04:25:41,565 : INFO : SwitchController : Found active switch: ('1-0-40', <Platform.SmartVirtual>) <switch.s_trough1>
+2026-07-15 04:25:41,565 : INFO : SwitchController : Found active switch: ('1-0-41', <Platform.SmartVirtual>) <switch.s_trough2>
+2026-07-15 04:25:41,565 : INFO : SwitchController : Found active switch: ('1-0-42', <Platform.SmartVirtual>) <switch.s_trough3>
+2026-07-15 04:25:41,566 : INFO : SwitchController : Found active switch: ('1-0-43', <Platform.SmartVirtual>) <switch.s_trough4>
+2026-07-15 04:25:41,574 : ERROR : asyncio : Exception in callback EventManager._queue_task_done(<Task finishe...ype: 'dict'")>)
+handle: <Handle EventManager._queue_task_done(<Task finishe...ype: 'dict'")>)>
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/events.py", line 795, in _queue_task_done
+    future.result()
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/events.py", line 708, in _run_handlers_sequential
+    handler.callback(queue=queue, **merged_kwargs)
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/mode_controller.py", line 97, in initialize_modes
+    item.method(config=mode.config[item.config_section],
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/config_player.py", line 150, in process_mode_config
+    config = self.validate_config(config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/config_player.py", line 113, in validate_config
+    validated_config[event] = self.validate_config_entry(settings, event)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/config_players/event_player.py", line 75, in validate_config_entry
+    config = super().validate_config_entry(settings, name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/config_players/flat_config_player.py", line 17, in validate_config_entry
+    config = self._parse_config(settings, name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/config_player.py", line 138, in _parse_config
+    config = self.get_list_config(config)   # pylint: disable-msg=assignment-from-no-return
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/config_players/event_player.py", line 114, in get_list_config
+    result[event] = {}
+    ~~~~~~^^^^^^^
+TypeError: unhashable type: 'dict'
+2026-07-15 04:25:41,581 : INFO : Machine : Starting the main run loop with active modes: []
+2026-07-15 04:25:41,581 : WARNING : Machine : Attract mode is not active, game will not be playable. Please check your attract mode configuration.
+2026-07-15 04:25:41,582 : INFO : Machine : Shutting down...
+2026-07-15 04:25:41,582 : INFO : EventManager : Event: ======'shutdown'====== Args={}
+2026-07-15 04:25:42,584 : ERROR : Machine : Runtime Exception
+Traceback (most recent call last):
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/machine.py", line 810, in _run_loop
+    raise self._exception['exception']
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/events.py", line 88, in _run
+    self._context.run(self._callback, *self._args)
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/events.py", line 795, in _queue_task_done
+    future.result()
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/events.py", line 708, in _run_handlers_sequential
+    handler.callback(queue=queue, **merged_kwargs)
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/mode_controller.py", line 97, in initialize_modes
+    item.method(config=mode.config[item.config_section],
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/config_player.py", line 150, in process_mode_config
+    config = self.validate_config(config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/config_player.py", line 113, in validate_config
+    validated_config[event] = self.validate_config_entry(settings, event)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/config_players/event_player.py", line 75, in validate_config_entry
+    config = super().validate_config_entry(settings, name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/config_players/flat_config_player.py", line 17, in validate_config_entry
+    config = self._parse_config(settings, name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/core/config_player.py", line 138, in _parse_config
+    config = self.get_list_config(config)   # pylint: disable-msg=assignment-from-no-return
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/guillaumebarre/mpf/lib/python3.12/site-packages/mpf/config_players/event_player.py", line 114, in get_list_config
+    result[event] = {}
+    ~~~~~~^^^^^^^
+TypeError: unhashable type: 'dict'
+2026-07-15 04:25:42,587 : INFO : root : MPF run loop ended.

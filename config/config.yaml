@@ -8,6 +8,7 @@ modes:
   - selection_modes
   - einstein_multiball
   - banane
+  - libyens
 
 hardware:
   platform: opp
@@ -27,6 +28,162 @@ displays:
 psus:
   default:
     release_wait_ms: 50
+
+autofire_coils:
+  left_slingshot:
+    coil: c_left_slingshot
+    switch: s_left_slingshot
+  right_slingshot:
+    coil: c_right_slingshot
+    switch: s_right_slingshot
+  lower_jet:
+    coil: c_lower_jet_bumper
+    switch: s_lower_jet
+  left_jet:
+    coil: c_left_jet_bumper
+    switch: s_left_jet
+  right_jet:
+    coil: c_right_jet_bumper
+    switch: s_right_jet
+
+diverters:
+  deviateur_rampe_bras:
+    activation_coil: c_deviateur_bras_actuate
+    type: pulse
+    activate_events: multiball_lock_lock_einstein_enabled
+    disable_events: multiball_lock_lock_einstein_disabled
+
+servos:
+  servo_bras_einstein:
+    number: 0-0-11
+    reset_position: 0.2
+    servo_min: 0.1
+    servo_max: 0.9
+    positions:
+      0.2: position_de_repos_du_bras
+      0.8: position_max_du_bras
+    reset_events: reset_servo_bras_einstein
+    debug: true
+
+servo_controllers:
+  controleur_bras_einstein:
+    servo: servo_bras_einstein
+    control_events:
+      - event: start_einstein_multiball
+        position: 0.8
+      - event: c_eject_bras_virtual_pulsed
+        position: 0.8
+      - event: einstein_multiball_ended
+        position: 0.2
+
+flippers:
+  left_flipper_main:
+    main_coil: c_flipper_left_main
+    activation_switch: s_left_flipper
+    enable_events: machine_reset_phase_3
+  left_flipper_mini:
+    main_coil: c_flipper_left_mini_main
+    activation_switch: s_left_flipper
+    enable_events: machine_reset_phase_3
+  right_flipper_bas:
+    main_coil: c_flipper_right_bas_main
+    activation_switch: s_right_flipper
+    enable_events: machine_reset_phase_3
+  right_flipper_haut:
+    main_coil: c_flipper_right_haut_main
+    activation_switch: s_right_flipper
+    enable_events: machine_reset_phase_3
+  right_flipper_mini:
+    main_coil: c_flipper_right_mini_main
+    activation_switch: s_right_flipper
+    enable_events: machine_reset_phase_3
+
+spinners:
+  spinner_almanach:
+    switch: s_spinner_almanach
+    # active_ms: 500
+
+  spinner_pierre_cardin:
+    switch: s_spinner_pierre_cardin
+    # active_ms: 500
+
+machine:
+  balls_installed: 5
+  min_balls: 5
+
+game:
+  balls_per_game: 5
+  max_players: 4
+
+virtual_platform_start_active_switches: s_trough1, s_trough2, s_trough3, s_trough4, s_trough5
+
+ball_devices:
+  bd_trough:
+    ball_switches: s_trough1, s_trough2, s_trough3, s_trough4, s_trough5, s_trough_jam
+    eject_coil: c_trough_eject
+    tags: trough, home, drain
+    jam_switch: s_trough_jam
+    eject_coil_jam_pulse: 15ms
+    eject_targets: bd_plunger
+    eject_timeouts: 3s
+    entrance_count_delay: 300ms
+    debug: true
+  bd_plunger:
+    ball_switches: s_plunger
+    eject_timeouts: 5s
+    entrance_count_delay: 300ms
+    eject_coil: c_plunger_eject
+    eject_targets: playfield
+  bd_left_vuk:
+    ball_switches: s_left_popper
+    eject_timeouts: 2s
+    eject_coil: c_left_popper
+    eject_targets: playfield
+    debug: true
+  bd_right_vuk:
+    ball_switches: s_right_popper
+    eject_timeouts: 2s
+    eject_coil: c_right_popper
+    eject_targets: playfield
+    debug: true
+  bd_upper_vuk:
+    ball_switches: s_top_popper
+    eject_timeouts: 2s
+    eject_coil: c_top_popper
+    eject_targets: bd_bras_rotatif
+  bd_bras_rotatif:
+    ball_switches: s_bras_slot1, s_bras_slot2, s_bras_slot3
+    eject_coil: c_eject_bras_virtual
+    eject_targets: playfield
+    tags: lock
+    debug: true
+
+ball_holds:
+  delorean:
+    balls_to_hold: 1
+    hold_devices: bd_left_vuk
+    enable_events: shot_qualification_selection_modes_group_complete
+    release_one_events: selection_modes_completed
+
+playfields:
+  playfield:
+    default_source_device: bd_plunger
+    tags: default
+    enable_ball_search: true
+
+ball_saves:
+  default_ball_save:
+    active_time: 10s
+    hurry_up_time: 2s
+    grace_period: 1s
+    enable_events: ball_started
+    auto_launch: true
+    early_ball_save_events: s_left_outlane_active, s_right_outlane_active
+    balls_to_save: -1
+
+player_vars:
+  potato:
+    initial_value: 0
 
 switches:
   s_left_flipper:
@@ -295,162 +452,6 @@ coils:
     number: 1-0-0
     default_pulse_ms: 1
     default_hold_power: 0.125
-
-autofire_coils:
-  left_slingshot:
-    coil: c_left_slingshot
-    switch: s_left_slingshot
-  right_slingshot:
-    coil: c_right_slingshot
-    switch: s_right_slingshot
-  lower_jet:
-    coil: c_lower_jet_bumper
-    switch: s_lower_jet
-  left_jet:
-    coil: c_left_jet_bumper
-    switch: s_left_jet
-  right_jet:
-    coil: c_right_jet_bumper
-    switch: s_right_jet
-
-diverters:
-  deviateur_rampe_bras:
-    activation_coil: c_deviateur_bras_actuate
-    type: pulse
-    activate_events: multiball_lock_lock_einstein_enabled
-    disable_events: multiball_lock_lock_einstein_disabled
-
-servos:
-  servo_bras_einstein:
-    number: 0-0-11
-    reset_position: 0.2
-    servo_min: 0.1
-    servo_max: 0.9
-    positions:
-      0.2: position_de_repos_du_bras
-      0.8: position_max_du_bras
-    reset_events: reset_servo_bras_einstein
-    debug: true
-
-servo_controllers:
-  controleur_bras_einstein:
-    servo: servo_bras_einstein
-    control_events:
-      - event: start_einstein_multiball
-        position: 0.8
-      - event: c_eject_bras_virtual_pulsed
-        position: 0.8
-      - event: einstein_multiball_ended
-        position: 0.2
-
-flippers:
-  left_flipper_main:
-    main_coil: c_flipper_left_main
-    activation_switch: s_left_flipper
-    enable_events: machine_reset_phase_3
-  left_flipper_mini:
-    main_coil: c_flipper_left_mini_main
-    activation_switch: s_left_flipper
-    enable_events: machine_reset_phase_3
-  right_flipper_bas:
-    main_coil: c_flipper_right_bas_main
-    activation_switch: s_right_flipper
-    enable_events: machine_reset_phase_3
-  right_flipper_haut:
-    main_coil: c_flipper_right_haut_main
-    activation_switch: s_right_flipper
-    enable_events: machine_reset_phase_3
-  right_flipper_mini:
-    main_coil: c_flipper_right_mini_main
-    activation_switch: s_right_flipper
-    enable_events: machine_reset_phase_3
-
-spinners:
-  spinner_almanach:
-    switch: s_spinner_almanach
-    # active_ms: 500
-
-  spinner_pierre_cardin:
-    switch: s_spinner_pierre_cardin
-    # active_ms: 500
-
-machine:
-  balls_installed: 5
-  min_balls: 5
-
-game:
-  balls_per_game: 5
-  max_players: 4
-
-virtual_platform_start_active_switches: s_trough1, s_trough2, s_trough3, s_trough4, s_trough5
-
-ball_devices:
-  bd_trough:
-    ball_switches: s_trough1, s_trough2, s_trough3, s_trough4, s_trough5, s_trough_jam
-    eject_coil: c_trough_eject
-    tags: trough, home, drain
-    jam_switch: s_trough_jam
-    eject_coil_jam_pulse: 15ms
-    eject_targets: bd_plunger
-    eject_timeouts: 3s
-    entrance_count_delay: 300ms
-    debug: true
-  bd_plunger:
-    ball_switches: s_plunger
-    eject_timeouts: 5s
-    entrance_count_delay: 300ms
-    eject_coil: c_plunger_eject
-    eject_targets: playfield
-  bd_left_vuk:
-    ball_switches: s_left_popper
-    eject_timeouts: 2s
-    eject_coil: c_left_popper
-    eject_targets: playfield
-    debug: true
-  bd_right_vuk:
-    ball_switches: s_right_popper
-    eject_timeouts: 2s
-    eject_coil: c_right_popper
-    eject_targets: playfield
-    debug: true
-  bd_upper_vuk:
-    ball_switches: s_top_popper
-    eject_timeouts: 2s
-    eject_coil: c_top_popper
-    eject_targets: bd_bras_rotatif
-  bd_bras_rotatif:
-    ball_switches: s_bras_slot1, s_bras_slot2, s_bras_slot3
-    eject_coil: c_eject_bras_virtual
-    eject_targets: playfield
-    tags: lock
-    debug: true
-
-ball_holds:
-  delorean:
-    balls_to_hold: 1
-    hold_devices: bd_left_vuk
-    enable_events: shot_qualification_selection_modes_group_complete
-    release_one_events: selection_modes_completed
-
-playfields:
-  playfield:
-    default_source_device: bd_plunger
-    tags: default
-    enable_ball_search: true
-
-ball_saves:
-  default_ball_save:
-    active_time: 10s
-    hurry_up_time: 2s
-    grace_period: 1s
-    enable_events: ball_started
-    auto_launch: true
-    early_ball_save_events: s_left_outlane_active, s_right_outlane_active
-    balls_to_save: -1
-
-player_vars:
-  potato:
-    initial_value: 0
 
 lights:
   l_translite_1:

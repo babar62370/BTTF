@@ -4,23 +4,21 @@ mode:
   start_events: ball_started
   priority: 500
 
-slides:
+slide_player:
   slide_einstein_multiball:
-    target: DefaultDisplay
-    # - type: scene
-      # scene: einstein_multiball_video  # MPF va chercher "einstein_multiball_video.tscn" dans vos slides/
+    slide_einstein_multiball:
+      target: DefaultDisplay
 
-# 1. Compteur étendu (la valeur max s'adapte ou monte haut pour laisser tourner)
+# 1. Compteur étendu
 counters:
   compteur_tirs_einstein:
     count_events: s_lane_cafe_einstein_active
-    count_complete_value: 100                    # Valeur plafond haute pour laisser le compteur évoluer
+    count_complete_value: 100
     persist_state: true
     reset_on_complete: false
 
 # 2. Gestion de la progression et des déclenchements
 event_player:
-  # Paliers 3, 9, 18, 30
   compteur_tirs_einstein_value{value==3}:
     - activer_deviateur_einstein
     - declencher_einstein_multiball
@@ -38,15 +36,15 @@ event_player:
     - declencher_einstein_multiball
     - slide_einstein_multiball
   
-  # Paliers continus toutes les 12 après 30
   compteur_tirs_einstein_value{value >= 42 and (value - 30) % 12 == 0}:
     - activer_deviateur_einstein
     - declencher_einstein_multiball
     - slide_einstein_multiball
   
-  # Sécurités du déviateur
-  multiball_lock_lock_einstein_full: desactiver_deviateur_bras
-  mode_einstein_multiball_started: desactiver_deviateur_bras
+  multiball_lock_lock_einstein_full:
+    - desactiver_deviateur_bras
+  mode_einstein_multiball_started:
+    - desactiver_deviateur_bras
 
 # 3. Logique de verrouillage physique
 multiball_locks:

@@ -1,0 +1,60 @@
+#config_version=6
+
+mode:
+  priority: 500
+  stop_on_ball_end: true
+  start_events: start_libyens_mode
+  stop_events:
+    - timer_poursuite_timer_complete
+    - libyens_rattrapent_marty
+    - libyens_mode_ended
+
+timers:
+  poursuite_timer:
+    start_value: 30
+    end_value: 0
+    direction: down
+    start_running: true
+
+counters:
+  libyens_doc_targets_counter:
+    count_events:
+      - shot_bank_doc_lower_hit
+      - shot_bank_doc_middle_hit
+      - shot_bank_doc_upper_hit
+    count_complete_value: 3
+    events_when_complete: libyens_doc_targets_completed
+    reset_on_complete: true
+
+variable_player:
+  shot_bank_doc_lower_hit:
+    score: 100000
+
+  shot_bank_doc_middle_hit:
+    score: 100000
+
+  shot_bank_doc_upper_hit:
+    score: 100000
+
+  shot_ramp_marty_hit:
+    score: 500000
+
+  s_ramp_bttf_active:
+    score: 2000000
+
+#
+# Gestion des lumières
+#
+light_player:
+  mode_libyens_started:
+    l_insert_bank_doc_lower: yellow
+    l_insert_bank_doc_middle: yellow
+    l_insert_bank_doc_upper: yellow
+    l_insert_lane_marty: orange
+    l_insert_ramp_bttf: off
+
+  shot_ramp_marty_hit:
+    l_insert_ramp_bttf: red
+
+  s_ramp_bttf_active:
+    l_insert_ramp_bttf: off

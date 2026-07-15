@@ -1,0 +1,22 @@
+#show_version=6
+- time: 0
+  lights:
+    l_insert_bank_doc_lower: red
+    l_insert_bank_doc_middle: red
+    l_insert_bank_doc_upper: red
+- time: 0.25
+  lights:
+    l_insert_bank_doc_lower: off
+    l_insert_bank_doc_middle: off
+    l_insert_bank_doc_upper: off
+- time: 0.5
+  lights:
+    l_insert_bank_doc_lower: red
+    l_insert_bank_doc_middle: red
+    l_insert_bank_doc_upper: red
+- time: 0.75
+  lights:
+    l_insert_bank_doc_lower: off
+    l_insert_bank_doc_middle: off
+    l_insert_bank_doc_upper: off
+- duration: 1.0

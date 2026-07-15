@@ -24,28 +24,116 @@ mode_settings:
     mode_start:
       - attract
 
+# --- SHOW_PLAYERS UNIFIÉS ---
 show_player:
   start_einstein_multiball:
     einstein_multiball_video:
       action: play
+  bank_doc_fully_red:
+    flash_doc_inserts:
+      action: play
+  start_libyens_mode:
+    flash_doc_inserts:
+      action: stop
+# -----------------------------
+      
+# --- GESTION DE LA BANQUE DE CIBLES DOC ET DU DÉCLENCHEMENT LIBYENS ---
 
-# in your base mode (modes/base/config/base.yaml)
+shot_profiles:
+  doc_progression_profile:
+    states:
+      - name: touch_1
+      - name: touch_2
+      - name: touch_3
+
+# Compteur pour détecter quand les 3 cibles ont atteint le stade rouge
+counters:
+  doc_ready_counter:
+    count_events: shot_bank_doc_lower_touch_3_hit, shot_bank_doc_middle_touch_3_hit, shot_bank_doc_upper_touch_3_hit
+    count_complete_value: 3
+    reset_on_complete: true
+    events_when_complete: bank_doc_fully_red
+
+# --- LIGHT_PLAYER UNIQUE (regroupe les cibles DOC et l'allumage du mode base) ---
+light_player:
+  # --- CIBLE DOC INFÉRIEURE ---
+  shot_bank_doc_lower_touch_1:
+    l_insert_bank_doc_lower: yellow
+  shot_bank_doc_lower_touch_2:
+    l_insert_bank_doc_lower: orange
+  shot_bank_doc_lower_touch_3:
+    l_insert_bank_doc_lower: red
+
+  # --- CIBLE DOC MILANTAINE (MIDDLE) ---
+  shot_bank_doc_middle_touch_1:
+    l_insert_bank_doc_middle: yellow
+  shot_bank_doc_middle_touch_2:
+    l_insert_bank_doc_middle: orange
+  shot_bank_doc_middle_touch_3:
+    l_insert_bank_doc_middle: red
+
+  # --- CIBLE DOC SUPÉRIEURE ---
+  shot_bank_doc_upper_touch_1:
+    l_insert_bank_doc_upper: yellow
+  shot_bank_doc_upper_touch_2:
+    l_insert_bank_doc_upper: orange
+  shot_bank_doc_upper_touch_3:
+    l_insert_bank_doc_upper: red
+
+  # Lorsque toutes les cibles sont rouges : mise en fixe rouge des inserts
+  bank_doc_fully_red:
+    l_insert_bank_doc_lower: red
+    l_insert_bank_doc_middle: red
+    l_insert_bank_doc_upper: red
+
+  # --- ÉCLAIRAGES GÉNÉRAUX AU DÉMARRAGE DU MODE BASE ---
+  mode_base_started:
+    l_left_outlane: white
+    l_insert_shoot_again: white
+    l_left_inlane_lower: floralwhite
+    l_left_inlane_top: red
+    l_left_slingshot_lower: floralwhite
+    l_left_slingshot_top: red
+    l_insert_left_inlane: white
+    l_insert_left_outlane: white
+    l_left_inter_lower: floralwhite
+    l_left_inter_top: red
+    l_left_top_lower: floralwhite
+    l_left_top_top: red
+    l_left_top_left: floralwhite
+    l_left_top_right: red
+    l_miniplayfield_lower: floralwhite
+    l_miniplayfield_top: red
+    l_right_inter_lower: floralwhite
+    l_right_inter_middle_lower: red
+    l_right_inter_middle_top: floralwhite
+    l_right_inter_top: red
+    l_insert_right_outlane: white
+    l_insert_right_inlane: white
+    l_right_slingshot_lower: floralwhite
+    l_right_slingshot_top: red
+    l_right_inlane_lower: floralwhite
+    l_right_inlane_top: red
+    l_right_outlane: white
+    l_up_middle: white
+    l_up_middle_left: white
+    l_up_left: white
+    l_up_middle_right: white
+    l_up_right: white
+    l_right_popper: red
+    l_lower_jet_lower: white
+    l_lower_jet: white
+    l_left_jet_lower: white
+    l_left_jet: white
+    l_right_jet_lower: white
+    l_right_jet: white
+# -----------------------------------------------------------------------------
+
 variable_player:
-  # LES 3 PREMIERS SONT DES EXEMPLES AVEC POTATO A GARDER EN TETE
-  # s_right_inlane_active:
-    # score: 100
-  # s_left_flipper_active:
-    # score: 1000
-    # potato: 1
-  # s_right_flipper_active:
-    # potato: -2
   s_left_flipper_active:
     score: 100
   s_right_flipper_active:
     score: 100
-  # s_start:
-    # number: 0-0-3
-    # tags: start
   s_left_slingshot_active:
     score: 100
   s_right_slingshot_active:
@@ -60,8 +148,6 @@ variable_player:
     score: 100
   s_right_popper_active:
     score: 100
-  # s_top_popper_active:
-    # score: 100
   # OPTOS
   s_ramp_1985_entree_active:
     score: 100
@@ -159,8 +245,6 @@ variable_player:
     score: 100
   s_lane_guitar_active:
     score: 100
-  # s_tilt:
-    # number: 1-0-80
     
 sequence_shots:
   shot_ramp_1985:
@@ -172,14 +256,9 @@ sequence_shots:
   shot_ramp_marty:
     switch_sequence: s_ramp_marty_lower, s_ramp_marty_upper
     sequence_timeout: 3s
-    # QUE FAIRE DE   s_lane_marty_lower ET s_lane_marty_upper
-  # QUE FAIRE DE s_ramp_hotel_de_ville ET s_ramp_george ET s_ramp_bttf CAR IL N'Y A PAS DE SORTIE, IL FAUT LE COMBINER AVEC UN AUTRE SWITCH ??
-  # IDEM POUR s_ramp_bttf ET s_lane_cafe_einstein ET s_lane_einstein_upper
   shot_ramp_1955:
-  # A VERIFIER +++
     switch_sequence: s_lane_1955, s_ramp_1955, s_ramp_1985_sortie
     sequence_timeout: 3s
-  # REVOIR SEQUENCE TIMEOUT A 1S POUR LES RAMPES DE BAS DE PLATEAU
   
 shots:
   shot_shoot_again:
@@ -202,38 +281,6 @@ shots:
     switches: s_right_outlane
     show_tokens:
       leds: l_insert_right_outlane
-  # shot_1885:
-    # switches: s_left_popper
-    # show_tokens:
-      # leds: l_insert_1885
-  # shot_1955:
-    # switches: s_left_popper
-    # show_tokens:
-      # leds: l_insert_1955
-  # shot_1985:
-    # switches: s_left_popper
-    # show_tokens:
-      # leds: l_insert_1985
-  # shot_2015:
-    # switches: s_left_popper
-    # show_tokens:
-      # leds: l_insert_2015
-  # shot_biff:
-    # switches: s_left_popper
-    # show_tokens:
-      # leds: l_insert_biff
-  # shot_bttf:
-    # switches: s_left_popper
-    # show_tokens:
-      # leds: l_insert_bttf
-  # shot_x2:
-    # switches: 
-    # show_tokens:
-      # leds: l_insert_x2
-  # shot_extraball:
-    # switches: 
-    # show_tokens:
-      # leds: l_insert_extraball
   shot_ramp_hotel_de_ville:
     switches: s_ramp_hotel_de_ville
     show_tokens:
@@ -250,12 +297,6 @@ shots:
     switches: s_target_plutonium
     show_tokens:
       leds: l_insert_target_plutonium
-  # A REVOIR +++
-  # shot_lane_1955:
-    # switches: s_lane_1955
-    # show_tokens:
-      # leds: l_insert_lane_1955
-  # ET IL MANQUAIT POPPER GAUCHE ET DROITE, D'AUTRES OUBLIS ?
   shot_left_popper:
     switches: s_left_popper
     show_tokens:
@@ -308,15 +349,6 @@ shots:
     switches: s_lane_biff
     show_tokens:
       leds: l_insert_lane_biff
-  # ?????
-  # shot_lane_doc_lower:
-    # switches: s_lane_doc_lower
-    # show_tokens:
-      # leds: l_insert_lane_doc_lower
-  # shot_lane_doc_upper:
-    # switches: s_lane_doc_upper
-    # show_tokens:
-      # leds: l_insert_lane_doc_upper
   shot_lane_horloge:
     switches: s_lane_horloge
     show_tokens:
@@ -329,18 +361,23 @@ shots:
     switches: s_target_overboard
     show_tokens:
       leds: l_insert_target_overboard
+  
   shot_bank_doc_lower:
     switches: s_bank_doc_lower
+    profile: doc_progression_profile
     show_tokens:
       leds: l_insert_bank_doc_lower
   shot_bank_doc_middle:
     switches: s_bank_doc_middle
+    profile: doc_progression_profile
     show_tokens:
       leds: l_insert_bank_doc_middle
   shot_bank_doc_upper:
     switches: s_bank_doc_upper
+    profile: doc_progression_profile
     show_tokens:
       leds: l_insert_bank_doc_upper
+
   shot_lane_lorraine:
     switches: s_lane_lorraine
     show_tokens:
@@ -376,48 +413,3 @@ shot_groups:
     shots: shot_lane_1885, shot_ramp_1955_complete, shot_ramp_1985_complete, shot_ramp_2015_complete
     enable_events: ball_started
     reset_events: selection_modes_completed
-      
-# PENSER A FAIRE ETTEINDRE LES BUMPERS TEMPORAIREMENT LORSQU'ILS SONT TOUCHES
-
-light_player:
-  # Événement qui se déclenche lorsque le mode base démarre
-  mode_base_started:
-    l_left_outlane: white
-    l_insert_shoot_again: white
-    l_left_inlane_lower: floralwhite
-    l_left_inlane_top: red
-    l_left_slingshot_lower: floralwhite
-    l_left_slingshot_top: red
-    l_insert_left_inlane: white
-    l_insert_left_outlane: white
-    l_left_inter_lower: floralwhite
-    l_left_inter_top: red
-    l_left_top_lower: floralwhite
-    l_left_top_top: red
-    l_left_top_left: floralwhite
-    l_left_top_right: red
-    l_miniplayfield_lower: floralwhite
-    l_miniplayfield_top: red
-    l_right_inter_lower: floralwhite
-    l_right_inter_middle_lower: red
-    l_right_inter_middle_top: floralwhite
-    l_right_inter_top: red
-    l_insert_right_outlane: white
-    l_insert_right_inlane: white
-    l_right_slingshot_lower: floralwhite
-    l_right_slingshot_top: red
-    l_right_inlane_lower: floralwhite
-    l_right_inlane_top: red
-    l_right_outlane: white
-    l_up_middle: white
-    l_up_middle_left: white
-    l_up_left: white
-    l_up_middle_right: white
-    l_up_right: white
-    l_right_popper: red
-    l_lower_jet_lower: white
-    l_lower_jet: white
-    l_left_jet_lower: white
-    l_left_jet: white
-    l_right_jet_lower: white
-    l_right_jet: white
