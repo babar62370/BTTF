@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cl1m4gyd0omkm"
+path="res://.godot/imported/ouverture_porte _delorean.mp3-dbda59b422477f074adfa07b88fc4ade.mp3str"
+
+[deps]
+
+source_file="res://sounds/effects/ouverture_porte _delorean.mp3"
+dest_files=["res://.godot/imported/ouverture_porte _delorean.mp3-dbda59b422477f074adfa07b88fc4ade.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

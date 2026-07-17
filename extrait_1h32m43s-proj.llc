@@ -1,0 +1,12 @@
+{
+  version: 2,
+  mediaFileName: 'extrait_1h32m43s.mp3',
+  cutSegments: [
+    {
+      start: 0.23302813688212926,
+      end: 0.6806874524714829,
+      name: '',
+      selected: true,
+    },
+  ],
+}
