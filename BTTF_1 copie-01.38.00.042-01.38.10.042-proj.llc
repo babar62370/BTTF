@@ -1,0 +1,12 @@
+{
+  version: 2,
+  mediaFileName: 'BTTF_1 copie-01.38.00.042-01.38.10.042.mp4',
+  cutSegments: [
+    {
+      start: 6.726144486692014,
+      end: 7.996653992395437,
+      name: '',
+      selected: true,
+    },
+  ],
+}
