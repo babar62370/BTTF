@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_qqsk2"]
 [ext_resource type="Script" uid="uid://cnc7dblwai6nd" path="res://addons/mpf-gmc/classes/mpf_display.gd" id="2_qdyu4"]
 [ext_resource type="AudioStream" uid="uid://8238u6w8mmsy" path="res://sounds/music/power_of_love.mp3" id="3_d8l0k"]
-[ext_resource type="Texture2D" uid="uid://bm02ykr5lj5nh" path="res://Page 1.png" id="3_qdyu4"]
+[ext_resource type="Texture2D" uid="uid://mik0ry3fo54x" path="res://pictures/base.png" id="3_qdyu4"]
 [ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="4_tve0m"]
 
 [node name="BaseInfos" type="Control" unique_id=669278098]

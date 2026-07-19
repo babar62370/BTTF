@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dnhhmnowl0fsr"
+path="res://.godot/imported/earth_angel_(will you_be_mine).mp3-8dd37d13dd58e570d5aa7b39b9693efa.mp3str"
+
+[deps]
+
+source_file="res://sounds/music/earth_angel_(will you_be_mine).mp3"
+dest_files=["res://.godot/imported/earth_angel_(will you_be_mine).mp3-8dd37d13dd58e570d5aa7b39b9693efa.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
