@@ -1,0 +1,12 @@
+{
+  version: 2,
+  mediaFileName: 'allo_2015_video.mp4',
+  cutSegments: [
+    {
+      start: 8.640947717110265,
+      end: 12.61152404486692,
+      name: '',
+      selected: true,
+    },
+  ],
+}

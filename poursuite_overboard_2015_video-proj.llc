@@ -1,0 +1,12 @@
+{
+  version: 2,
+  mediaFileName: 'poursuite_overboard_2015_video.mp4',
+  cutSegments: [
+    {
+      start: 0,
+      end: 169.62714405475282,
+      name: '',
+      selected: true,
+    },
+  ],
+}

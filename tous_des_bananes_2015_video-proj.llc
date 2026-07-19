@@ -1,0 +1,12 @@
+{
+  version: 2,
+  mediaFileName: 'tous_des_bananes_2015_video.mp4',
+  cutSegments: [
+    {
+      start: 2.885931558935361,
+      end: 6.55683650190114,
+      name: '',
+      selected: true,
+    },
+  ],
+}
