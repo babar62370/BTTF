@@ -1,0 +1,12 @@
+{
+  version: 2,
+  mediaFileName: 'chute_de_sacs_vilains_2_2015_video.mp4',
+  cutSegments: [
+    {
+      start: 16.700262504942966,
+      end: 18.679327341444868,
+      name: '',
+      selected: true,
+    },
+  ],
+}

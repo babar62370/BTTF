@@ -1,0 +1,12 @@
+{
+  version: 2,
+  mediaFileName: 'fumier_biff_2015_video.mp4',
+  cutSegments: [
+    {
+      start: 6.845817490494296,
+      end: 33.225034220532315,
+      name: '',
+      selected: true,
+    },
+  ],
+}

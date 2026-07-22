@@ -1,0 +1,12 @@
+{
+  version: 2,
+  mediaFileName: 'banane_bal_2015_video.mp4',
+  cutSegments: [
+    {
+      start: 8.852594427376426,
+      end: 10.000998,
+      name: '',
+      selected: true,
+    },
+  ],
+}

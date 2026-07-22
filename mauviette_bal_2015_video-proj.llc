@@ -1,0 +1,12 @@
+{
+  version: 2,
+  mediaFileName: 'mauviette_bal_2015_video.mp4',
+  cutSegments: [
+    {
+      start: 8.003800400000001,
+      end: 14.912023558935362,
+      name: '',
+      selected: true,
+    },
+  ],
+}

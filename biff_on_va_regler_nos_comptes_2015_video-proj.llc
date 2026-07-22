@@ -1,0 +1,12 @@
+{
+  version: 2,
+  mediaFileName: 'biff_on_va_regler_nos_comptes_2015_video.mp4',
+  cutSegments: [
+    {
+      start: 8.879555682889734,
+      end: 20,
+      name: '',
+      selected: true,
+    },
+  ],
+}

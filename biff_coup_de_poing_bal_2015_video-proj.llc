@@ -1,0 +1,12 @@
+{
+  version: 2,
+  mediaFileName: 'biff_coup_de_poing_bal_2015_video.mp4',
+  cutSegments: [
+    {
+      start: 0.9216251627376426,
+      end: 5.034663079087453,
+      name: '',
+      selected: true,
+    },
+  ],
+}

@@ -1,0 +1,12 @@
+{
+  version: 2,
+  mediaFileName: 'almanach_ohlala_2015_video.mp4',
+  cutSegments: [
+    {
+      start: 9.978436203802282,
+      end: 23.21203299847909,
+      name: '',
+      selected: true,
+    },
+  ],
+}

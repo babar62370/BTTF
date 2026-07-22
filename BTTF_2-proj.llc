@@ -3,8 +3,8 @@
   mediaFileName: 'BTTF_2.mp4',
   cutSegments: [
     {
-      start: 842.5335150000005,
-      end: 847.4535149999965,
+      start: 4850.000794731563,
+      end: 4870.497723,
       name: '',
       selected: true,
     },

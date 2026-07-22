@@ -1,0 +1,12 @@
+{
+  version: 2,
+  mediaFileName: 'main_ecrasee_2015_video.mp4',
+  cutSegments: [
+    {
+      start: 9.78739782661597,
+      end: 24.30518599999998,
+      name: '',
+      selected: true,
+    },
+  ],
+}

@@ -1,0 +1,12 @@
+{
+  version: 2,
+  mediaFileName: 'bal_suite_2015_video.mp4',
+  cutSegments: [
+    {
+      start: 2.960000000000002,
+      end: 88.73199499999988,
+      name: '',
+      selected: true,
+    },
+  ],
+}
