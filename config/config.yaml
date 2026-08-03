@@ -207,34 +207,36 @@ switches:
     number: 0-0-11
   s_left_slingshot:
     number: 0-0-27
-  s_right_slingshot:
+  # OPTO
+  s_ramp_1985_entree:
     number: 0-0-26
+    type: NC
   s_lower_jet:
     number: 0-0-25
   s_left_jet:
     number: 0-0-24
-  s_right_jet:
-    number: 0-0-19
   s_left_popper:
-    number: 0-0-18
+    number: 0-0-19
   s_right_popper:
-    number: 0-0-17
-  s_top_popper:
-    number: 0-0-16
+    number: 0-0-18
   # OPTOS
-  s_ramp_1985_entree:
-    number: 1-0-1
-    type: NC
-  s_ramp_hotel_de_ville:
-    number: 1-0-2
-    type: NC
-  s_horloge:
-    number: 1-0-3
-    type: NC
   s_ramp_2015_lower:
-    number: 1-0-8
+    number: 0-0-17
     type: NC
   s_ramp_marty_lower:
+    number: 0-0-16
+    type: NC
+  s_right_slingshot:
+    number: 1-0-1
+  s_right_jet:
+    number: 1-0-2
+  s_top_popper:
+    number: 1-0-3
+  # OPTOS
+  s_ramp_hotel_de_ville:
+    number: 1-0-8
+    type: NC
+  s_horloge:
     number: 1-0-9
     type: NC
   s_ramp_george:
@@ -243,6 +245,7 @@ switches:
   s_ramp_bttf:
     number: 1-0-11
     type: NC
+  # MATRICE
   s_left_inlane:
     number: 1-0-32
     tags: playfield_active
@@ -303,7 +306,7 @@ switches:
     debounce: quick
     #ignore_window_ms: 2ms
     tags: playfield_active
-  s_lane_cafe_einstein:
+  #s_lane_cafe_einstein:
     number: 1-0-50
     tags: playfield_active
   s_lane_einstein_upper:
@@ -386,6 +389,7 @@ switches:
   # MANQUE LE CAPTEUR DE PORTE ET L'ACCES AU MENU DE CONFIGURATION
 
 coils:
+  # banque a
   c_flipper_left_main:
     number: 0-0-8
     default_pulse_ms: 15
@@ -396,62 +400,65 @@ coils:
     default_pulse_ms: 10
     default_hold_power: 0.10
     allow_enable: true
-  c_flipper_right_bas_main:
+  c_trough_eject:
     number: 0-0-10
+    default_pulse_ms: 20
+  c_left_slingshot:
+    number: 0-0-11
+    default_pulse_ms: 10
+  c_lower_jet_bumper:
+    number: 0-0-0
+    default_pulse_ms: 10
+  c_left_popper:
+    number: 0-0-12
+  # banque b
+  c_flipper_right_bas_main:
+    number: 0-0-15
     default_pulse_ms: 12
     default_hold_power: 0.125
     allow_enable: true
   c_flipper_right_haut_main:
-    number: 0-0-11
+    number: 0-0-7
     default_pulse_ms: 10
     default_hold_power: 0.10
     allow_enable: true
   c_flipper_right_mini_main:
-    number: 0-0-0
+    number: 0-0-6
     default_pulse_ms: 10
     default_hold_power: 0.10
     allow_enable: true
-  c_trough_eject:
-    number: 0-0-12
-    default_pulse_ms: 20
   c_plunger_eject:
-    number: 0-0-13
-    default_pulse_ms: 25
-  c_left_slingshot:
-    number: 0-0-14
-    default_pulse_ms: 10
-  c_right_slingshot:
-    number: 0-0-15
-    default_pulse_ms: 10
-  c_lower_jet_bumper:
-    number: 0-0-7
-    default_pulse_ms: 10
-  c_left_jet_bumper:
-    number: 0-0-6
-    default_pulse_ms: 10
-  c_right_jet_bumper:
     number: 0-0-5
-    default_pulse_ms: 10
-  c_left_popper:
+    default_pulse_ms: 25
+  c_left_jet_bumper:
     number: 0-0-4
-    default_pulse_ms: 20
+    default_pulse_ms: 10
   c_right_popper:
     number: 0-0-3
     default_pulse_ms: 20
-  c_deviateur_bras_actuate:
-    number: 0-0-2
-    default_pulse_ms: 30
+  # banque c
+  c_right_slingshot:
+    number: 1-0-0
+    default_pulse_ms: 10
+  c_right_jet_bumper:
+    number: 1-0-7
+    default_pulse_ms: 10
   c_top_popper:
-    number: 0-0-1
+    number: 1-0-6
     default_pulse_ms: 20
+  c_deviateur_bras_actuate:
+    number: 1-0-5
+    default_pulse_ms: 30
+    
+  c_shaker:
+    number: 1-0-4
+    default_pulse_ms: 1
+    default_hold_power: 0.125
+    
   c_eject_bras_virtual:
     number: 1
     platform: virtual
     default_pulse_ms: 20
-  c_shaker:
-    number: 1-0-0
-    default_pulse_ms: 1
-    default_hold_power: 0.125
 
 lights:
   l_translite_1:
@@ -765,3 +772,191 @@ light_player:
     l_translite_23: white
     l_translite_24: white
     l_translite_25: white
+    
+sound_player:
+  # s_my_switch_active:      # Événement généré quand le switch est activé
+    # switch_click:          # Nom du fichier son (ou de l'asset configuré dans GMC)
+      # action: play         # Action à effectuer
+      # bus: sfx             # Note : 'bus' remplace l'ancien 'track' (ex: bus audio sfx)
+
+  # --- Bumpers, SlINGS & Poppers ---
+  s_left_popper_active:
+    switch_click:
+      action: play
+      bus: effects
+  s_right_popper_active:
+    switch_click:
+      action: play
+      bus: effects
+
+  # --- Servos & Slots ---
+  s_servo_bras_einstein_active:
+    switch_click:
+      action: play
+      bus: effects
+  s_bras_slot1_active:
+    switch_click:
+      action: play
+      bus: effects
+  s_bras_slot2_active:
+    switch_click:
+      action: play
+      bus: effects
+  s_bras_slot3_active:
+    switch_click:
+      action: play
+      bus: effects
+
+  # --- Ramps & Optos ---
+  s_ramp_1985_entree_active:
+    switch_click:
+      action: play
+      bus: effects
+  s_ramp_hotel_de_ville_active:
+    switch_click:
+      action: play
+      bus: effects
+  s_horloge_active:
+    switch_click:
+      action: play
+      bus: effects
+  s_ramp_2015_lower_active:
+    switch_click:
+      action: play
+      bus: effects
+  s_ramp_marty_lower_active:
+    switch_click:
+      action: play
+      bus: effects
+  s_ramp_george_active:
+    switch_click:
+      action: play
+      bus: effects
+  s_ramp_bttf_active:
+    switch_click:
+      action: play
+      bus: effects
+  s_ramp_1955_active:
+    switch_click:
+      action: play
+      bus: effects
+  s_ramp_1985_sortie_active:
+    switch_click:
+      action: play
+      bus: effects
+  s_ramp_2015_upper_active:
+    switch_click:
+      action: play
+      bus: effects
+  s_ramp_marty_upper_active:
+    switch_click:
+      action: play
+      bus: effects
+
+  # --- Lanes & Inlanes / Outlanes ---
+  s_lane_1955_active:
+    switch_click:
+      action: play
+      bus: effects
+  s_lane_1885_active:
+    switch_click:
+      action: play
+      bus: effects
+  s_lane_cafe_einstein_active:
+    switch_click:
+      action: play
+      bus: effects
+  s_lane_einstein_upper_active:
+    switch_click:
+      action: play
+      bus: effects
+  s_lane_biff_active:
+    switch_click:
+      action: play
+      bus: effects
+  s_lane_doc_lower_active:
+    switch_click:
+      action: play
+      bus: effects
+  s_lane_doc_upper_active:
+    switch_click:
+      action: play
+      bus: effects
+  s_lane_horloge_active:
+    switch_click:
+      action: play
+      bus: effects
+  s_lane_marty_lower_active:
+    switch_click:
+      action: play
+      bus: effects
+  s_lane_marty_upper_active:
+    switch_click:
+      action: play
+      bus: effects
+  s_lane_lorraine_active:
+    switch_click:
+      action: play
+      bus: effects
+  s_lane_marvin_active:
+    switch_click:
+      action: play
+      bus: effects
+  s_lane_guitar_active:
+    switch_click:
+      action: play
+      bus: effects
+
+  # --- Cibles (Targets) & Banques de cibles ---
+  s_target_plutonium_active:
+    switch_click:
+      action: play
+      bus: effects
+  s_bank_dmc_lower_active:
+    switch_click:
+      action: play
+      bus: effects
+  s_bank_dmc_middle_active:
+    switch_click:
+      action: play
+      bus: effects
+  s_bank_dmc_upper_active:
+    switch_click:
+      action: play
+      bus: effects
+  s_entree_souterrain_active:
+    switch_click:
+      action: play
+      bus: effects
+  s_target_hill_valley_active:
+    switch_click:
+      action: play
+      bus: effects
+  s_spinner_almanach_active:
+    switch_click:
+      action: play
+      bus: effects
+  s_target_foudre_active:
+    switch_click:
+      action: play
+      bus: effects
+  s_target_overboard_active:
+    switch_click:
+      action: play
+      bus: effects
+  s_bank_doc_lower_active:
+    switch_click:
+      action: play
+      bus: effects
+  s_bank_doc_middle_active:
+    switch_click:
+      action: play
+      bus: effects
+  s_bank_doc_upper_active:
+    switch_click:
+      action: play
+      bus: effects
+  s_spinner_pierre_cardin_active:
+    switch_click:
+      action: play
+      bus: effects
