@@ -1,0 +1,48 @@
+{
+  version: 2,
+  mediaFileName: 'BTTF_2.mp4',
+  cutSegments: [
+    {
+      start: 4971.239932,
+      end: 4975.034211999994,
+      name: '',
+      selected: false,
+    },
+    {
+      start: 5288.7640970000375,
+      end: 5300.381095,
+      name: '',
+      selected: false,
+    },
+    {
+      start: 4821.243963040313,
+      end: 4834.483963040301,
+      name: '',
+      selected: false,
+    },
+    {
+      start: 4850.001941,
+      end: 4870.631868,
+      name: '',
+      selected: false,
+    },
+    {
+      start: 5657.123263,
+      end: 5683.249491000004,
+      name: '',
+      selected: false,
+    },
+    {
+      start: 6074.824254000019,
+      end: 6084.824254000019,
+      name: '',
+      selected: false,
+    },
+    {
+      start: 5452.5422370000815,
+      end: 5652.422237000033,
+      name: '',
+      selected: false,
+    },
+  ],
+}
